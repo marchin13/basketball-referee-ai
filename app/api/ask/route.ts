@@ -65,6 +65,8 @@ async function normalizeQuestion(question: string): Promise<string> {
 }
 
 export async function POST(request: NextRequest) {
+  const startTime = Date.now(); // 計測開始
+  
   try {
     const { question } = await request.json();
     console.log('\n' + '='.repeat(60));
@@ -188,6 +190,35 @@ ${relevantText}
       .replace(/^/, '<div class="prose max-w-none"><p class="mb-3 text-gray-700">')
       .replace(/$/, '</p></div>');
 
+    const responseTime = Date.now() - startTime; // 計測終了
+
+    // ★★★ ログをSupabaseに保存 ★★★
+    try {
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      );
+
+      await supabase.from('query_logs').insert({
+        question,
+        normalized_question: normalizedQuestion,
+        ai_answer: htmlAnswer,
+        raw_answer: answerText,
+        rag_results: ragResults,
+        rag_count: ragResults.length,
+        response_time_ms: responseTime,
+        user_agent: request.headers.get('user-agent'),
+        ip_address: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip'),
+        referrer: request.headers.get('referer'),
+        model_used: 'gpt-4o-mini'
+      });
+
+      console.log('📊 ログ保存完了');
+    } catch (logError) {
+      console.error('ログ保存エラー（処理は継続）:', logError);
+      // エラーでも処理は継続
+    }
+
     return NextResponse.json({ 
       answer: htmlAnswer,
       rawAnswer: answerText,
@@ -203,12 +234,28 @@ ${relevantText}
 
   } catch (error: any) {
     console.error('❌ 詳細なエラー情報:', error);
-    return NextResponse.json(
-      { 
-        error: 'エラーが発生しました',
-        details: error.message,
-      },
-      { status: 500 }
-    );
+    
+    // より親切なエラーメッセージ
+    if (error.message.includes('fetch') || error.message.includes('Failed to fetch')) {
+      return NextResponse.json(
+        { error: 'ネットワークエラーが発生しました。インターネット接続を確認してください。' },
+        { status: 500 }
+      );
+    } else if (error.message.includes('Supabase') || error.message.includes('Database')) {
+      return NextResponse.json(
+        { error: 'データベース接続エラーが発生しました。しばらく待ってから再度お試しください。' },
+        { status: 500 }
+      );
+    } else if (error.message.includes('OpenAI') || error.message.includes('API')) {
+      return NextResponse.json(
+        { error: 'AI APIエラーが発生しました。しばらく待ってから再度お試しください。' },
+        { status: 500 }
+      );
+    } else {
+      return NextResponse.json(
+        { error: 'エラーが発生しました。もう一度お試しください。エラーが続く場合は管理者にお問い合わせください。' },
+        { status: 500 }
+      );
+    }
   }
 }
