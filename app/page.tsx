@@ -74,12 +74,12 @@ export default function Home() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
   <div className="max-w-4xl mx-auto px-4 py-6">
     <h1 className="text-3xl font-bold text-gray-900">
-      🏀 バスケ審判AI　🐈
+      🏀 バスケ審判AI
     </h1>
     <p className="text-gray-600 mt-2">
-      JBA競技規則に基づいた質問に回答します
+      JBA競技規則（2025年版）に基づいた質問に回答します
     </p>
-    {/* 追加 */}
+    {/* ベータ版注意書き */}
     <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
       <p className="text-sm text-yellow-900">
         ⚠️ <strong>ベータ版</strong>：回答が間違っている場合は、フィードバックをお願いします。
@@ -209,7 +209,7 @@ export default function Home() {
       {/* フッター */}
       <footer className="mt-12 py-6 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-600 text-sm">
-          <p>バスケ審判AI - JBA公式競技規則（2024年版）に基づく</p>
+          <p>バスケ審判AI - JBA公式競技規則（2025年版）に基づく</p>
           <p className="mt-1">Beta Version - フィードバックをお待ちしています</p>
         </div>
       </footer>

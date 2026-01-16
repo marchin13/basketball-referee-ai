@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "バスケ審判AI - JBA競技規則検索",
-  description: "バスケットボール競技規則をAIで検索。審判の疑問を即座に解決します。",
-  keywords: ["バスケットボール", "審判", "競技規則", "JBA", "AI"],
+  title: "バスケ審判AI - JBA競技規則検索（2025年版）",
+  description: "バスケットボール競技規則（2025年版）をAIで検索。審判の疑問を即座に解決します。",
+  keywords: ["バスケットボール", "審判", "競技規則", "JBA", "AI", "2025年版"],
   authors: [{ name: "Basketball Referee AI" }],
   openGraph: {
-    title: "バスケ審判AI",
-    description: "バスケットボール競技規則をAIで検索。審判の疑問を即座に解決します。",
+    title: "バスケ審判AI（2025年版）",
+    description: "バスケットボール競技規則（2025年版）をAIで検索。審判の疑問を即座に解決します。",
     url: "https://basketball-referee-ai.vercel.app",
     siteName: "バスケ審判AI",
     locale: "ja_JP",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "バスケ審判AI",
-    description: "バスケットボール競技規則をAIで検索",
+    title: "バスケ審判AI（2025年版）",
+    description: "バスケットボール競技規則（2025年版）をAIで検索",
   },
   robots: {
     index: true,
