@@ -1,62 +1,67 @@
 import OpenAI from 'openai';
 import { NextRequest, NextResponse } from 'next/server';
 import { searchRules } from '@/lib/rag';
+import { createClient } from '@supabase/supabase-js';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// 質問を正規化（略語・口語を正式用語に変換）
 async function normalizeQuestion(question: string): Promise<string> {
   console.log('=== 質問の正規化 ===');
   console.log('元の質問:', question);
   
-  // 長文（100文字以上）の場合は正規化しない
-  if (question.length > 100) {
+  if (question.length < 20) {
     console.log('⚠️ 長文のため正規化をスキップ');
-    console.log('===================\n');
     return question;
   }
-  
-  // 短文のみ正規化
+
   try {
     const completion = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [
         {
           role: 'system',
-          content: `あなたはバスケットボール用語の正規化アシスタントです。
+          content: `あなたはバスケットボール審判の質問を正規化する専門家です。
 
-【最重要】質問の内容・意味・情報量を一切変えずに、略語だけを正式名称に変換してください。
+ユーザーの質問を、検索しやすい形に正規化してください。
 
-【変換ルール】
-- 「アンスポ」→「アンスポーツマンライクファウル」
-- 「UF」→「アンスポーツマンライクファウル」
-- 「クライテリア」→「判定基準」
-- 「TF」→「テクニカルファウル」
+【正規化ルール】
+1. 略語を正式名称に展開
+   - アンスポ → アンスポーツマンライクファウル
+   - テクニカル → テクニカルファウル
+   - ダブル → ダブルファウル
+   - TO → タイムアウト
+   - FT → フリースロー
 
-【絶対に禁止】
-- 要約すること
-- 情報を削除すること
-- 条文番号を推測すること
-- 情報を追加すること
+2. 曖昧な表現を具体化
+   - 「あれ」「それ」→ 文脈から推測して具体的に
+   - 「どうなる」→ 「ルールは」「判定は」
+
+3. 重要な情報は残す
+   - 数字（秒数、点数、人数など）
+   - 状況（フロントコート、バックコート、スローインなど）
+   - 動作（シュート、パス、ドリブルなど）
+
+4. 不要な情報は削除
+   - 挨拶、お礼
+   - 「教えてください」「質問です」などの定型句
 
 【出力】
-元の質問をそのまま保ち、上記の略語のみを置換してください。`
+正規化された質問のみを返してください。説明は不要です。`
         },
         {
           role: 'user',
           content: question
         }
       ],
-      temperature: 0,
-      max_tokens: 500,
+      temperature: 0.1,
+      max_tokens: 200,
     });
 
     const normalized = completion.choices[0]?.message?.content?.trim() || question;
     console.log('正規化後:', normalized);
     console.log('===================\n');
-    
     return normalized;
   } catch (error) {
     console.error('正規化エラー:', error);
@@ -65,7 +70,7 @@ async function normalizeQuestion(question: string): Promise<string> {
 }
 
 export async function POST(request: NextRequest) {
-  const startTime = Date.now(); // 計測開始
+  const startTime = Date.now();
   
   try {
     const { question } = await request.json();
@@ -73,13 +78,9 @@ export async function POST(request: NextRequest) {
     console.log('📝 新しい質問:', question);
     console.log('='.repeat(60) + '\n');
 
-    // ステップ1: 質問を正規化
     const normalizedQuestion = await normalizeQuestion(question);
-
-    // ステップ2: RAGで関連条文を検索
     const ragResults = await searchRules(normalizedQuestion, 10);
     
-    // ステップ3: 検索結果をテキストにまとめる
     const relevantText = ragResults
       .map((result) => {
         return `【${result.sectionId} ${result.sectionName}】（類似度: ${(result.similarity * 100).toFixed(1)}%）\n${result.content}`;
@@ -87,9 +88,8 @@ export async function POST(request: NextRequest) {
       .join('\n\n---\n\n');
     
     console.log('📄 関連テキスト長:', relevantText.length, '文字\n');
-
-    // ステップ4: OpenAI APIで回答生成
     console.log('🤖 回答を生成中...');
+    
     const completion = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [
@@ -181,7 +181,6 @@ ${relevantText}
     const answerText = completion.choices[0]?.message?.content || '';
     console.log('✅ 回答生成完了\n');
 
-    // MarkdownをHTMLに変換
     const htmlAnswer = answerText
       .replace(/##\s+(.+)/g, '<h2 class="text-xl font-bold mt-6 mb-3 text-gray-800">$1</h2>')
       .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
@@ -190,9 +189,9 @@ ${relevantText}
       .replace(/^/, '<div class="prose max-w-none"><p class="mb-3 text-gray-700">')
       .replace(/$/, '</p></div>');
 
-    const responseTime = Date.now() - startTime; // 計測終了
+    const responseTime = Date.now() - startTime;
 
-    // ★★★ ログをSupabaseに保存 ★★★
+    // ログ保存
     try {
       const supabase = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -215,8 +214,7 @@ ${relevantText}
 
       console.log('📊 ログ保存完了');
     } catch (logError) {
-      console.error('ログ保存エラー（処理は継続）:', logError);
-      // エラーでも処理は継続
+      console.error('⚠️ ログ保存エラー（処理は継続）:', logError);
     }
 
     return NextResponse.json({ 
@@ -235,7 +233,6 @@ ${relevantText}
   } catch (error: any) {
     console.error('❌ 詳細なエラー情報:', error);
     
-    // より親切なエラーメッセージ
     if (error.message.includes('fetch') || error.message.includes('Failed to fetch')) {
       return NextResponse.json(
         { error: 'ネットワークエラーが発生しました。インターネット接続を確認してください。' },
