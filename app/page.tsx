@@ -91,39 +91,39 @@ export default function Home() {
       {/* メインコンテンツ */}
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* 質問入力フォーム */}
-        <form onSubmit={handleSubmit} className="mb-8">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <label htmlFor="question" className="block text-lg font-semibold text-gray-800 mb-3">
-              質問を入力してください
-            </label>
-            <textarea
-  id="question"
-  value={question}
-  onChange={(e) => setQuestion(e.target.value)}
-  placeholder="例: アンスポの4つのクライテリアを教えてください"
-  className="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-base text-gray-900 placeholder-gray-400 resize-none"
-  rows={4}
-  disabled={loading}
-/>
-            <button
-              type="submit"
-              disabled={loading || !question.trim()}
-              className="mt-4 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed"
-            >
-              {loading ? (
-                <span className="flex items-center justify-center">
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  回答を生成中...
-                </span>
-              ) : (
-                '質問する'
-              )}
-            </button>
-          </div>
-        </form>
+        <form onSubmit={handleSubmit} className="mb-6">
+  <div className="space-y-3">
+    <label htmlFor="question" className="block text-base font-bold text-gray-900 px-1">
+      質問を入力してください
+    </label>
+    <textarea
+      id="question"
+      value={question}
+      onChange={(e) => setQuestion(e.target.value)}
+      placeholder="例: アンスポの4つのクライテリアを教えてください"
+      className="w-full p-3 bg-white border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-base text-gray-900 placeholder-gray-400 resize-none shadow-sm"
+      rows={5}
+      disabled={loading}
+    />
+    <button
+      type="submit"
+      disabled={loading || !question.trim()}
+      className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-md text-lg"
+    >
+      {loading ? (
+        <span className="flex items-center justify-center">
+          <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          回答を生成中...
+        </span>
+      ) : (
+        '質問する'
+      )}
+    </button>
+  </div>
+</form>
 
         {/* エラー表示 */}
         {error && (
