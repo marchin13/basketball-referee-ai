@@ -69,6 +69,8 @@ async function normalizeQuestion(question: string): Promise<string> {
   }
 }
 
+// ... 既存のimport文 ...
+
 export async function POST(request: NextRequest) {
   const startTime = Date.now();
   
@@ -167,7 +169,20 @@ ${relevantText}
 > [関連する原文の引用]
 
 ## 補足説明
-[必要に応じて、複数の条文を統合した説明]`
+[必要に応じて、複数の条文を統合した説明]
+
+## 関連する質問候補
+この質問に関連して、以下のような質問の意図もあるかもしれません：
+1. [具体的な状況を追加した質問]
+2. [例外ケースに関する質問]
+3. [関連する別のルールに関する質問]
+
+（例）
+元の質問: 審判がゲームクロックを進めることはありますか？
+関連質問:
+1. 審判が止める指示を出していないのに、テーブルオフィシャルズがゲームクロックを止めた場合、審判はゲームクロックを進める権限がありますか？
+2. ゲームクロックの誤作動があった場合、審判はどのように対応しますか？
+3. 審判がゲームクロックを修正できる状況はどのような場合ですか？`
         },
         {
           role: 'user',
@@ -175,13 +190,33 @@ ${relevantText}
         }
       ],
       temperature: 0.1,
-      max_tokens: 2000,
+      max_tokens: 2500, // 関連質問分を増やす
     });
 
     const answerText = completion.choices[0]?.message?.content || '';
     console.log('✅ 回答生成完了\n');
 
-    const htmlAnswer = answerText
+    // 関連質問を抽出
+    const relatedQuestionsMatch = answerText.match(/## 関連する質問候補\n([\s\S]*?)(?=\n##|\n$|$)/);
+    let relatedQuestions: string[] = [];
+    let mainAnswer = answerText;
+
+    if (relatedQuestionsMatch) {
+      const relatedSection = relatedQuestionsMatch[1];
+      // 番号付きリストを抽出
+      relatedQuestions = relatedSection
+        .split('\n')
+        .filter(line => /^\d+\./.test(line.trim()))
+        .map(line => line.replace(/^\d+\.\s*/, '').trim())
+        .filter(q => q.length > 0);
+      
+      // 関連質問セクションを本文から削除
+      mainAnswer = answerText.replace(/## 関連する質問候補[\s\S]*$/, '').trim();
+      
+      console.log('💡 関連質問:', relatedQuestions.length, '件');
+    }
+
+    const htmlAnswer = mainAnswer
       .replace(/##\s+(.+)/g, '<h2 class="text-xl font-bold mt-6 mb-3 text-gray-800">$1</h2>')
       .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
       .replace(/>\s+(.+)/g, '<blockquote class="border-l-4 border-orange-500 pl-4 py-2 my-3 bg-orange-50 italic text-gray-700">$1</blockquote>')
@@ -220,6 +255,7 @@ ${relevantText}
     return NextResponse.json({ 
       answer: htmlAnswer,
       rawAnswer: answerText,
+      relatedQuestions, // 新規追加
       model: 'gpt-4o-mini (RAG)',
       originalQuestion: question,
       normalizedQuestion: normalizedQuestion,
