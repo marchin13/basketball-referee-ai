@@ -278,8 +278,9 @@ export default function Home() {
             <div className="mt-8">
               <FeedbackForm 
                 question={question}
-                answer={rawAnswer}
+                aiAnswer={rawAnswer}
                 normalizedQuestion={normalizedQuestion}
+                ragResults={ragResults}
               />
             </div>
           </div>
