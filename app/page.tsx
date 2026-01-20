@@ -9,6 +9,12 @@ interface RagResult {
   similarity: number;
 }
 
+interface SignalImage {
+  name: string;
+  path: string;
+  description: string;
+}
+
 export default function Home() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
@@ -16,6 +22,7 @@ export default function Home() {
   const [normalizedQuestion, setNormalizedQuestion] = useState('');
   const [ragResults, setRagResults] = useState<RagResult[]>([]);
   const [relatedQuestions, setRelatedQuestions] = useState<string[]>([]);
+  const [signalImages, setSignalImages] = useState<SignalImage[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -33,6 +40,7 @@ export default function Home() {
     setNormalizedQuestion('');
     setRagResults([]);
     setRelatedQuestions([]);
+    setSignalImages([]);
 
     try {
       const response = await fetch('/api/ask', {
@@ -53,6 +61,7 @@ export default function Home() {
       setNormalizedQuestion(data.normalizedQuestion);
       setRagResults(data.ragResults || []);
       setRelatedQuestions(data.relatedQuestions || []);
+      setSignalImages(data.signalImages || []);
     } catch (err: any) {
       console.error('エラー詳細:', err);
       
@@ -72,9 +81,7 @@ export default function Home() {
 
   const handleRelatedQuestion = (relatedQ: string) => {
     setQuestion(relatedQ);
-    // スクロールをトップに
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // 少し待ってから自動送信
     setTimeout(() => {
       const form = document.querySelector('form');
       if (form) {
@@ -147,6 +154,46 @@ export default function Home() {
           </div>
         )}
 
+        {/* 使い方セクション */}
+        {!answer && (
+          <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+              💡 使い方
+            </h2>
+            <ol className="space-y-3 text-gray-700">
+              <li className="flex">
+                <span className="font-bold text-orange-600 mr-3">1.</span>
+                <span>バスケットボール競技規則に関する質問を入力してください</span>
+              </li>
+              <li className="flex">
+                <span className="font-bold text-orange-600 mr-3">2.</span>
+                <span>AIが関連する条文を検索して回答を生成します</span>
+              </li>
+              <li className="flex">
+                <span className="font-bold text-orange-600 mr-3">3.</span>
+                <span>関連する質問候補も表示されるので、クリックして詳しく調べられます</span>
+              </li>
+              <li className="flex">
+                <span className="font-bold text-orange-600 mr-3">4.</span>
+                <span>回答が正しくない場合はフィードバックをお願いします</span>
+              </li>
+            </ol>
+
+            <div className="mt-6 p-4 bg-orange-50 border border-orange-200 rounded-lg">
+              <h3 className="text-sm font-bold text-orange-900 mb-2 flex items-center">
+                📌 よくある質問例：
+              </h3>
+              <ul className="space-y-1 text-sm text-gray-700">
+                <li>• アンスポーツマンライクファウルの判定基準は？</li>
+                <li>• ショットクロック残り18秒でヘルドボール、オフェンス継続の場合は？</li>
+                <li>• 試合開始前のテクニカルファウルの記録方法は？</li>
+                <li>• ゲームクロック残り2秒でフリースローの場合、ショットクロックは？</li>
+                <li>• 審判がゲームクロックを進めることはありますか？</li>
+              </ul>
+            </div>
+          </div>
+        )}
+
         {/* 回答表示 */}
         {answer && (
           <div className="bg-white rounded-lg shadow-md p-6">
@@ -158,7 +205,33 @@ export default function Home() {
               dangerouslySetInnerHTML={{ __html: answer }}
             />
 
-            {/* 関連質問（新規追加） */}
+            {/* 審判シグナル画像（新規追加） */}
+            {signalImages && signalImages.length > 0 && (
+              <div className="mt-8 p-5 bg-purple-50 border-2 border-purple-200 rounded-lg">
+                <h3 className="text-lg font-bold text-purple-900 mb-3">
+                  📸 審判のシグナル
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {signalImages.map((img, index) => (
+                    <div key={index} className="bg-white p-3 rounded shadow hover:shadow-lg transition">
+                      <img 
+                        src={img.path} 
+                        alt={img.name}
+                        className="w-full h-auto rounded mb-2"
+                      />
+                      <p className="text-sm text-gray-800 font-semibold mb-1">
+                        {img.name}
+                      </p>
+                      <p className="text-xs text-gray-600">
+                        {img.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 関連質問 */}
             {relatedQuestions && relatedQuestions.length > 0 && (
               <div className="mt-8 p-5 bg-blue-50 border-2 border-blue-200 rounded-lg">
                 <h3 className="text-lg font-bold text-blue-900 mb-3">
@@ -191,9 +264,9 @@ export default function Home() {
                 <ul className="mt-3 space-y-2">
                   {ragResults.map((result, index) => (
                     <li key={index} className="text-sm text-gray-600">
-                      {index + 1}. {result.sectionId} {result.sectionName} 
+                      {index + 1}. {result.sectionId} - {result.sectionName} 
                       <span className="text-gray-400 ml-2">
-                        (類似度: {(result.similarity * 100).toFixed(1)}%)
+                        ({(result.similarity * 100).toFixed(1)}% 類似)
                       </span>
                     </li>
                   ))}
@@ -202,59 +275,22 @@ export default function Home() {
             )}
 
             {/* フィードバックフォーム */}
-            <FeedbackForm
-              question={question}
-              aiAnswer={rawAnswer || answer}
-              normalizedQuestion={normalizedQuestion || question}
-              ragResults={ragResults}
-            />
-          </div>
-        )}
-
-        {/* 使い方ガイド */}
-        {!answer && !loading && (
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">💡 使い方</h2>
-            <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-orange-500 font-bold mr-2">1.</span>
-                <span>バスケットボール競技規則に関する質問を入力してください</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-500 font-bold mr-2">2.</span>
-                <span>AIが関連する条文を検索して回答を生成します</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-500 font-bold mr-2">3.</span>
-                <span>関連する質問候補も表示されるので、クリックして詳しく調べられます</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-500 font-bold mr-2">4.</span>
-                <span>回答が正しくない場合はフィードバックをお願いします</span>
-              </li>
-            </ul>
-
-            <div className="mt-6 p-4 bg-orange-50 rounded-lg">
-              <p className="text-sm text-gray-700">
-                <strong>📌 よくある質問例：</strong>
-              </p>
-              <ul className="mt-2 space-y-1 text-sm text-gray-600">
-                <li>• アンスポーツマンライクファウルの判定基準は？</li>
-                <li>• ショットクロック残り18秒でヘルドボール、オフェンス継続の場合は？</li>
-                <li>• 試合開始前のテクニカルファウルの記録方法は？</li>
-                <li>• ゲームクロック残り2秒でフリースローの場合、ショットクロックは？</li>
-                <li>• 審判がゲームクロックを進めることはありますか？</li>
-              </ul>
+            <div className="mt-8">
+              <FeedbackForm 
+                question={question}
+                answer={rawAnswer}
+                normalizedQuestion={normalizedQuestion}
+              />
             </div>
           </div>
         )}
       </main>
 
       {/* フッター */}
-      <footer className="mt-12 py-6 border-t border-gray-200">
+      <footer className="mt-16 py-8 bg-gray-100 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-600 text-sm">
-          <p>バスケ審判AI - JBA公式競技規則（2025年版）に基づく</p>
-          <p className="mt-1">Beta Version - フィードバックをお待ちしています</p>
+          <p>JBA競技規則（2025年版）に基づいています</p>
+          <p className="mt-2">※ 正式な判定は公式規則書をご確認ください</p>
         </div>
       </footer>
     </div>

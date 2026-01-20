@@ -1,6 +1,7 @@
 import OpenAI from 'openai';
 import { NextRequest, NextResponse } from 'next/server';
 import { searchRules } from '@/lib/rag';
+import { searchSignalImages } from '@/lib/signal-images';
 import { createClient } from '@supabase/supabase-js';
 
 const openai = new OpenAI({
@@ -80,6 +81,10 @@ export async function POST(request: NextRequest) {
 
     const normalizedQuestion = await normalizeQuestion(question);
     const ragResults = await searchRules(normalizedQuestion, 10);
+    
+    // 審判シグナル画像を検索
+    const signalImages = searchSignalImages(normalizedQuestion);
+    console.log(`📸 シグナル画像: ${signalImages.length}件\n`);
     
     // 競技規則とインタープリテーションを分離
     const ruleResults = ragResults.filter(r => 
@@ -324,6 +329,11 @@ ${interpretationText || '該当するインタープリテーションはあり�
       answer: htmlAnswer,
       rawAnswer: answerText,
       relatedQuestions,
+      signalImages: signalImages.map(img => ({
+        name: img.name,
+        path: img.path,
+        description: img.description
+      })),
       model: 'gpt-4o-mini (RAG)',
       originalQuestion: question,
       normalizedQuestion: normalizedQuestion,
