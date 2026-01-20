@@ -69,8 +69,6 @@ async function normalizeQuestion(question: string): Promise<string> {
   }
 }
 
-// ... 既存のimport文 ...
-
 export async function POST(request: NextRequest) {
   const startTime = Date.now();
   
@@ -83,13 +81,28 @@ export async function POST(request: NextRequest) {
     const normalizedQuestion = await normalizeQuestion(question);
     const ragResults = await searchRules(normalizedQuestion, 10);
     
-    const relevantText = ragResults
+    // 競技規則とインタープリテーションを分離
+    const ruleResults = ragResults.filter(r => 
+      r.sectionId.startsWith('第') && !r.sectionId.includes('インタープリテーション')
+    );
+    const interpretationResults = ragResults.filter(r => 
+      r.sectionId.includes('インタープリテーション')
+    );
+    
+    const ruleText = ruleResults
       .map((result) => {
-        return `【${result.sectionId} ${result.sectionName}】（類似度: ${(result.similarity * 100).toFixed(1)}%）\n${result.content}`;
+        return `【${result.sectionId} ${result.sectionName}】\n${result.content}`;
       })
       .join('\n\n---\n\n');
     
-    console.log('📄 関連テキスト長:', relevantText.length, '文字\n');
+    const interpretationText = interpretationResults
+      .map((result) => {
+        return `【${result.sectionId} ${result.sectionName}】\n${result.content}`;
+      })
+      .join('\n\n---\n\n');
+    
+    console.log('📄 競技規則:', ruleResults.length, '件');
+    console.log('📄 インタープリテーション:', interpretationResults.length, '件\n');
     console.log('🤖 回答を生成中...');
     
     const completion = await openai.chat.completions.create({
@@ -126,50 +139,45 @@ export async function POST(request: NextRequest) {
 5. 提供された条文から合理的に推論できる内容は説明に含めてください
 6. 明らかに情報が不足している場合のみ「提供された資料では十分な情報が得られませんでした」と答えてください
 
-【典型的な誤答パターン - これらを避けること】
+【重要：引用する条文の選択基準】
+- 質問のメインテーマ（例：アンスポーツマンライクファウル）に直接関連する条文を優先的に引用する
+- 関連性の低い条文（例：質問がアンスポーツマンライクファウルなのにテクニカルファウルを引用）は避ける
+- 【1. 競技規則】セクションでは、質問に最も関連する条文を引用する
+- 提供された条文の中に質問に直接関連するものがない場合は、その旨を明記する
 
-❌ 誤答例1（ショットクロック - ポゼッション継続）:
-質問: ショットクロック残り18秒のときに、フロントコートでヘルドボール、オフェンス継続。ショットクロックは？
-誤答: 14秒にリセット
-理由: 「フロントコート」というキーワードだけで判断
+【提供される競技規則】
+${ruleText || '該当する競技規則本文はありません'}
 
-✅ 正答例1:
-質問: ショットクロック残り18秒のときに、フロントコートでヘルドボール、オフェンス継続。ショットクロックは？
-正答: 18秒継続（リセットなし）
-理由: 「オフェンス継続」= ポゼッション変わらず → 14秒リセットの条件を満たさない
-
-❌ 誤答例2（ファウル）:
-質問: ディフェンスファウルでフリースロー1本
-誤答: そのようなシチュエーションがあります
-理由: 存在しないルールを生成
-
-✅ 正答例2:
-質問: ディフェンスファウルでフリースロー1本
-正答: パーソナルファウルでフリースロー1本となるのは「アンドワン」（ショット成功+ファウル）の場合のみ
-
-❌ 誤答例3（ゲームクロックとショットクロック）:
-質問: ゲームクロック残り2秒、ショットクロック残り4秒。シュートファウルでフリースロー。ショットクロックは？
-誤答: 24秒にリセット / 14秒にリセット
-理由: ゲームクロックの残り時間を考慮していない
-
-✅ 正答例3:
-質問: ゲームクロック残り2秒、ショットクロック残り4秒。シュートファウルでフリースロー。ショットクロックは？
-正答: ショットクロックはオフ（表示しない）
-理由: ゲームクロック2秒 < 14秒のため、第50条によりショットクロックは使用しない
-
-【提供される競技規則（関連度順）】
-${relevantText}
+【提供されるインタープリテーション（具体例と解説）】
+${interpretationText || '該当するインタープリテーションはありません'}
 
 【回答フォーマット】
-## 回答
-[質問に対する明確な回答]
+必ず以下のフォーマットに従って回答してください：
 
-## 根拠となる条文
+## 質問の解釈
+[AIが理解した質問の意図を1-2文で明確に記述]
+
+## 回答
+[競技規則に基づく明確で簡潔な回答（2-4文程度）]
+
+## 根拠
+
+### 1. 競技規則
 **第○条 [条文名]**
-> [関連する原文の引用]
+> [原文の重要部分を引用]
+
+（該当する競技規則本文がある場合のみ記載）
+
+### 2. インタープリテーション
+**第○条 [条文名] ○-○**
+> [原文の重要部分を引用]
+
+[具体例の説明があれば簡潔に記載]
+
+（該当するインタープリテーションがある場合のみ記載）
 
 ## 補足説明
-[必要に応じて、複数の条文を統合した説明]
+[必要に応じて、複数の条文を統合した説明や注意点を記載]
 
 ## 関連する質問候補
 この質問に関連して、以下のような質問の意図もあるかもしれません：
@@ -177,12 +185,69 @@ ${relevantText}
 2. [例外ケースに関する質問]
 3. [関連する別のルールに関する質問]
 
-（例）
-元の質問: 審判がゲームクロックを進めることはありますか？
-関連質問:
-1. 審判が止める指示を出していないのに、テーブルオフィシャルズがゲームクロックを止めた場合、審判はゲームクロックを進める権限がありますか？
-2. ゲームクロックの誤作動があった場合、審判はどのように対応しますか？
-3. 審判がゲームクロックを修正できる状況はどのような場合ですか？`
+【回答例1：ショットクロックの質問】
+
+質問：「ショットクロック残り18秒のときに、フロントコートでヘルドボール、オフェンス継続。ショットクロックは？」
+
+## 質問の解釈
+ボールポゼッションが変わらず、オフェンスが継続する場合のショットクロック操作について確認したい質問です。
+
+## 回答
+ショットクロックは18秒のまま継続します。リセットされません。
+
+## 根拠
+
+### 1. 競技規則
+**第29条 ショットクロック**
+> ショットクロックはボールがライブになったときスタートする。
+
+### 2. インタープリテーション
+**第29/50条 ショットクロック 29-2**
+> ヘルドボールでオルタネイティングポゼッションアローがボールをコントロールしていたチームを示している場合、ショットクロックは継続する。
+
+「オフェンス継続」の場合、ボールポゼッションは変わっていないため、14秒リセットの条件を満たしません。
+
+## 補足説明
+14秒リセットが適用されるのは「ボールポゼッションが変わる」場合のみです。ヘルドボールでもポゼッションが変わらない場合は、ショットクロックは止まらず、そのまま継続します。
+
+## 関連する質問候補
+この質問に関連して、以下のような質問の意図もあるかもしれません：
+1. ショットクロック残り18秒のときに、フロントコートでヘルドボール、ディフェンスにボールが渡った場合、ショットクロックは？
+2. ショットクロック残り10秒でヘルドボール、オフェンス継続の場合は？
+3. ヘルドボールでオルタネイティングポゼッションが適用される条件は？
+
+---
+
+【回答例2：アンスポーツマンライクファウルの質問】
+
+質問：「アンスポーツマンライクファウルが発生した場合の具体的な状況は？」
+
+## 質問の解釈
+アンスポーツマンライクファウルとして判定される具体的なシチュエーションを知りたい質問です。
+
+## 回答
+アンスポーツマンライクファウルは、正当なバスケットボールプレーとは認められない不必要な接触や、過度に激しい接触があった場合に判定されます。
+
+## 根拠
+
+### 1. 競技規則
+**第37条 アンスポーツマンライクファウル**
+> プレーヤーがボールに対して正当にプレーしようとする努力をしないで相手チームのプレーヤーに対して起こしたコンタクトはアンスポーツマンライクファウルである。
+
+### 2. インタープリテーション
+**第37条 アンスポーツマンライクファウル 37-1**
+> 速攻の状況でディフェンスのプレーヤーがボールに対する正当なプレーをせずファウルをした場合、アンスポーツマンライクファウルとなる。
+
+具体例：速攻中のオフェンスプレーヤーに対して、ディフェンスがボールではなく体を押さえてファウルした場合など。
+
+## 補足説明
+アンスポーツマンライクファウルは通常のパーソナルファウルよりも重い罰則があり、2本または3本のフリースローとスローインが与えられます。
+
+## 関連する質問候補
+この質問に関連して、以下のような質問の意図もあるかもしれません：
+1. アンスポーツマンライクファウルとテクニカルファウルの違いは？
+2. アンスポーツマンライクファウルの罰則は？
+3. どのような場合にディスクォリファイングファウルになるのか？`
         },
         {
           role: 'user',
@@ -190,7 +255,7 @@ ${relevantText}
         }
       ],
       temperature: 0.1,
-      max_tokens: 2500, // 関連質問分を増やす
+      max_tokens: 2500,
     });
 
     const answerText = completion.choices[0]?.message?.content || '';
@@ -203,25 +268,28 @@ ${relevantText}
 
     if (relatedQuestionsMatch) {
       const relatedSection = relatedQuestionsMatch[1];
-      // 番号付きリストを抽出
       relatedQuestions = relatedSection
         .split('\n')
         .filter(line => /^\d+\./.test(line.trim()))
         .map(line => line.replace(/^\d+\.\s*/, '').trim())
         .filter(q => q.length > 0);
       
-      // 関連質問セクションを本文から削除
       mainAnswer = answerText.replace(/## 関連する質問候補[\s\S]*$/, '').trim();
       
       console.log('💡 関連質問:', relatedQuestions.length, '件');
     }
 
+    // HTMLに変換（改善されたスタイリング）
     const htmlAnswer = mainAnswer
-      .replace(/##\s+(.+)/g, '<h2 class="text-xl font-bold mt-6 mb-3 text-gray-800">$1</h2>')
+      .replace(/## 質問の解釈\n/g, '<div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded"><h2 class="text-lg font-bold text-blue-900 mb-2">📌 質問の解釈</h2><p class="text-blue-800">')
+      .replace(/\n## 回答\n/g, '</p></div><div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6 rounded"><h2 class="text-lg font-bold text-green-900 mb-2">✅ 回答</h2><p class="text-green-800 font-semibold text-lg">')
+      .replace(/\n## 根拠\n/g, '</p></div><div class="bg-gray-50 border-l-4 border-gray-500 p-4 mb-6 rounded"><h2 class="text-lg font-bold text-gray-900 mb-3">📖 根拠</h2>')
+      .replace(/### 1\. 競技規則\n/g, '<h3 class="text-md font-bold text-gray-800 mt-4 mb-2">【1. 競技規則】</h3>')
+      .replace(/### 2\. インタープリテーション\n/g, '<h3 class="text-md font-bold text-gray-800 mt-4 mb-2">【2. インタープリテーション】</h3>')
+      .replace(/\n## 補足説明\n/g, '</div><div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6 rounded"><h2 class="text-lg font-bold text-yellow-900 mb-2">💡 補足説明</h2><p class="text-yellow-800">')
       .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
-      .replace(/>\s+(.+)/g, '<blockquote class="border-l-4 border-orange-500 pl-4 py-2 my-3 bg-orange-50 italic text-gray-700">$1</blockquote>')
-      .replace(/\n\n/g, '</p><p class="mb-3 text-gray-700">')
-      .replace(/^/, '<div class="prose max-w-none"><p class="mb-3 text-gray-700">')
+      .replace(/^> (.+)/gm, '<blockquote class="border-l-4 border-orange-400 pl-4 py-2 my-2 bg-orange-50 text-gray-700">$1</blockquote>')
+      .replace(/\n\n/g, '</p><p class="mb-2 text-gray-700">')
       .replace(/$/, '</p></div>');
 
     const responseTime = Date.now() - startTime;
@@ -255,7 +323,7 @@ ${relevantText}
     return NextResponse.json({ 
       answer: htmlAnswer,
       rawAnswer: answerText,
-      relatedQuestions, // 新規追加
+      relatedQuestions,
       model: 'gpt-4o-mini (RAG)',
       originalQuestion: question,
       normalizedQuestion: normalizedQuestion,
