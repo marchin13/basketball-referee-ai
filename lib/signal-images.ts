@@ -217,6 +217,174 @@ export const signalImages: SignalImage[] = [
     keywords: ['ゴールテンディング', 'インタフェアレンス', 'バイオレーション', 'ゴール'],
     relatedSections: ['第31条'],
     description: '伸ばした人差し指でバスケットを作ったもう一方の手の上で回す'
+  },
+  {
+    id: 'hitting-head',
+    name: '頭をたたく',
+    path: '/images/signals/27-hitting-head.png',
+    keywords: ['頭', 'たたく', 'ファウル', 'ヘッド'],
+    relatedSections: ['第33条', '第37条'],
+    description: '頭に触れる または 頭をたたく'
+  },
+  {
+    id: 'team-control-foul',
+    name: 'ボールをコントロールしているチームのファウル',
+    path: '/images/signals/28-team-control-foul.png',
+    keywords: ['チームコントロール', 'オフェンスファウル', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '攻撃しているチームのバスケットへ腕と拳を突き出す'
+  },
+  {
+    id: 'foul-in-act-of-shooting',
+    name: 'ショットの動作中のプレーヤーへのファウル',
+    path: '/images/signals/29-foul-in-act-of-shooting.png',
+    keywords: ['ショット', 'シューティング', 'ファウル', 'アクトオブシューティング'],
+    relatedSections: ['第33条', '第43条'],
+    description: 'こぶしを握った片腕を肩したあと、フリースローの枚数を示す'
+  },
+  {
+    id: 'foul-not-in-act-of-shooting',
+    name: 'ショットの動作中ではないプレーヤーへのファウル',
+    path: '/images/signals/30-foul-not-in-act-of-shooting.png',
+    keywords: ['ファウル', 'プッシング', 'ブロッキング', 'ホールディング', 'チャージング'],
+    relatedSections: ['第33条'],
+    description: 'こぶしを握った片腕を肩したあと、コートを正しく指示する'
+  },
+  {
+    id: 'pass-off',
+    name: 'パス・オフ（ショットの動作中にファウルが起きたがファウルを受けたプレーヤーがパスをすること）',
+    path: '/images/signals/31-pass-off.png',
+    keywords: ['パスオフ', 'ファウル', 'パス'],
+    relatedSections: ['第33条'],
+    description: '手のひらを開いて両手を横に動かす'
+  },
+  {
+    id: 'double-foul',
+    name: 'ダブルファウル',
+    path: '/images/signals/32-double-foul.png',
+    keywords: ['ダブルファウル', 'ファウル', '同時'],
+    relatedSections: ['第33条'],
+    description: 'こぶしを握って上と両腕を振る'
+  },
+  {
+    id: 'technical-foul',
+    name: 'テクニカルファウル',
+    path: '/images/signals/33-technical-foul.png',
+    keywords: ['テクニカルファウル', 'テクニカル', 'T', 'ファウル'],
+    relatedSections: ['第36条'],
+    description: '両手でTを示す'
+  },
+  {
+    id: 'unsportsmanlike-foul',
+    name: 'アンスポーツマンライクファウル',
+    path: '/images/signals/34-unsportsmanlike-foul.png',
+    keywords: ['アンスポーツマンライクファウル', 'アンスポ', 'UF', 'ファウル'],
+    relatedSections: ['第37条'],
+    description: '手首を握って頭上に上げる'
+  },
+  {
+    id: 'disqualifying-foul',
+    name: 'ディスクォリファイングファウル',
+    path: '/images/signals/35-disqualifying-foul.png',
+    keywords: ['ディスクォリファイングファウル', 'DQ', 'ディスクォ', '失格', 'ファウル'],
+    relatedSections: ['第38条'],
+    description: '両手の腕の上こぶしを上に上げる'
+  },
+  {
+    id: 'fake-foul',
+    name: 'フェイクファウル',
+    path: '/images/signals/36-fake-foul.png',
+    keywords: ['フェイクファウル', 'フェイク', 'フロッピング', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '前腕を2度上げ下げる'
+  },
+  {
+    id: 'illegal-boundary-crossing',
+    name: 'イリーガルバウンダリラインクロッシング（アルベディンクシグナル）',
+    path: '/images/signals/37-illegal-boundary-crossing.png',
+    keywords: ['バウンダリライン', 'アルベディンク', 'イリーガル', 'クロッシング'],
+    relatedSections: ['第23条'],
+    description: '境界線を行ったり来たりする仕草を示す（指3本指を握る）2回目：投球と2：00'
+  },
+  {
+    id: 'holding',
+    name: 'ホールディング',
+    path: '/images/signals/38-holding.png',
+    keywords: ['ホールディング', 'ホールド', 'つかむ', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '手首を握って下げる'
+  },
+  {
+    id: 'blocking-illegal-screen',
+    name: 'ブロッキング（ディフェンス）、イリーガルスクリーン（オフェンス）',
+    path: '/images/signals/39-blocking-illegal-screen.png',
+    keywords: ['ブロッキング', 'イリーガルスクリーン', 'スクリーン', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '両手を腰に当てる'
+  },
+  {
+    id: 'pushing-charging',
+    name: 'プッシングまたはボールをコントロールしていないチャージング',
+    path: '/images/signals/40-pushing-charging.png',
+    keywords: ['プッシング', 'チャージング', 'ファウル', '押す'],
+    relatedSections: ['第33条'],
+    description: '押すまねをする'
+  },
+  {
+    id: 'hand-checking',
+    name: 'ハンドチェッキング',
+    path: '/images/signals/41-hand-checking.png',
+    keywords: ['ハンドチェッキング', 'ハンドチェック', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '手のひらを用いて腕を横に動かす'
+  },
+  {
+    id: 'illegal-use-of-hands',
+    name: 'イリーガルユース・オブ・ハンズ',
+    path: '/images/signals/42-illegal-use-of-hands.png',
+    keywords: ['イリーガルユースオブハンズ', 'ハンド', '手', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '手首をたたく'
+  },
+  {
+    id: 'charging-with-ball',
+    name: 'ボールをコントロールしているチャージング',
+    path: '/images/signals/43-charging-with-ball.png',
+    keywords: ['チャージング', 'チャージ', 'ファウル', 'オフェンスファウル'],
+    relatedSections: ['第33条'],
+    description: '握りこぶしで手のひらをたたく'
+  },
+  {
+    id: 'illegal-contact-on-hand',
+    name: '手に対するイリーガルコンタクト',
+    path: '/images/signals/44-illegal-contact-on-hand.png',
+    keywords: ['イリーガルコンタクト', '手', 'ハンド', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '手のひらをもう一方の前腕を叩く'
+  },
+  {
+    id: 'pushing-foul',
+    name: 'プッシング',
+    path: '/images/signals/45-pushing.png',
+    keywords: ['プッシング', '押す', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '腕を後ろに動かす'
+  },
+  {
+    id: 'illegal-cylinder',
+    name: 'イリーガルシリンダー',
+    path: '/images/signals/46-illegal-cylinder.png',
+    keywords: ['イリーガルシリンダー', 'シリンダー', 'ファウル'],
+    relatedSections: ['第33条'],
+    description: '手のひらを向かい合わせて縦に調整を通過させる'
+  },
+  {
+    id: 'excessive-elbow-swing',
+    name: '過度な肘の振り回し',
+    path: '/images/signals/47-excessive-elbow-swing.png',
+    keywords: ['肘', 'エルボー', 'ファウル', '振り回し'],
+    relatedSections: ['第33条'],
+    description: '肘を後ろに振る'
   }
 ];
 
