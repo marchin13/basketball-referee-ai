@@ -11,6 +11,21 @@ export interface RagResult {
   content: string;
   similarity: number;
   source: 'vector' | 'keyword';
+  rankScore?: number; // 🆕 順位スコア
+  combinedScore?: number; // 🆕 合計スコア
+}
+
+export interface ConfidenceInfo {
+  grade: 'A+' | 'A' | 'B' | 'C';
+  description: string;
+  shouldShowAlternative: boolean;
+  colorClass: string;
+}
+
+export interface SearchResultWithConfidence {
+  results: RagResult[];
+  confidence: ConfidenceInfo;
+  alternativeResult?: RagResult;
 }
 
 // 🆕 フレーズマッチング: 文脈レベルでの一致度を評価
@@ -60,6 +75,79 @@ function calculatePhraseMatch(question: string, content: string): number {
   }
   
   return totalBonus;
+}
+
+// 🆕🆕 信頼度判定関数
+function calculateConfidence(results: RagResult[]): ConfidenceInfo {
+  if (results.length === 0) {
+    return {
+      grade: 'C',
+      description: '該当する競技規則が見つかりませんでした',
+      shouldShowAlternative: false,
+      colorClass: 'bg-red-100 text-red-800 border-red-300'
+    };
+  }
+  
+  const top = results[0];
+  const second = results[1];
+  
+  // 結果が1件のみ
+  if (!second) {
+    if (top.similarity >= 0.7) {
+      return {
+        grade: 'A',
+        description: '該当する競技規則を特定しました',
+        shouldShowAlternative: false,
+        colorClass: 'bg-blue-100 text-blue-800 border-blue-300'
+      };
+    } else {
+      return {
+        grade: 'B',
+        description: '類似する規則はありますが、完全一致ではありません',
+        shouldShowAlternative: false,
+        colorClass: 'bg-yellow-100 text-yellow-800 border-yellow-300'
+      };
+    }
+  }
+  
+  const scoreDiff = (top.combinedScore || 0) - (second.combinedScore || 0);
+  
+  // A+: 1位が圧倒的（差が0.15以上）
+  if (scoreDiff >= 0.15) {
+    return {
+      grade: 'A+',
+      description: '検索結果が完全一致しています',
+      shouldShowAlternative: false,
+      colorClass: 'bg-green-100 text-green-800 border-green-300'
+    };
+  }
+  
+  // A: 1位が明確（差が0.08以上）
+  if (scoreDiff >= 0.08) {
+    return {
+      grade: 'A',
+      description: '該当する競技規則をほぼ特定しました',
+      shouldShowAlternative: false,
+      colorClass: 'bg-blue-100 text-blue-800 border-blue-300'
+    };
+  }
+  
+  // B: 僅差（差が0.08未満）
+  if (scoreDiff < 0.08) {
+    return {
+      grade: 'B',
+      description: '複数の解釈がある可能性があります',
+      shouldShowAlternative: true,
+      colorClass: 'bg-yellow-100 text-yellow-800 border-yellow-300'
+    };
+  }
+  
+  return {
+    grade: 'A',
+    description: '該当する競技規則を特定しました',
+    shouldShowAlternative: false,
+    colorClass: 'bg-blue-100 text-blue-800 border-blue-300'
+  };
 }
 
 // 🆕 拡張：より多くのキーワードを抽出
@@ -296,10 +384,10 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
     
     const vectorString = '[' + questionEmbedding.join(',') + ']';
     
-    // 🔄 変更: RPC関数名を match_jba_rules に
+    // 🔄 変更: RPC関数名を match_jba_rules に、件数もmatchCountを使用
     const { data: vectorData, error: vectorError } = await supabase.rpc('match_jba_rules', {
       query_embedding: vectorString,
-      match_count: 10
+      match_count: matchCount
     });
     
     if (vectorError) {
@@ -325,30 +413,52 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
     const keywords = extractKeywords(cleanQuestion);
     const keywordResults = await searchByKeywords(keywords, cleanQuestion);
     
-    // 3. 結果をマージして重複排除
+    // 🆕🆕 3. 順位スコアを計算
+    const vectorRankScores = new Map<string, number>();
+    vectorResults.forEach((result, index) => {
+      vectorRankScores.set(result.sectionId, Math.max(10 - index, 1));
+    });
+    
+    const keywordRankScores = new Map<string, number>();
+    keywordResults.forEach((result, index) => {
+      keywordRankScores.set(result.sectionId, Math.max(10 - index, 1));
+    });
+    
+    // 🆕🆕 4. 結果をマージして順位スコアを付与
     const allResults = [...vectorResults, ...keywordResults];
     const merged = new Map<string, RagResult>();
     
     allResults.forEach(result => {
       const existing = merged.get(result.sectionId);
       if (!existing || result.similarity > existing.similarity) {
-        merged.set(result.sectionId, result);
+        // 順位スコアを計算
+        const vScore = vectorRankScores.get(result.sectionId) || 0;
+        const kScore = keywordRankScores.get(result.sectionId) || 0;
+        const rankScore = vScore + kScore;
+        
+        merged.set(result.sectionId, {
+          ...result,
+          rankScore,
+          combinedScore: result.similarity * 0.5 + (rankScore / 20) * 0.5 // 類似度50% + 順位50%
+        });
       }
     });
     
-    // 類似度でソート
-    const finalResults = Array.from(merged.values())
-      .sort((a, b) => b.similarity - a.similarity)
-      .slice(0, matchCount);
+    // 🆕🆕 5. 合計スコアでソート
+    const sortedResults = Array.from(merged.values())
+      .sort((a, b) => (b.combinedScore || 0) - (a.combinedScore || 0));
+    
+    const finalResults = sortedResults.slice(0, matchCount);
     
     console.log(`🔀 マージ後: ${merged.size}件`);
-    console.log('📊 最終結果（上位10件）:');
-    Array.from(merged.values())
-      .sort((a, b) => b.similarity - a.similarity)
-      .slice(0, 10)
-      .forEach((result, index) => {
-        console.log(`  [${index + 1}] ${result.sectionId} (${(result.similarity * 100).toFixed(1)}%, ${result.source === 'vector' ? 'V' : 'K'})`);
-      });
+    console.log(`📊 最終結果（上位${matchCount}件）:`);
+    finalResults.forEach((result, index) => {
+      console.log(`  [${index + 1}] ${result.sectionId} (類似度:${(result.similarity * 100).toFixed(1)}%, 順位:${result.rankScore}, 総合:${((result.combinedScore || 0) * 100).toFixed(1)}%, ${result.source === 'vector' ? 'V' : 'K'})`);
+    });
+    
+    // 🆕🆕 6. 信頼度を判定
+    const confidence = calculateConfidence(finalResults);
+    console.log(`📊 信頼度: ${confidence.grade} - ${confidence.description}`);
     
     return finalResults;
     
