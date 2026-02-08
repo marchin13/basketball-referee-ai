@@ -15,6 +15,13 @@ interface SignalImage {
   description: string;
 }
 
+interface Reference {
+  sectionId: string;
+  sectionName: string;
+  content: string;
+  score: number;
+}
+
 export default function Home() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
@@ -23,6 +30,8 @@ export default function Home() {
   const [ragResults, setRagResults] = useState<RagResult[]>([]);
   const [relatedQuestions, setRelatedQuestions] = useState<string[]>([]);
   const [signalImages, setSignalImages] = useState<SignalImage[]>([]);
+  const [reasoning, setReasoning] = useState('');
+  const [references, setReferences] = useState<Reference[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -41,6 +50,8 @@ export default function Home() {
     setRagResults([]);
     setRelatedQuestions([]);
     setSignalImages([]);
+    setReasoning('');
+    setReferences([]);
 
     try {
       const response = await fetch('/api/ask', {
@@ -62,6 +73,8 @@ export default function Home() {
       setRagResults(data.ragResults || []);
       setRelatedQuestions(data.relatedQuestions || []);
       setSignalImages(data.signalImages || []);
+      setReasoning(data.reasoning || '');
+      setReferences(data.references || []);
     } catch (err: any) {
       console.error('エラー詳細:', err);
       
@@ -198,14 +211,25 @@ export default function Home() {
         {answer && (
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">📖 回答</h2>
-            
-            {/* AI回答 */}
-            <div
-              className="prose prose-lg max-w-none mb-6"
-              dangerouslySetInnerHTML={{ __html: answer }}
-            />
 
-            {/* 審判シグナル画像（新規追加） */}
+            {/* 1. 回答（簡潔な結論） */}
+            <div className="prose prose-lg max-w-none mb-6 text-gray-900">
+              <p className="text-lg leading-relaxed">{answer}</p>
+            </div>
+
+            {/* 2. AI判断理由（詳細） */}
+            {reasoning && (
+              <div className="mt-6 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-lg shadow-sm">
+                <h3 className="text-lg font-bold text-blue-900 mb-3 flex items-center">
+                  💭 AI判断理由
+                </h3>
+                <p className="text-gray-900 whitespace-pre-wrap leading-relaxed font-medium">
+                  {reasoning}
+                </p>
+              </div>
+            )}
+
+            {/* 3. 審判シグナル画像（既存機能） */}
             {signalImages && signalImages.length > 0 && (
               <div className="mt-8 p-5 bg-purple-50 border-2 border-purple-200 rounded-lg">
                 <h3 className="text-lg font-bold text-purple-900 mb-3">
@@ -214,8 +238,8 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {signalImages.map((img, index) => (
                     <div key={index} className="bg-white p-3 rounded shadow hover:shadow-lg transition">
-                      <img 
-                        src={img.path} 
+                      <img
+                        src={img.path}
                         alt={img.name}
                         className="w-full h-auto rounded mb-2"
                       />
@@ -231,7 +255,7 @@ export default function Home() {
               </div>
             )}
 
-            {/* 関連質問 */}
+            {/* 4. 関連質問 */}
             {relatedQuestions && relatedQuestions.length > 0 && (
               <div className="mt-8 p-5 bg-blue-50 border-2 border-blue-200 rounded-lg">
                 <h3 className="text-lg font-bold text-blue-900 mb-3">
@@ -255,28 +279,35 @@ export default function Home() {
               </div>
             )}
 
-            {/* 検索された条文（デバッグ情報） */}
-            {ragResults && ragResults.length > 0 && (
-              <details className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <summary className="cursor-pointer font-semibold text-gray-700">
-                  🔍 参照した条文（{ragResults.length}件）
+            {/* 5. 参照した条文（統合版・折りたたみ） */}
+            {references && references.length > 0 && (
+              <details className="mt-6 p-5 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-lg shadow-sm">
+                <summary className="text-lg font-bold text-green-900 flex items-center cursor-pointer hover:text-green-700">
+                  🔍 参照した条文（{references.length}件） - クリックで展開
                 </summary>
-                <ul className="mt-3 space-y-2">
-                  {ragResults.map((result, index) => (
-                    <li key={index} className="text-sm text-gray-600">
-                      {index + 1}. {result.sectionId} - {result.sectionName} 
-                      <span className="text-gray-400 ml-2">
-                        ({(result.similarity * 100).toFixed(1)}% 類似)
-                      </span>
-                    </li>
+                <div className="mt-4 space-y-3">
+                  {references.map((ref, index) => (
+                    <div key={index} className="bg-white p-4 rounded-lg shadow-sm border border-green-100">
+                      <div className="flex items-start justify-between mb-2">
+                        <span className="font-bold text-green-900">
+                          {ref.sectionId} - {ref.sectionName}
+                        </span>
+                        <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                          関連度: {(ref.score * 100).toFixed(1)}%
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-900 leading-relaxed whitespace-pre-wrap">
+                        {ref.content}
+                      </p>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </details>
             )}
 
-            {/* フィードバックフォーム */}
+            {/* 6. フィードバック */}
             <div className="mt-8">
-              <FeedbackForm 
+              <FeedbackForm
                 question={question}
                 aiAnswer={rawAnswer}
                 normalizedQuestion={normalizedQuestion}
@@ -292,6 +323,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 text-center text-gray-600 text-sm">
           <p>JBA競技規則（2025年版）に基づいています</p>
           <p className="mt-2">※ 正式な判定は公式規則書をご確認ください</p>
+          <p className="mt-4 text-xs text-gray-500">
+            Version 1.1.0
+          </p>
         </div>
       </footer>
     </div>

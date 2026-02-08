@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "setup-embeddings": "tsx scripts/setup-embeddings.ts"
+    "setup-embeddings": "tsx scripts/setup-embeddings.ts",
+    "test:178": "tsx --env-file=.env.local tests/scripts/run_test_suite.ts",
+    "analyze:errors": "tsx tests/scripts/analyze_errors.ts",
+    "test:reasoning": "tsx --env-file=.env.local tests/scripts/run_test_with_reasoning.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
@@ -24,7 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.4",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",

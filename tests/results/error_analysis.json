@@ -1,0 +1,905 @@
+{
+  "timestamp": "2026-02-08T02:56:22.036Z",
+  "test_file": "test_run_2026-02-08T02-56-05-025Z.json",
+  "total_errors": 59,
+  "patterns": [
+    {
+      "pattern_type": "検索失敗（結果0件）",
+      "count": 0,
+      "questions": [],
+      "examples": [],
+      "suggested_fix": "キーワード抽出ロジックの改善、同義語辞書の追加"
+    },
+    {
+      "pattern_type": "低信頼度検索（C）",
+      "count": 7,
+      "questions": [
+        4,
+        9,
+        22,
+        22,
+        29,
+        32,
+        43
+      ],
+      "examples": [
+        {
+          "question_number": 4,
+          "question_text": "スローインラインとは、近い方のエンドラインの内側の縁から8.325mの距離 に、コートの外側に向かってサイドラインと直角に引いた、長さ0.15ｍの4本の ラインをいう。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "C",
+          "search_results": [
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.595
+            },
+            {
+              "sectionId": "解説_第36条 36-30",
+              "sectionName": "解説_第36条 36-30",
+              "combinedScore": 0.57
+            },
+            {
+              "sectionId": "規則_第12条 12-６-３",
+              "sectionName": "規則_第12条 12-６-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.49
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.46499999999999997
+            },
+            {
+              "sectionId": "解説_第28条 28-４",
+              "sectionName": "解説_第28条 28-４",
+              "combinedScore": 0.44
+            },
+            {
+              "sectionId": "規則_第８条 ８-６",
+              "sectionName": "規則_第８条 ８-６",
+              "combinedScore": 0.41500000000000004
+            },
+            {
+              "sectionId": "規則_第9条 9-２",
+              "sectionName": "規則_第9条 9-２",
+              "combinedScore": 0.39
+            }
+          ],
+          "top_article": "規則_第2条 (part 1)",
+          "response_time_ms": 7298
+        },
+        {
+          "question_number": 9,
+          "question_text": "チームAは所定の時間内にスコアラーにリストを提出した。2人のプレーヤーの番 号が実際のユニフォームの番号と一致していない、あるいはそのプレーヤーの氏 名がスコアシートに記載されていなかった。この不一致が、ゲーム開始後に発見 された。いずれのチームにも不利にならないタイミングで審判がゲームを中断 し、誤った番号は罰則なしに修正される。しかし、記載されていなかったプレー ヤーの氏名をスコアシートに追加することはできない。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "C",
+          "search_results": [
+            {
+              "sectionId": "規則_第50条 50-５ (part 1)",
+              "sectionName": "規則_第50条 50-５ (part 1) (part 1/None)",
+              "combinedScore": 0.5834100445020145
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.58
+            },
+            {
+              "sectionId": "規則_第４条 ４-２-３",
+              "sectionName": "規則_第４条 ４-２-３",
+              "combinedScore": 0.5549999999999999
+            },
+            {
+              "sectionId": "解説_第36条 36-29",
+              "sectionName": "解説_第36条 36-29",
+              "combinedScore": 0.531617030698572
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第６条 ６-１",
+              "sectionName": "規則_第６条 ６-１",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "解説_第36条 36-28",
+              "sectionName": "解説_第36条 36-28",
+              "combinedScore": 0.499003046810446
+            },
+            {
+              "sectionId": "規則_第７条 ７-１",
+              "sectionName": "規則_第７条 ７-１",
+              "combinedScore": 0.48
+            }
+          ],
+          "top_article": "規則_第50条 50-５ (part 1)",
+          "response_time_ms": 9816
+        },
+        {
+          "question_number": 22,
+          "question_text": "A１は相手チームのバスケットの下でチームメイトのA２を抱き上げ、持ち上げ た。A３はA２にボールをパスし、A２はバスケットの中にボールをダンクした。 審判は、スポーツマンらしくないプレーと判断し、A２のゴールは認めずA１にテ クニカルファウルを宣した。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "C",
+          "search_results": [
+            {
+              "sectionId": "解説_第33条 33-７",
+              "sectionName": "解説_第33条 33-７",
+              "combinedScore": 0.597316722491886
+            },
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.595
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.57
+            },
+            {
+              "sectionId": "解説_第33条 33-８",
+              "sectionName": "解説_第33条 33-８",
+              "combinedScore": 0.564717169983224
+            },
+            {
+              "sectionId": "規則_第47条 47-３",
+              "sectionName": "規則_第47条 47-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "解説_第36条 36-20",
+              "sectionName": "解説_第36条 36-20",
+              "combinedScore": 0.5279829611747935
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "解説_第38条 38-10",
+              "sectionName": "解説_第38条 38-10",
+              "combinedScore": 0.50276064657452
+            }
+          ],
+          "top_article": "解説_第33条 33-７",
+          "response_time_ms": 9159
+        }
+      ],
+      "suggested_fix": "ベクトル検索の重み調整、キーワード検索の強化"
+    },
+    {
+      "pattern_type": "中信頼度（B）",
+      "count": 50,
+      "questions": [
+        2,
+        3,
+        3,
+        6,
+        8,
+        8,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11,
+        11,
+        12,
+        13,
+        14,
+        15,
+        15,
+        16,
+        16,
+        17,
+        19,
+        19,
+        19,
+        19,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        28,
+        29,
+        31,
+        31,
+        31,
+        32,
+        32,
+        33,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        42,
+        43,
+        44,
+        44,
+        45
+      ],
+      "examples": [
+        {
+          "question_number": 2,
+          "question_text": "審判とゲームの関係は、ゲーム開始予定時刻の20分前（国内大会においては、大 会主催者の考えによって決定する）にコートに出たときから始まり、クルーチー フがゲームの終了を知らせるゲームクロックのブザーを承認したときに終了す る。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第46条 46-9",
+              "sectionName": "規則_第46条 46-9",
+              "combinedScore": 0.6711674081583565
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.58
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.5549999999999999
+            },
+            {
+              "sectionId": "規則_第44条 44-３-２",
+              "sectionName": "規則_第44条 44-３-２",
+              "combinedScore": 0.5319079518318265
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第46条 46-10",
+              "sectionName": "規則_第46条 46-10",
+              "combinedScore": 0.5060408532619565
+            },
+            {
+              "sectionId": "規則_第７条 ７-５",
+              "sectionName": "規則_第７条 ７-５",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "規則_第８条 ８-８",
+              "sectionName": "規則_第８条 ８-８",
+              "combinedScore": 0.48
+            }
+          ],
+          "top_article": "規則_第46条 46-9",
+          "response_time_ms": 6614
+        },
+        {
+          "question_number": 3,
+          "question_text": "チームファウルに数えるファウルとは、プレーヤーに記録されるパーソナルファ ウルのことをいう。 テクニカルファウル、アンスポーツマンライクファウル、ディスクォリファイン グファウルは、プレーヤーのファウルであってもチームファウルに数えない。 １チームに対してクォーターごとに４個のチームファウルが記録された後は、 チームファウルのペナルティシチュエーションになる。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第８条 ８-9",
+              "sectionName": "規則_第８条 ８-9",
+              "combinedScore": 0.7
+            },
+            {
+              "sectionId": "規則_第50条 50-５ (part 3)",
+              "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+              "combinedScore": 0.66
+            },
+            {
+              "sectionId": "規則_第35条 35-１-２",
+              "sectionName": "規則_第35条 35-１-２",
+              "combinedScore": 0.5778822893991145
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.5449999999999999
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "規則_第50条 50-５ (part 7)",
+              "sectionName": "規則_第50条 50-５ (part 7) (part 7/None)",
+              "combinedScore": 0.48776495573981704
+            },
+            {
+              "sectionId": "規則_第８条 ８-８",
+              "sectionName": "規則_第８条 ８-８",
+              "combinedScore": 0.48
+            },
+            {
+              "sectionId": "規則_第36条 36-２-２",
+              "sectionName": "規則_第36条 36-２-２",
+              "combinedScore": 0.462599162381918
+            }
+          ],
+          "top_article": "規則_第８条 ８-9",
+          "response_time_ms": 13176
+        },
+        {
+          "question_number": 3,
+          "question_text": "第４クォーター残り44秒、ショットクロック残り17秒で、A１がバックコートで ドリブルをしているとき、チームBのプレーヤーがボールをチームAのバックコー トのテーブルサイドもしくはオポジットサイドのスローインラインのアウトオブ バウンズに弾き出した。その後タイムアウトがチームAに認められた。チームAの ヘッドコーチがフロントコートからのスローインを選択した場合、ゲームはフロ ントコートのボールがアウトオブバウンズに弾かれた側と同じ側のスローインラ インからチームAのスローインで再開される。ショットクロックは14秒となる。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.72
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.6699999999999999
+            },
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.585
+            },
+            {
+              "sectionId": "規則_第29条 29-１-１",
+              "sectionName": "規則_第29条 29-１-１",
+              "combinedScore": 0.5729336018404034
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.56
+            },
+            {
+              "sectionId": "規則_第29条 29-２-１",
+              "sectionName": "規則_第29条 29-２-１",
+              "combinedScore": 0.5468285335200155
+            },
+            {
+              "sectionId": "解説_第28条 28-４",
+              "sectionName": "解説_第28条 28-４",
+              "combinedScore": 0.5349999999999999
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.47
+            }
+          ],
+          "top_article": "規則_第50条 50-３",
+          "response_time_ms": 12875
+        }
+      ],
+      "suggested_fix": "検索結果の順位調整、複数候補の再評価"
+    },
+    {
+      "pattern_type": "高信頼度だが誤答（A/A+）",
+      "count": 2,
+      "questions": [
+        13,
+        14
+      ],
+      "examples": [
+        {
+          "question_number": 13,
+          "question_text": "ボールがデッドでゲームクロックが止められ、そのとき各クォーターやオーバー タイムの残りが14秒未満で、なおかつどちらかのチームにボールのコントロール が新たに始まるとき、ショットクロックの表示装置の表示を切る。また、ショッ トクロックのブザーは、チームがボールをコントロールしているときを除いて、 ゲームクロックやゲームを止めるものではないし、ボールをデッドにするもので もない。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "A",
+          "search_results": [
+            {
+              "sectionId": "規則_第10条 10-３",
+              "sectionName": "規則_第10条 10-３",
+              "combinedScore": 0.825551961395262
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.7807983369824796
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.595
+            },
+            {
+              "sectionId": "規則_第29条 29-２-２",
+              "sectionName": "規則_第29条 29-２-２",
+              "combinedScore": 0.5501643359857005
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第29条 29-１-２",
+              "sectionName": "規則_第29条 29-１-２",
+              "combinedScore": 0.5249581217765835
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "解説_第16条 16-11",
+              "sectionName": "解説_第16条 16-11",
+              "combinedScore": 0.49926947052892945
+            }
+          ],
+          "top_article": "規則_第10条 10-３",
+          "response_time_ms": 12108
+        },
+        {
+          "question_number": 14,
+          "question_text": "A１がバックコートでライブのボールをコントロールしているときに、両足が完 全にフロントコートに触れているA２に向かってパスをした。A２はボールを キャッチできず、ボールはA２の体に当たってバックコートに転がり、バック コートにいるA３がキャッチした。このとき、チームAがバックコートでライブの ボールをコントロールしてから8秒が経過していた。審判はその前にA２の体に ボールが当たっていたためフロントコートにボールが進められたと判断し、A３ がキャッチした時点で再び８秒のカウントを始めた。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "A",
+          "search_results": [
+            {
+              "sectionId": "解説_第28条 28-４",
+              "sectionName": "解説_第28条 28-４",
+              "combinedScore": 0.755531590596783
+            },
+            {
+              "sectionId": "解説_第30条 30-10",
+              "sectionName": "解説_第30条 30-10",
+              "combinedScore": 0.6880461034247449
+            },
+            {
+              "sectionId": "解説_第30条 30-9",
+              "sectionName": "解説_第30条 30-9",
+              "combinedScore": 0.6480409734534945
+            },
+            {
+              "sectionId": "解説_第30条 30-３",
+              "sectionName": "解説_第30条 30-３",
+              "combinedScore": 0.59012027294519
+            },
+            {
+              "sectionId": "解説_第30条 30-16",
+              "sectionName": "解説_第30条 30-16",
+              "combinedScore": 0.5649670824359495
+            },
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.5549999999999999
+            },
+            {
+              "sectionId": "解説_第30条 30-15",
+              "sectionName": "解説_第30条 30-15",
+              "combinedScore": 0.532083844604607
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.53
+            }
+          ],
+          "top_article": "解説_第28条 28-４",
+          "response_time_ms": 9794
+        }
+      ],
+      "suggested_fix": "LLM判定プロンプトの改善、Few-shot例の追加"
+    },
+    {
+      "pattern_type": "偽陰性（○→×）",
+      "count": 36,
+      "questions": [
+        3,
+        4,
+        9,
+        9,
+        10,
+        11,
+        11,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15,
+        16,
+        16,
+        19,
+        19,
+        19,
+        19,
+        20,
+        21,
+        25,
+        26,
+        29,
+        29,
+        31,
+        31,
+        31,
+        32,
+        32,
+        36,
+        38,
+        42,
+        42,
+        43,
+        44
+      ],
+      "examples": [
+        {
+          "question_number": 3,
+          "question_text": "第４クォーター残り44秒、ショットクロック残り17秒で、A１がバックコートで ドリブルをしているとき、チームBのプレーヤーがボールをチームAのバックコー トのテーブルサイドもしくはオポジットサイドのスローインラインのアウトオブ バウンズに弾き出した。その後タイムアウトがチームAに認められた。チームAの ヘッドコーチがフロントコートからのスローインを選択した場合、ゲームはフロ ントコートのボールがアウトオブバウンズに弾かれた側と同じ側のスローインラ インからチームAのスローインで再開される。ショットクロックは14秒となる。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.72
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.6699999999999999
+            },
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.585
+            },
+            {
+              "sectionId": "規則_第29条 29-１-１",
+              "sectionName": "規則_第29条 29-１-１",
+              "combinedScore": 0.5729336018404034
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.56
+            },
+            {
+              "sectionId": "規則_第29条 29-２-１",
+              "sectionName": "規則_第29条 29-２-１",
+              "combinedScore": 0.5468285335200155
+            },
+            {
+              "sectionId": "解説_第28条 28-４",
+              "sectionName": "解説_第28条 28-４",
+              "combinedScore": 0.5349999999999999
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.47
+            }
+          ],
+          "top_article": "規則_第50条 50-３",
+          "response_time_ms": 12875
+        },
+        {
+          "question_number": 4,
+          "question_text": "スローインラインとは、近い方のエンドラインの内側の縁から8.325mの距離 に、コートの外側に向かってサイドラインと直角に引いた、長さ0.15ｍの4本の ラインをいう。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "C",
+          "search_results": [
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.595
+            },
+            {
+              "sectionId": "解説_第36条 36-30",
+              "sectionName": "解説_第36条 36-30",
+              "combinedScore": 0.57
+            },
+            {
+              "sectionId": "規則_第12条 12-６-３",
+              "sectionName": "規則_第12条 12-６-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.49
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.46499999999999997
+            },
+            {
+              "sectionId": "解説_第28条 28-４",
+              "sectionName": "解説_第28条 28-４",
+              "combinedScore": 0.44
+            },
+            {
+              "sectionId": "規則_第８条 ８-６",
+              "sectionName": "規則_第８条 ８-６",
+              "combinedScore": 0.41500000000000004
+            },
+            {
+              "sectionId": "規則_第9条 9-２",
+              "sectionName": "規則_第9条 9-２",
+              "combinedScore": 0.39
+            }
+          ],
+          "top_article": "規則_第2条 (part 1)",
+          "response_time_ms": 7298
+        },
+        {
+          "question_number": 9,
+          "question_text": "チームAは所定の時間内にスコアラーにリストを提出した。2人のプレーヤーの番 号が実際のユニフォームの番号と一致していない、あるいはそのプレーヤーの氏 名がスコアシートに記載されていなかった。この不一致が、ゲーム開始後に発見 された。いずれのチームにも不利にならないタイミングで審判がゲームを中断 し、誤った番号は罰則なしに修正される。しかし、記載されていなかったプレー ヤーの氏名をスコアシートに追加することはできない。",
+          "correct_answer": "○",
+          "ai_answer": "×",
+          "is_correct": false,
+          "confidence_grade": "C",
+          "search_results": [
+            {
+              "sectionId": "規則_第50条 50-５ (part 1)",
+              "sectionName": "規則_第50条 50-５ (part 1) (part 1/None)",
+              "combinedScore": 0.5834100445020145
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.58
+            },
+            {
+              "sectionId": "規則_第４条 ４-２-３",
+              "sectionName": "規則_第４条 ４-２-３",
+              "combinedScore": 0.5549999999999999
+            },
+            {
+              "sectionId": "解説_第36条 36-29",
+              "sectionName": "解説_第36条 36-29",
+              "combinedScore": 0.531617030698572
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第６条 ６-１",
+              "sectionName": "規則_第６条 ６-１",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "解説_第36条 36-28",
+              "sectionName": "解説_第36条 36-28",
+              "combinedScore": 0.499003046810446
+            },
+            {
+              "sectionId": "規則_第７条 ７-１",
+              "sectionName": "規則_第７条 ７-１",
+              "combinedScore": 0.48
+            }
+          ],
+          "top_article": "規則_第50条 50-５ (part 1)",
+          "response_time_ms": 9816
+        }
+      ],
+      "suggested_fix": "プロンプトで「正しい記述も存在する」ことを強調"
+    },
+    {
+      "pattern_type": "偽陽性（×→○）",
+      "count": 23,
+      "questions": [
+        2,
+        3,
+        6,
+        8,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17,
+        19,
+        22,
+        22,
+        24,
+        28,
+        32,
+        33,
+        37,
+        40,
+        41,
+        43,
+        44,
+        45
+      ],
+      "examples": [
+        {
+          "question_number": 2,
+          "question_text": "審判とゲームの関係は、ゲーム開始予定時刻の20分前（国内大会においては、大 会主催者の考えによって決定する）にコートに出たときから始まり、クルーチー フがゲームの終了を知らせるゲームクロックのブザーを承認したときに終了す る。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第46条 46-9",
+              "sectionName": "規則_第46条 46-9",
+              "combinedScore": 0.6711674081583565
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.58
+            },
+            {
+              "sectionId": "規則_第49条 49-２",
+              "sectionName": "規則_第49条 49-２",
+              "combinedScore": 0.5549999999999999
+            },
+            {
+              "sectionId": "規則_第44条 44-３-２",
+              "sectionName": "規則_第44条 44-３-２",
+              "combinedScore": 0.5319079518318265
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.53
+            },
+            {
+              "sectionId": "規則_第46条 46-10",
+              "sectionName": "規則_第46条 46-10",
+              "combinedScore": 0.5060408532619565
+            },
+            {
+              "sectionId": "規則_第７条 ７-５",
+              "sectionName": "規則_第７条 ７-５",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "規則_第８条 ８-８",
+              "sectionName": "規則_第８条 ８-８",
+              "combinedScore": 0.48
+            }
+          ],
+          "top_article": "規則_第46条 46-9",
+          "response_time_ms": 6614
+        },
+        {
+          "question_number": 3,
+          "question_text": "チームファウルに数えるファウルとは、プレーヤーに記録されるパーソナルファ ウルのことをいう。 テクニカルファウル、アンスポーツマンライクファウル、ディスクォリファイン グファウルは、プレーヤーのファウルであってもチームファウルに数えない。 １チームに対してクォーターごとに４個のチームファウルが記録された後は、 チームファウルのペナルティシチュエーションになる。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第８条 ８-9",
+              "sectionName": "規則_第８条 ８-9",
+              "combinedScore": 0.7
+            },
+            {
+              "sectionId": "規則_第50条 50-５ (part 3)",
+              "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+              "combinedScore": 0.66
+            },
+            {
+              "sectionId": "規則_第35条 35-１-２",
+              "sectionName": "規則_第35条 35-１-２",
+              "combinedScore": 0.5778822893991145
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.5449999999999999
+            },
+            {
+              "sectionId": "規則_第３条",
+              "sectionName": "規則_第３条",
+              "combinedScore": 0.5049999999999999
+            },
+            {
+              "sectionId": "規則_第50条 50-５ (part 7)",
+              "sectionName": "規則_第50条 50-５ (part 7) (part 7/None)",
+              "combinedScore": 0.48776495573981704
+            },
+            {
+              "sectionId": "規則_第８条 ８-８",
+              "sectionName": "規則_第８条 ８-８",
+              "combinedScore": 0.48
+            },
+            {
+              "sectionId": "規則_第36条 36-２-２",
+              "sectionName": "規則_第36条 36-２-２",
+              "combinedScore": 0.462599162381918
+            }
+          ],
+          "top_article": "規則_第８条 ８-9",
+          "response_time_ms": 13176
+        },
+        {
+          "question_number": 6,
+          "question_text": "チームAのチームベンチエリアの近くでB１がショットの動作（アクトオブシュー ティング）中のA１にファウルをした。ボールはバスケットに入らなかった。A１ が２本のフリースローを行っている間にチームAの理学療法士がチームベンチエ リアから、コート上にいるA２の緩くなったテーピングの補強と脚へのスプレー を行った。審判はコート上にいるA２がチームAの理学療法士から介助を受けたと みなし、A２は交代しなければならない。",
+          "correct_answer": "×",
+          "ai_answer": "○",
+          "is_correct": false,
+          "confidence_grade": "B",
+          "search_results": [
+            {
+              "sectionId": "規則_第2条 (part 1)",
+              "sectionName": "規則_第2条 (part 1) (part 1/None)",
+              "combinedScore": 0.61
+            },
+            {
+              "sectionId": "解説_第33条 33-７",
+              "sectionName": "解説_第33条 33-７",
+              "combinedScore": 0.605844120855458
+            },
+            {
+              "sectionId": "規則_第50条 50-３",
+              "sectionName": "規則_第50条 50-３",
+              "combinedScore": 0.585
+            },
+            {
+              "sectionId": "解説_第33条 33-８",
+              "sectionName": "解説_第33条 33-８",
+              "combinedScore": 0.5763475269882455
+            },
+            {
+              "sectionId": "解説_第44条 44-18",
+              "sectionName": "解説_第44条 44-18",
+              "combinedScore": 0.5453968064368735
+            },
+            {
+              "sectionId": "規則_第49条 49-１",
+              "sectionName": "規則_第49条 49-１",
+              "combinedScore": 0.5449999999999999
+            },
+            {
+              "sectionId": "規則_第５条 ５-４",
+              "sectionName": "規則_第５条 ５-４",
+              "combinedScore": 0.52
+            },
+            {
+              "sectionId": "解説_第42条 42-15",
+              "sectionName": "解説_第42条 42-15",
+              "combinedScore": 0.5063064578819655
+            }
+          ],
+          "top_article": "規則_第2条 (part 1)",
+          "response_time_ms": 9297
+        }
+      ],
+      "suggested_fix": "否定形・数値の厳密チェック、批判的読解の強化"
+    }
+  ]
+}

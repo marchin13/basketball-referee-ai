@@ -1,0 +1,4807 @@
+{
+  "timestamp": "2026-02-07T03:21:24.457Z",
+  "total_questions": 178,
+  "correct_count": 118,
+  "incorrect_count": 60,
+  "accuracy_rate": 66.29213483146067,
+  "avg_response_time_ms": 711.8426966292135,
+  "results": [
+    {
+      "question_number": 1,
+      "question_text": "バスケットボールは、それぞれ５人ずつのプレーヤーからなる２チームによって プレーされ、それぞれのチームの目的は「相手チームのバスケットに得点するこ と」および「相手チームが得点することを妨げること」である。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第16条 16-２-３",
+          "sectionName": "規則_第16条 16-２-３",
+          "combinedScore": 0.5900000000000001
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.54
+        }
+      ],
+      "top_article": "規則_第16条 16-２-３",
+      "response_time_ms": 5014
+    },
+    {
+      "question_number": 1,
+      "question_text": "競技時間中、５個のファウルを宣せられプレーをする資格を失ったチームメン バーは、以降そのゲームに出場することはできないが、チームベンチに座ること は許される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第４条 ４-１-３",
+          "sectionName": "規則_第４条 ４-１-３",
+          "combinedScore": 0.764557482924617
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.54
+        }
+      ],
+      "top_article": "規則_第４条 ４-１-３",
+      "response_time_ms": 1464
+    },
+    {
+      "question_number": 1,
+      "question_text": "センターライン近くのチームAのフロントコートで、両手でボールを持ったA１が B１に近接してガードされヘルドボールとなった。その間にA１の片足がバック コートに触れてしまい、さらにヘルドボール後にB１はボールから手を離した。 審判はジャンプボールシチュエーションを宣した。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第12条 12-４",
+          "sectionName": "規則_第12条 12-４",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第12条 12-５",
+          "sectionName": "解説_第12条 12-５",
+          "combinedScore": 0.6900000000000001
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.665
+        }
+      ],
+      "top_article": "規則_第12条 12-４",
+      "response_time_ms": 1807
+    },
+    {
+      "question_number": 1,
+      "question_text": "オフェンスのプレーヤーが自身のシリンダーの範囲でノーマルバスケットボール プレーを試みているとき、ディフェンスのプレーヤーはボールを持っているオ フェンスのプレーヤーのシリンダーの中に入って不当な触れ合いを起こしてはな らない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第12条 12-５",
+          "sectionName": "解説_第12条 12-５",
+          "combinedScore": 0.65
+        },
+        {
+          "sectionId": "規則_第12条 12-４",
+          "sectionName": "規則_第12条 12-４",
+          "combinedScore": 0.625
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.6000000000000001
+        }
+      ],
+      "top_article": "解説_第12条 12-５",
+      "response_time_ms": 3936
+    },
+    {
+      "question_number": 1,
+      "question_text": "プレーヤー兼ヘッドコーチがプレーヤーとして５個のファウルを宣せられた場 合、プレーをすることはできないが、ヘッドコーチの役割は継続できる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第７条 ７-６",
+          "sectionName": "規則_第７条 ７-６",
+          "combinedScore": 0.5651338067890065
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 735
+    },
+    {
+      "question_number": 1,
+      "question_text": "審判、テーブルオフィシャルズ、コミッショナー（同席している場合）は、競技 規則に則りゲームを行わなければならず、それらを変える権限を持たない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第44条 44-６-１",
+          "sectionName": "規則_第44条 44-６-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第45条 45-６",
+          "sectionName": "規則_第45条 45-６",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "規則_第44条 44-６-１",
+      "response_time_ms": 1108
+    },
+    {
+      "question_number": 1,
+      "question_text": "A１のショットのボールが空中にある間にショットクロックのブザーが鳴った。 その後ボールはリングに触れなかった。その直後にA２にテクニカルファウルが 宣せられた。誰もリバウンドの位置に着かずに、１本のフリースローがチームB のいずれかのプレーヤーに与えられる。また、ショットクロックバイオレーショ ンとなるため、ゲームはテクニカルファウルが宣せられたときにボールがあった 場所に最も近いアウトオブバウンズからチームBのスローインで再開される。 ショットクロックは24秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6412184070088405
+        },
+        {
+          "sectionId": "解説_第44条 44-７",
+          "sectionName": "解説_第44条 44-７",
+          "combinedScore": 0.5724319680759901
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 641
+    },
+    {
+      "question_number": 2,
+      "question_text": "テーブルオフィシャルズのみ、得点、ファウル、タイムアウトを含む記録や、 ゲームクロック、ショットクロックの操作に関わる訂正のできる誤りを認識した 場合、本規則に従って誤りが訂正されるよう審判に知らせなくてはならない。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.6799999999999999
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "規則_第47条 47-３",
+      "response_time_ms": 1566
+    },
+    {
+      "question_number": 2,
+      "question_text": "プレーのインターバル中は、プレーをする資格があるチームメンバーは全てプ レーヤーであるとみなされる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-５",
+          "sectionName": "規則_第８条 ８-５",
+          "combinedScore": 0.4564678694923035
+        }
+      ],
+      "top_article": "規則_第８条 ８-５",
+      "response_time_ms": 1657
+    },
+    {
+      "question_number": 2,
+      "question_text": "サイドラインの近くで、両手でボールを持ったA１がB１とB２に近接してガード された。A１は片足がアウトオブバウンズに触れているB１にボールで触れた。審 判はジャンプボールシチュエーションを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-４",
+          "sectionName": "規則_第50条 50-４",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "規則_第12条 12-４",
+          "sectionName": "規則_第12条 12-４",
+          "combinedScore": 0.72
+        },
+        {
+          "sectionId": "規則_第35条 35-２",
+          "sectionName": "規則_第35条 35-２",
+          "combinedScore": 0.6900000000000001
+        }
+      ],
+      "top_article": "規則_第50条 50-４",
+      "response_time_ms": 1659
+    },
+    {
+      "question_number": 2,
+      "question_text": "A１はスリーポイントゴールのショットで空中にいるとき、自身のシリンダーの 外に脚を広げ、B１との間で触れ合いが起きた。審判はB１のファウルを宣し、３ 本のフリースローをA１に与えた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第15条 15-５",
+          "sectionName": "解説_第15条 15-５",
+          "combinedScore": 0.636959319140852
+        },
+        {
+          "sectionId": "解説_第33条 33-２",
+          "sectionName": "解説_第33条 33-２",
+          "combinedScore": 0.6097140784476425
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第15条 15-５",
+      "response_time_ms": 618
+    },
+    {
+      "question_number": 2,
+      "question_text": "２個のテクニカルファウル、あるいは２個のアンスポーツマンライクファウル、 もしくは１個のテクニカルファウルと１個のアンスポーツマンライクファウルを 記録されたプレーヤーは、アシスタントスコアラー(国内大会の場合)によって ゲームディスクォリフィケーション（GD）マーカーを示され、失格・退場とな る。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第36条 36-２-３",
+          "sectionName": "規則_第36条 36-２-３",
+          "combinedScore": 0.676814594648532
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.66
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 597
+    },
+    {
+      "question_number": 2,
+      "question_text": "審判とゲームの関係は、ゲーム開始予定時刻の20分前（国内大会においては、大 会主催者の考えによって決定する）にコートに出たときから始まり、クルーチー フがゲームの終了を知らせるゲームクロックのブザーを承認したときに終了す る。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第46条 46-9",
+          "sectionName": "規則_第46条 46-9",
+          "combinedScore": 0.6711674081583565
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第46条 46-9",
+      "response_time_ms": 430
+    },
+    {
+      "question_number": 2,
+      "question_text": "スローインをするA１がフロントコートでボールをパスした。その後ボールは チームAのフロントコートでスリーポイントエリアにいるいずれかのプレーヤー にショットもしくはパスではなく正当に触れられ、バスケットに入った。審判は チームAの３点を認めた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第34条 34-9",
+          "sectionName": "解説_第34条 34-9",
+          "combinedScore": 0.6154278459379955
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第34条 34-４",
+          "sectionName": "解説_第34条 34-４",
+          "combinedScore": 0.585953168755392
+        }
+      ],
+      "top_article": "解説_第34条 34-9",
+      "response_time_ms": 718
+    },
+    {
+      "question_number": 3,
+      "question_text": "コートは、境界線（エンドラインおよびサイドライン）で囲まれている。これら のラインはコートには含まれる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "規則_第11条 11-１",
+          "sectionName": "規則_第11条 11-１",
+          "combinedScore": 0.5549999999999999
+        },
+        {
+          "sectionId": "規則_第17条 17-３-２",
+          "sectionName": "規則_第17条 17-３-２",
+          "combinedScore": 0.53
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 724
+    },
+    {
+      "question_number": 3,
+      "question_text": "審判が交代要員をコートに招き入れたときプレーヤーとなるため、タイムアウト またはプレーのインターバル中は交代要員がタイマー（国内大会ではスコア ラー）に交代を申し出たときはまだプレーヤーとはならず交代要員である。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第５条 ５-７",
+          "sectionName": "規則_第５条 ５-７",
+          "combinedScore": 0.7123233783621695
+        },
+        {
+          "sectionId": "規則_第19条 19-３-５",
+          "sectionName": "規則_第19条 19-３-５",
+          "combinedScore": 0.612756642349666
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "規則_第５条 ５-７",
+      "response_time_ms": 613
+    },
+    {
+      "question_number": 3,
+      "question_text": "ドリブルとは、ライブのボールをコントロールしたプレーヤーが、ボールをコー トに投げたり叩いたり転がしたり、弾ませたりする動作である。ドリブルしてい るボールが手に触れていない間は、そのプレーヤーの踏むステップの数に制限は ない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第28条 28-４",
+          "sectionName": "解説_第28条 28-４",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第14条 14-１-１",
+          "sectionName": "規則_第14条 14-１-１",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第24条 24-１-１",
+          "sectionName": "規則_第24条 24-１-１",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "解説_第28条 28-４",
+      "response_time_ms": 645
+    },
+    {
+      "question_number": 3,
+      "question_text": "ディフェンスのプレーヤーは両足をコートにつけさえすれば、相手チームのプ レーヤーと正対しなくても、リーガルガーディングポジションを占めたとみなさ れる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第17条 17-３-３",
+          "sectionName": "規則_第17条 17-３-３",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第28条 28-１-２",
+          "sectionName": "規則_第28条 28-１-２",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第43条 43-２-５",
+          "sectionName": "規則_第43条 43-２-５",
+          "combinedScore": 0.515481444058598
+        }
+      ],
+      "top_article": "規則_第17条 17-３-３",
+      "response_time_ms": 490
+    },
+    {
+      "question_number": 3,
+      "question_text": "チームファウルに数えるファウルとは、プレーヤーに記録されるパーソナルファ ウルのことをいう。 テクニカルファウル、アンスポーツマンライクファウル、ディスクォリファイン グファウルは、プレーヤーのファウルであってもチームファウルに数えない。 １チームに対してクォーターごとに４個のチームファウルが記録された後は、 チームファウルのペナルティシチュエーションになる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "解説_第36条 36-30",
+          "sectionName": "解説_第36条 36-30",
+          "combinedScore": 0.635
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 1009
+    },
+    {
+      "question_number": 3,
+      "question_text": "審判の１人が怪我またはその他の理由で審判を続けられなくなり、その後10分を 経過してもその審判が任務を遂行できない場合は、ゲームを再開する。怪我をし た審判の代わりとなる審判がいない場合は、残りの審判だけでゲーム終了まで任 務を遂行する。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-５",
+          "sectionName": "規則_第47条 47-５",
+          "combinedScore": 0.6979629726431991
+        },
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第５条 ５-５",
+          "sectionName": "規則_第５条 ５-５",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第47条 47-５",
+      "response_time_ms": 612
+    },
+    {
+      "question_number": 3,
+      "question_text": "第４クォーター残り44秒、ショットクロック残り17秒で、A１がバックコートで ドリブルをしているとき、チームBのプレーヤーがボールをチームAのバックコー トのテーブルサイドもしくはオポジットサイドのスローインラインのアウトオブ バウンズに弾き出した。その後タイムアウトがチームAに認められた。チームAの ヘッドコーチがフロントコートからのスローインを選択した場合、ゲームはフロ ントコートのボールがアウトオブバウンズに弾かれた側と同じ側のスローインラ インからチームAのスローインで再開される。ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.72
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.585
+        },
+        {
+          "sectionId": "規則_第29条 29-１-１",
+          "sectionName": "規則_第29条 29-１-１",
+          "combinedScore": 0.5729336018404034
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 716
+    },
+    {
+      "question_number": 4,
+      "question_text": "スローインラインとは、近い方のエンドラインの内側の縁から8.325mの距離 に、コートの外側に向かってサイドラインと直角に引いた、長さ0.15ｍの4本の ラインをいう。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "規則_第12条 12-６-３",
+          "sectionName": "規則_第12条 12-６-３",
+          "combinedScore": 0.5549999999999999
+        },
+        {
+          "sectionId": "解説_第36条 36-30",
+          "sectionName": "解説_第36条 36-30",
+          "combinedScore": 0.53
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 738
+    },
+    {
+      "question_number": 4,
+      "question_text": "A6が交代を申し出た。審判はA6がユニフォームのシャツの下にコンプレッショ ンではないTシャツを着用していることに気づき交代を認めなかった。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第４条 ４-６",
+          "sectionName": "解説_第４条 ４-６",
+          "combinedScore": 0.6744572312286815
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第４条 ４-２-３",
+          "sectionName": "規則_第４条 ４-２-３",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "解説_第４条 ４-６",
+      "response_time_ms": 638
+    },
+    {
+      "question_number": 4,
+      "question_text": "A１はドリブルを終えたあと、B１の脚に故意にボールを投げて当てた。A１は ボールをキャッチし、再びドリブルを始めた。これはA１の正当なプレーであ る。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-12",
+          "sectionName": "解説_第30条 30-12",
+          "combinedScore": 0.6777902757116955
+        },
+        {
+          "sectionId": "解説_第24条 24-８",
+          "sectionName": "解説_第24条 24-８",
+          "combinedScore": 0.6472089634973675
+        },
+        {
+          "sectionId": "解説_第24条 24-７",
+          "sectionName": "解説_第24条 24-７",
+          "combinedScore": 0.612644219775326
+        }
+      ],
+      "top_article": "解説_第30条 30-12",
+      "response_time_ms": 571
+    },
+    {
+      "question_number": 4,
+      "question_text": "ディフェンスのプレーヤーは、ボールをコントロールしている（ボールを持って いるかドリブルをしている）プレーヤーをガードするときは、相手の速さと距離 を十分に考慮して位置を占めなければならない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第28条 28-１-２",
+          "sectionName": "規則_第28条 28-１-２",
+          "combinedScore": 0.78
+        },
+        {
+          "sectionId": "規則_第33条 33-５",
+          "sectionName": "規則_第33条 33-５",
+          "combinedScore": 0.6505546584394786
+        },
+        {
+          "sectionId": "規則_第33条 33-４",
+          "sectionName": "規則_第33条 33-４",
+          "combinedScore": 0.598713541814283
+        }
+      ],
+      "top_article": "規則_第28条 28-１-２",
+      "response_time_ms": 839
+    },
+    {
+      "question_number": 4,
+      "question_text": "チームファウルのペナルティシチュエーションにあるチームのプレーヤーが、 ショットの動作（アクトオブシューティング）中ではない相手チームのプレー ヤーに暴言を吐きテクニカルファウルを宣せられた。 チームファウルペナルティの罰則として相手チームのプレーヤーに２本のフリー スローが与えられる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第41条 41-２-１",
+          "sectionName": "規則_第41条 41-２-１",
+          "combinedScore": 0.6694121706836129
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第41条 41-２-１",
+      "response_time_ms": 460
+    },
+    {
+      "question_number": 4,
+      "question_text": "スコアシートの記録に誤りが見つかった場合、スコアラーはクルーチーフと協議 し、第４4条「訂正のできる誤り」の範囲内で修正できる誤りは修正しなくては ならない。また、記録の誤りが第４4条「訂正のできる誤り」で規定されている 範囲内で発見されなかった場合、その誤りは訂正することができない。クルー チーフあるいはコミッショナー（同席している場合）は、その事実の詳細な報告 を大会主催者に提出しなければならない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第48条 48-３",
+          "sectionName": "規則_第48条 48-３",
+          "combinedScore": 0.658122222647405
+        },
+        {
+          "sectionId": "規則_第44条 44-４-７",
+          "sectionName": "規則_第44条 44-４-７",
+          "combinedScore": 0.6160552828957411
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.565
+        }
+      ],
+      "top_article": "規則_第48条 48-３",
+      "response_time_ms": 566
+    },
+    {
+      "question_number": 4,
+      "question_text": "B１がドリブルをしているA１をディフェンスした。A１はB１を押し、あたかも B１にファウルをされたかのような印象を与えようと頭部を急に動かした。審判 はA１にファウルを宣した。審判はA１にファウルを宣しているため、加えてフェ イクの警告は与えない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.573401829790853
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第47条 47-３",
+      "response_time_ms": 644
+    },
+    {
+      "question_number": 5,
+      "question_text": "バスケットボールのゲームを行うときには、2種類以上の明瞭に異なる音色の、 大きな音の出るブザーを用意されていなければならない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.79
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第４条 ４-４-５",
+          "sectionName": "規則_第４条 ４-４-５",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 620
+    },
+    {
+      "question_number": 5,
+      "question_text": "A１が足首を怪我したと見られたため、ゲームが中断された。チームAの交代要員 がコート内に入ったが、A１の手当てはしなかった。A１は手当てを受けていない ため、交代する必要はない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第５条 ５-13",
+          "sectionName": "解説_第５条 ５-13",
+          "combinedScore": 0.5674994900078075
+        },
+        {
+          "sectionId": "規則_第５条 ５-７",
+          "sectionName": "規則_第５条 ５-７",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第５条 ５-４",
+      "response_time_ms": 582
+    },
+    {
+      "question_number": 5,
+      "question_text": "A１がドリブルを終え、A２にボールをパスした。ボールは偶然B２の体に触れた あと、フロアに触れた。A１はボールをキャッチし、再びドリブルを始めた。審 判はA１にダブルドリブルのバイオレーションを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第24条 24-８",
+          "sectionName": "解説_第24条 24-８",
+          "combinedScore": 0.6596714218765529
+        },
+        {
+          "sectionId": "解説_第24条 24-７",
+          "sectionName": "解説_第24条 24-７",
+          "combinedScore": 0.629787969731926
+        },
+        {
+          "sectionId": "解説_第24条 24-３",
+          "sectionName": "解説_第24条 24-３",
+          "combinedScore": 0.5974058207757265
+        }
+      ],
+      "top_article": "解説_第24条 24-８",
+      "response_time_ms": 716
+    },
+    {
+      "question_number": 5,
+      "question_text": "ジャンプをしたプレーヤーが元の位置と違うところに下りた勢いで、すでに近く にリーガルガーディングポジションを占めていた相手チームのプレーヤーと触れ 合いを起こしたときは、ジャンプをしたプレーヤーに触れ合いの責任がある。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第33条 33-８",
+          "sectionName": "規則_第33条 33-８",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "解説_第33条 33-５",
+          "sectionName": "解説_第33条 33-５",
+          "combinedScore": 0.5285260296307259
+        }
+      ],
+      "top_article": "規則_第47条 47-３",
+      "response_time_ms": 614
+    },
+    {
+      "question_number": 5,
+      "question_text": "B１がシューターのA１にアンスポーツマンライクファウルをした。ボールが空中 にある間に、ショットクロックのブザーが鳴った。ボールはリングに触れなかっ た。ボールがリングに当たらなかったことによるチームAのショットクロックの バイオレーションとなり、B１のアンスポーツマンライクファウルはなかったも のとする。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第44条 44-35 (part 11)",
+          "sectionName": "解説_第44条 44-35 (part 11) (part 11/None)",
+          "combinedScore": 0.5786324237146905
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 476
+    },
+    {
+      "question_number": 5,
+      "question_text": "プレーヤー兼ヘッドコーチは以下のときに失格・退場となる ・コーチとしてテクニカルファウル（C）とプレーヤーとしてのアンスポーツマ ンライクファウルまたはテクニカルファウルが宣せられる。 ・コーチとしてテクニカルファウル（B）とコーチとしてテクニカルファウル （C）とプレーヤーとしてのアンスポーツマンライクファウルまたはテクニカル ファウルが宣せられる。 ・コーチとして２個のテクニカルファウル（B）とプレーヤーとしてのアンス ポーツマンライクファウルまたはテクニカルファウルが宣せられる。 最後のテクニカルファウルまたはアンスポーツマンライクファウルが記録された すぐ隣の枠に「GD」を記入する。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.7
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "解説_第36条 36-19",
+          "sectionName": "解説_第36条 36-19",
+          "combinedScore": 0.637579791997665
+        }
+      ],
+      "top_article": "規則_第50条 50-５ (part 3)",
+      "response_time_ms": 759
+    },
+    {
+      "question_number": 5,
+      "question_text": "B１がドリブルをしているA１をディフェンスした。B１はA１を押し、A１はあ たかもB１にファウルをされたかのような印象を与えようと頭部を急に動かし た。審判はB１にファウルを宣した。ファウルに加えて、審判はA１にフェイクの 警告（これがチームAの最初のフェイクで、過度なフェイクではないの場合）を 与える、もしくはテクニカルファウル（チームAがすでにフェイクの警告を与え られている、もしくは最初でも過度なフェイクであった場合）を宣する。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-29",
+          "sectionName": "解説_第36条 36-29",
+          "combinedScore": 0.597798855405945
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第36条 36-28",
+          "sectionName": "解説_第36条 36-28",
+          "combinedScore": 0.5707456827163695
+        }
+      ],
+      "top_article": "解説_第36条 36-29",
+      "response_time_ms": 761
+    },
+    {
+      "question_number": 6,
+      "question_text": "チームAのチームベンチエリアの近くでB１がショットの動作（アクトオブシュー ティング）中のA１にファウルをした。ボールはバスケットに入らなかった。A１ が２本のフリースローを行っている間にチームAの理学療法士がチームベンチエ リアから、コート上にいるA２の緩くなったテーピングの補強と脚へのスプレー を行った。審判はコート上にいるA２がチームAの理学療法士から介助を受けたと みなし、A２は交代しなければならない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第33条 33-７",
+          "sectionName": "解説_第33条 33-７",
+          "combinedScore": 0.605844120855458
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 661
+    },
+    {
+      "question_number": 6,
+      "question_text": "リバウンドからのボールを両手で持っているA１がB１に近接してガードされたこ とでバランスを崩し、コート上に倒れその勢いで滑ってしまった。いずれもA１ の正当なプレーであり、コートに倒れることはトラベリングのバイオレーション ではない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第12条 12-13",
+          "sectionName": "解説_第12条 12-13",
+          "combinedScore": 0.621959246151315
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第36条 36-18",
+          "sectionName": "解説_第36条 36-18",
+          "combinedScore": 0.5688737029615265
+        }
+      ],
+      "top_article": "解説_第12条 12-13",
+      "response_time_ms": 728
+    },
+    {
+      "question_number": 6,
+      "question_text": "A１がノーチャージセミサークルの外からジャンプショットをしようとし、ノー チャージセミサークルから垂直に跳んだB１のトルソーに触れ合いを起こした。 審判はノーチャージセミサークルルールを適用し、A１のチームコントロール ファウルを宣しなかった。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第33条 33-５",
+          "sectionName": "解説_第33条 33-５",
+          "combinedScore": 0.5956468501160814
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第38条 38-10",
+          "sectionName": "解説_第38条 38-10",
+          "combinedScore": 0.566283133817186
+        }
+      ],
+      "top_article": "解説_第33条 33-５",
+      "response_time_ms": 631
+    },
+    {
+      "question_number": 6,
+      "question_text": "A１はショットの動作（アクトオブシューティング）中にB１からパーソナルファ ウルをされた。同じショットの動作（アクトオブシューティング）中にB２はア ンスポーツマンライクファウル相当の激しい触れ合いを起こしたため、別の審判 によってアンスポーツマンライクファウルが宣された。しかし、審判はすでにB １のパーソナルファウルを宣しているためB２のアンスポーツマンライクファウ ルはなかったものとし、２本のフリースローのみがA１に与えられる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "解説_第44条 44-35 (part 11)",
+          "sectionName": "解説_第44条 44-35 (part 11) (part 11/None)",
+          "combinedScore": 0.6137626875568241
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 723
+    },
+    {
+      "question_number": 6,
+      "question_text": "タイマーは、ゲーム開始のジャンプボールのとき、トスのためにクルーチーフの 手からボールが離れたときにゲームクロックを動かし始める",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.865
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.59
+        },
+        {
+          "sectionId": "規則_第８条 ８-６",
+          "sectionName": "規則_第８条 ８-６",
+          "combinedScore": 0.55
+        }
+      ],
+      "top_article": "規則_第49条 49-２",
+      "response_time_ms": 588
+    },
+    {
+      "question_number": 6,
+      "question_text": "第２クォーター残り3:37で、B１がA１にファウルをした。このクォーター4個目 のチームファウルであったが、誤って２本のフリースローがA１に与えられた。 この誤りが第４クォーター残り4:48に認識された。誤りは訂正できる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-３",
+          "sectionName": "解説_第44条 44-３",
+          "combinedScore": 0.6892088651657136
+        },
+        {
+          "sectionId": "解説_第44条 44-４",
+          "sectionName": "解説_第44条 44-４",
+          "combinedScore": 0.6351409316062955
+        },
+        {
+          "sectionId": "解説_第44条 44-12",
+          "sectionName": "解説_第44条 44-12",
+          "combinedScore": 0.6082787389589175
+        }
+      ],
+      "top_article": "解説_第44条 44-３",
+      "response_time_ms": 562
+    },
+    {
+      "question_number": 7,
+      "question_text": "ドクターの判断により怪我をしたプレーヤーが直ちに手当てを必要とする場合 は、ボールがライブであってもドクターは審判の許可なしにプレー中いつでも コートに入ることができる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第５条 ５-５",
+          "sectionName": "規則_第５条 ５-５",
+          "combinedScore": 0.5549999999999999
+        },
+        {
+          "sectionId": "規則_第44条 44-６-１",
+          "sectionName": "規則_第44条 44-６-１",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "規則_第５条 ５-４",
+      "response_time_ms": 640
+    },
+    {
+      "question_number": 7,
+      "question_text": "A１は両手でボールを持ってドリブルを終え、ひと続きの動作で左足でジャンプ し、左足、右足の順で着地してショットをした。動きながらまたはドリブルを終 えるときにボールをキャッチしたプレーヤーの場合、フロアについている足は０ 歩目とし、その後２歩までステップを踏むことができる。この場合はA１のトラ ベリングのバイオレーションではない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第25条 25-５",
+          "sectionName": "解説_第25条 25-５",
+          "combinedScore": 0.68841353425899
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.615
+        },
+        {
+          "sectionId": "解説_第24条 24-３",
+          "sectionName": "解説_第24条 24-３",
+          "combinedScore": 0.614396202248226
+        }
+      ],
+      "top_article": "解説_第25条 25-５",
+      "response_time_ms": 477
+    },
+    {
+      "question_number": 7,
+      "question_text": "A１がバスケットに向かってドライブし、ショットの動作（アクトオブシュー ティング）をしながらボールを手放す前にノーチャージセミサークルエリアに触 れているB１を、腕を使って押しのけた。審判はノーチャージセミサークルルー ルは適用せず、A１が不当に腕を使っているためA１のチームコントロールファウ ルを宣した。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第33条 33-７",
+          "sectionName": "解説_第33条 33-７",
+          "combinedScore": 0.6555694462528705
+        },
+        {
+          "sectionId": "解説_第33条 33-８",
+          "sectionName": "解説_第33条 33-８",
+          "combinedScore": 0.61938947405753
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "解説_第33条 33-７",
+      "response_time_ms": 624
+    },
+    {
+      "question_number": 7,
+      "question_text": "ショットの動作中（アクトオブシューティング）のA１にB１がパーソナルファウ ルをしショットは成功した。その後チームAのベンチにテクニカルファウルが宣 せられた。 審判は、A１のゴールを認めた後、まずチームBのヘッドコーチが指定したプレー ヤーに１本のフリースローを与え、次にA１に１本のフリースローを与え、通常 の最後のフリースローの後と同様にゲームを再開した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-11",
+          "sectionName": "解説_第44条 44-11",
+          "combinedScore": 0.629706777351697
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.5990572037560455
+        }
+      ],
+      "top_article": "解説_第44条 44-11",
+      "response_time_ms": 693
+    },
+    {
+      "question_number": 7,
+      "question_text": "タイマーは、ゲームクロックと、ときにはショットクロックを操作して、競技時 間、タイムアウト、プレーのインターバルの時間をはかる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.7949999999999999
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.7884169734467935
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "規則_第49条 49-２",
+      "response_time_ms": 583
+    },
+    {
+      "question_number": 7,
+      "question_text": "第４クォーター残り2:13で、B１がA１にファウルをし、このクォーター6個目の チームファウルであった。２本のフリースローがA１に与えられるはずが、審判 は誤ってA１ではなくA２にフリースローを行うように指示した。A２のフリース ローは２本とも成功した。 このフリースローの後、第４クォーター残り2:05に一度ゲームが止められたが誤 りに気付かず、次にゲームが止められた第４クォーター残り1:23で、この誤りが 認識された。 すでに誤りを訂正できる時機を過ぎているため、誤りは訂正できずなかったもの とする。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-４",
+          "sectionName": "解説_第44条 44-４",
+          "combinedScore": 0.6939119234295106
+        },
+        {
+          "sectionId": "解説_第44条 44-３",
+          "sectionName": "解説_第44条 44-３",
+          "combinedScore": 0.6561729237621045
+        },
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.621197488093832
+        }
+      ],
+      "top_article": "解説_第44条 44-４",
+      "response_time_ms": 842
+    },
+    {
+      "question_number": 8,
+      "question_text": "A１がファウルをされ２本のフリースローを得た。１本目のフリースローの後で 審判はA１が出血していることを認識し、A１はA6と交代した。このときチームB からB１とB２、2人の交代の申し出があった。審判はフリースローの途中でチー ムAに交代を認めたため、同様にチームBの2人の交代を認めた。その後、A6は２ 本目のフリースローを行った。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.6364976763725281
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第42条 42-７",
+          "sectionName": "解説_第42条 42-７",
+          "combinedScore": 0.588930084471102
+        }
+      ],
+      "top_article": "解説_第44条 44-17",
+      "response_time_ms": 533
+    },
+    {
+      "question_number": 8,
+      "question_text": "フロントコート内でライブのボールをコントロールしているチームのプレーヤー は、ゲームクロックが動いている間は、相手チームのバスケットに近い制限区域 内に３秒以上とどまることはできない。また、ライブのボールをコントロールし ているチームのプレーヤーが制限区域から出ようとしていたり、そのプレーヤー あるいはチームメイトがショットの動作（アクトオブシューティング）中で、 ボールが手から離れたか離れようとしている場合は3秒のバイオレーションには ならない。しかし、ライブのボールをコントロールしているチームのプレーヤー が制限区域内に３秒未満いたあと、ゴールのショットをするためにドリブルをし ている場合は3秒のバイオレーションである。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第26条 26-１-２",
+          "sectionName": "規則_第26条 26-１-２",
+          "combinedScore": 0.6209395970034145
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第17条 17-２",
+          "sectionName": "解説_第17条 17-２",
+          "combinedScore": 0.5642039537429905
+        }
+      ],
+      "top_article": "規則_第26条 26-１-２",
+      "response_time_ms": 572
+    },
+    {
+      "question_number": 8,
+      "question_text": "ゲームクロックが動いていて、ボールがライブの状態でA１はツーポイント ショットをした。B１はチームメイトのB２を押し、B２はショットの動作（アク トオブシューティング）中のA１に不当な触れ合いを起こした。ボールはバス ケットに入った。２点がA１に与えられ、審判はB１にパーソナルファウルを宣せ られる。１本のフリースローがA１に与えられ、ゲームは通常の最後のフリース ローの後と同様に再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.668065200082639
+        },
+        {
+          "sectionId": "解説_第35条 35-５",
+          "sectionName": "解説_第35条 35-５",
+          "combinedScore": 0.621359074766802
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第44条 44-17",
+      "response_time_ms": 774
+    },
+    {
+      "question_number": 8,
+      "question_text": "ショットの動作（アクトオブシューティング）中のA１にB１がアンスポーツマン ライクファウルをしショットは成功した。その後A１はテクニカルファウルを宣 せられた。 A１のゴールは認められる。お互いの１本のフリースローは相殺され行われず、 ゲームはフロントコートのスローインラインから残った罰則であるチームAのス ローインで再開される。ショットクロックは14秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "解説_第42条 42-７",
+          "sectionName": "解説_第42条 42-７",
+          "combinedScore": 0.6682838347642726
+        },
+        {
+          "sectionId": "解説_第36条 36-４",
+          "sectionName": "解説_第36条 36-４",
+          "combinedScore": 0.5965149947549485
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 607
+    },
+    {
+      "question_number": 8,
+      "question_text": "タイマーがタイムアウトの時間をはかり始めるのは、スコアラーがタイムアウト の合図を示したときにストップウォッチを動かし始める。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 624
+    },
+    {
+      "question_number": 8,
+      "question_text": "第２クォーター残り3:37で、B１がA１にファウルをし、このクォーター4個目の チームファウルであった。審判は誤って２本のフリースローをA１に与えた。こ の誤りが、A１が両方のフリースローを終えゲームクロックが動き始める前に認 識された。 誤りは訂正できる。成否にかかわらず、フリースローは取り消される。 ゲームは、スコアラーズテーブルの反対側のスローインラインからチームAのス ローインで再開され、ショットクロックは14秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7150000000000001
+        },
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.670921742916107
+        },
+        {
+          "sectionId": "解説_第44条 44-9",
+          "sectionName": "解説_第44条 44-9",
+          "combinedScore": 0.622007214666276
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 707
+    },
+    {
+      "question_number": 9,
+      "question_text": "チームAは所定の時間内にスコアラーにリストを提出した。2人のプレーヤーの番 号が実際のユニフォームの番号と一致していない、あるいはそのプレーヤーの氏 名がスコアシートに記載されていなかった。この不一致が、ゲーム開始後に発見 された。いずれのチームにも不利にならないタイミングで審判がゲームを中断 し、誤った番号は罰則なしに修正される。しかし、記載されていなかったプレー ヤーの氏名をスコアシートに追加することはできない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-５ (part 1)",
+          "sectionName": "規則_第50条 50-５ (part 1) (part 1/None)",
+          "combinedScore": 0.5834100445020145
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第６条 ６-１",
+          "sectionName": "規則_第６条 ６-１",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-５ (part 1)",
+      "response_time_ms": 743
+    },
+    {
+      "question_number": 9,
+      "question_text": "チームAがフロントコート内でライブのボールをコントロールしているときに、 制限区域に2.5秒とどまっているA１がショットのボールを放った。ボールはバッ クボードにもリングにも触れず、A１はそのボールをリバウンドした。A１の3秒 のバイオレーションである。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第28条 28-12",
+          "sectionName": "解説_第28条 28-12",
+          "combinedScore": 0.6225933017776345
+        },
+        {
+          "sectionId": "解説_第17条 17-51",
+          "sectionName": "解説_第17条 17-51",
+          "combinedScore": 0.5842939567776415
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "解説_第28条 28-12",
+      "response_time_ms": 673
+    },
+    {
+      "question_number": 9,
+      "question_text": "止まっている相手チームのプレーヤーの後ろ（視野の外）からスクリーンをかけ るプレーヤーは、相手が普通に動いても触れ合いが起こらない１歩の距離をおい て位置を占めなければならない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第33条 33-８",
+          "sectionName": "規則_第33条 33-８",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第32条 32-１-１",
+          "sectionName": "規則_第32条 32-１-１",
+          "combinedScore": 0.515
+        }
+      ],
+      "top_article": "規則_第47条 47-３",
+      "response_time_ms": 707
+    },
+    {
+      "question_number": 9,
+      "question_text": "B１はドリブルをしているA１にパーソナルファウルをし、このクォーター５個目 のチームファウルであった。その後A１は、ボールを至近距離にいるB１の顔に直 接ぶつけたため、ディスクォリファイングファウルが宣せられ失格・退場となっ た。 誰もリバウンドの位置に着かずに２本のフリースローがA１と交代したプレー ヤーに与えられ、次に２本のフリースローがチームBのヘッドコーチが指定した プレーヤーに与えられる。 ゲームはフロントコートのスローインラインからチームBのスローインで再開さ れる。ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6457217695878945
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.615
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 602
+    },
+    {
+      "question_number": 9,
+      "question_text": "第１クォーター残り2:43にチームAのバックコートからのサイドスローインで ショットクロックは残り23秒を表示していた。スローインをするA１の手から離 れたボールがコート内にいるチームBのプレーヤーの手にわずかに当たり、チー ムAのバックコートのエンドラインに向かってアウトオブバウンズとなった。 ゲームクロックは2:40となり、ショットクロックは動かさずに残り23秒で再開 となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6599999999999999
+        },
+        {
+          "sectionId": "解説_第17条 17-17",
+          "sectionName": "解説_第17条 17-17",
+          "combinedScore": 0.6598050716461266
+        },
+        {
+          "sectionId": "解説_第17条 17-49",
+          "sectionName": "解説_第17条 17-49",
+          "combinedScore": 0.628570365480144
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 743
+    },
+    {
+      "question_number": 9,
+      "question_text": "第３クォーターで、B２がドリブルをしているA１にファウルをし、このクォー ター５個目のチームファウルであった。２本のフリースローがA１に与えられた が、１本目のフリースローを失敗したあと、B１がリバウンドのボールを取り、 ゲームは誤って続行された。 この誤りが、第４クォーター残り2:54で認識された。審判は誤りを訂正するた め、チームベンチにいたA１(プレーする資格あり)をコートに招き入れ２本目の フリースローを与えた。 フリースローは誰もリバウンドの位置に着かずに行われ、ゲームは誤りの訂正の ために止められたところから再開される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-12",
+          "sectionName": "解説_第44条 44-12",
+          "combinedScore": 0.6767309649747105
+        },
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.6477144076057925
+        },
+        {
+          "sectionId": "解説_第44条 44-４",
+          "sectionName": "解説_第44条 44-４",
+          "combinedScore": 0.5979843854904205
+        }
+      ],
+      "top_article": "解説_第44条 44-12",
+      "response_time_ms": 679
+    },
+    {
+      "question_number": 10,
+      "question_text": "ゲーム開始前に確認された最初に出場すると指定されていたチームAの５人のプ レーヤーと異なるプレーヤーが１人、コート上にいることがゲーム開始後に発見 された。 審判は、チームAのベンチにテクニカルファウルを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第9条 9-８",
+          "sectionName": "解説_第9条 9-８",
+          "combinedScore": 0.5759621470019736
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第47条 47-３",
+      "response_time_ms": 630
+    },
+    {
+      "question_number": 10,
+      "question_text": "スローインをするA１がフロントコートでボールを持っている間、A２が制限区域 に3秒以上とどまった。チームAはボールをコントロールしているがゲームクロッ クはまだ動いていないため、A２の正当なプレーであり3秒バイオレーションでは ない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第26条 26-５",
+          "sectionName": "解説_第26条 26-５",
+          "combinedScore": 0.673871546983731
+        },
+        {
+          "sectionId": "解説_第30条 30-14",
+          "sectionName": "解説_第30条 30-14",
+          "combinedScore": 0.6150963133516185
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "解説_第26条 26-５",
+      "response_time_ms": 574
+    },
+    {
+      "question_number": 10,
+      "question_text": "正当なスクリーンをかけられた場合、スクリーンをかけたプレーヤーとのいかな る触れ合いについても、スクリーンをかけられたプレーヤーに触れ合いの責任が ある。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第33条 33-７",
+          "sectionName": "規則_第33条 33-７",
+          "combinedScore": 0.743823140859604
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第43条 43-２-２",
+          "sectionName": "規則_第43条 43-２-２",
+          "combinedScore": 0.54
+        }
+      ],
+      "top_article": "規則_第33条 33-７",
+      "response_time_ms": 479
+    },
+    {
+      "question_number": 10,
+      "question_text": "A１に２本のフリースローが与えられた。２本目のフリースローが成功したあ と、スローインのボールがエンドラインの後方からチームBのプレーヤーに与え られる前に、A２とB２がダブルファウルを宣せられた。 A２とB２のファウルは記入されるが罰則は相殺される。チームBはエンドライン からスローインを与えられる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-13",
+          "sectionName": "解説_第42条 42-13",
+          "combinedScore": 0.6787935239795739
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第17条 17-39",
+          "sectionName": "解説_第17条 17-39",
+          "combinedScore": 0.595572306479675
+        }
+      ],
+      "top_article": "解説_第42条 42-13",
+      "response_time_ms": 544
+    },
+    {
+      "question_number": 10,
+      "question_text": "チームAがバックコートでボールをコントロールしているとき、B２とチームAの ヘッドコーチが言い争いになり、両者にテクニカルファウルが宣せられた。この ときショットクロックは残り19秒を表示していた。両チームに宣せられたテクニ カルファウルは相殺され、ゲームはチームAのバックコートからスローインで再 開されることになったので、ショットクロックオペレーターはショットクロック の表示を24秒にリセットした。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.57
+        },
+        {
+          "sectionId": "解説_第44条 44-35 (part 17)",
+          "sectionName": "解説_第44条 44-35 (part 17) (part 17/None)",
+          "combinedScore": 0.5660942008439189
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 835
+    },
+    {
+      "question_number": 10,
+      "question_text": "第３クォーターの終了を知らせるゲームクロックのブザーが鳴ったとき、B１が ドリブルをしているA１にファウルをし、このクォーター6個目のチームファウル であった。審判はB１のファウルはゲームクロック残り0.3秒で起きたと判断し た。２本のフリースローがA１に与えられたが、A１ではなくA２がフリースロー を行おうとした。この誤りが最初のフリースローでボールがA２の手を離れた後 で認識された。 A２の２本のフリースローは取り消される。ゲームはチームBのバックコートのス コアラーズテーブルの反対側のフリースローラインの延長線上のアウトオブバウ ンズからチームBのスローインで再開され、ゲームクロックは0.3秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.707825321749574
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第44条 44-７",
+          "sectionName": "解説_第44条 44-７",
+          "combinedScore": 0.6259431243504955
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 589
+    },
+    {
+      "question_number": 11,
+      "question_text": "A１はスリーポイントゴールのショットをした。第３クォーターの終了を知らせ るゲームクロックのブザーが鳴ったとき、ボールは空中にあった。ブザーのあ と、B１がまだ空中にいるA１にファウルをし、ボールはバスケットに入った。A １に3点が与えられ、B１のファウルがアンスポーツマンライクファウルもしくは ディスクォリファイングファウルの判定基準に合致するものであっても、A１に 対するB１のファウルは第３クォーター終了後に起きたものとしてなかったもの とする。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第８条 ８-３",
+          "sectionName": "解説_第８条 ８-３",
+          "combinedScore": 0.7048212289810181
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.645
+        }
+      ],
+      "top_article": "解説_第８条 ８-３",
+      "response_time_ms": 567
+    },
+    {
+      "question_number": 11,
+      "question_text": "A１はB１に近接して4秒間ガードされた。その後A１はボールをファンブルし、 再びキャッチした。審判はA１がボールをファンブルしたことで再びコントロー ルを得たことになると判断し、新たに5秒のカウントをはじめた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-11",
+          "sectionName": "解説_第42条 42-11",
+          "combinedScore": 0.6102352308946575
+        },
+        {
+          "sectionId": "解説_第12条 12-10",
+          "sectionName": "解説_第12条 12-10",
+          "combinedScore": 0.5755578935146355
+        },
+        {
+          "sectionId": "規則_第44条 44-６-１",
+          "sectionName": "規則_第44条 44-６-１",
+          "combinedScore": 0.565
+        }
+      ],
+      "top_article": "解説_第42条 42-11",
+      "response_time_ms": 462
+    },
+    {
+      "question_number": 11,
+      "question_text": "第４クォーター残り1:31で、スローインをするA１がボールを手放す前に、チー ムAのバックコートでB２がA２に不当に触れ合いを起こした。スローインファウ ルがB２に宣せられた。審判はA２にフリースローを１本与え、ゲームはB２の ファウルが起きた場所に最も近いアウトオブバウンズからチームAのスローイン で再開される。ショットクロックは24秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第34条 34-４",
+          "sectionName": "解説_第34条 34-４",
+          "combinedScore": 0.6820687820890925
+        },
+        {
+          "sectionId": "解説_第34条 34-9",
+          "sectionName": "解説_第34条 34-9",
+          "combinedScore": 0.623069524937617
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 525
+    },
+    {
+      "question_number": 11,
+      "question_text": "チームAのフロントコートでダブルドリブルがA１に宣せられた。チームBのス ローインでゲームが再開されるとき、スローインのボールが与えられる前にB２ がA２にファウルをし、このクォーター3個目のチームファウルであった。チーム Bのスローインでボールがライブになる前に起きているため等しい重さの罰則は 相殺される。最初の違反が起きる前にチームAがボールをコントロールしてお り、ゲームはA１のバイオレーションが起きた場所に最も近いアウトオブバウン ズからチームAのスローインで再開となり、ショットクロックは継続となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-9",
+          "sectionName": "解説_第42条 42-9",
+          "combinedScore": 0.673171448017027
+        },
+        {
+          "sectionId": "解説_第35条 35-７",
+          "sectionName": "解説_第35条 35-７",
+          "combinedScore": 0.625761461326016
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第42条 42-9",
+      "response_time_ms": 631
+    },
+    {
+      "question_number": 11,
+      "question_text": "ジャンプボールシチュエーションになったとき、それまでボールをコントロール していたチームに引き続きスローインが与えられる場合は、ショットクロックは 止めるがリセットはしない。ただし、ボールがリングとバックボードの間に挟 まったときは、リセットする。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "規則_第12条 12-６-１",
+          "sectionName": "規則_第12条 12-６-１",
+          "combinedScore": 0.6799999999999999
+        },
+        {
+          "sectionId": "規則_第12条 12-６-２",
+          "sectionName": "規則_第12条 12-６-２",
+          "combinedScore": 0.64
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 635
+    },
+    {
+      "question_number": 11,
+      "question_text": "第３クォーターの終了を知らせるゲームクロックのブザーが鳴ったとき、B１が ドリブルをしているA１にファウルをし、このクォーター6個目のチームファウル であった。審判はB１のファウルはゲームクロック残り0.3秒で起きたと判断し た。２本のフリースローがA１に与えられるはずが、審判はA１ではなくA２を シューターに指定してフリースローを行った。この誤りが最後のフリースローで ボールがA２の手を離れた後で認識された。 誤りは訂正されずA２の２本のフリースローは有効となり、ゲームは通常の最後 のフリースローの後と同様に再開され、ゲームクロックは0.3秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.70030720383846
+        },
+        {
+          "sectionId": "解説_第44条 44-７",
+          "sectionName": "解説_第44条 44-７",
+          "combinedScore": 0.6345170336098165
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 579
+    },
+    {
+      "question_number": 12,
+      "question_text": "各クォーターやオーバータイムの終了間際にファウルが宣せられた場合、審判は 残りの競技時間を決定する。ゲームクロックには最低でも0.1秒が表示される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-８",
+          "sectionName": "規則_第８条 ８-８",
+          "combinedScore": 0.717269601388598
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第16条 16-12",
+          "sectionName": "解説_第16条 16-12",
+          "combinedScore": 0.5856679903664626
+        }
+      ],
+      "top_article": "規則_第８条 ８-８",
+      "response_time_ms": 788
+    },
+    {
+      "question_number": 12,
+      "question_text": "A１がセンターラインをまたいでいたとき、バックコートでドリブルをしているA ２からボールを受けた。A１はまだバックコートにいるA２に素早くボールをパス した。この場合において、A１は両足が完全にフロントコートに触れておらず、 バックコートへボールをパスすることができるし、8秒は継続して数えられる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第28条 28-４",
+          "sectionName": "解説_第28条 28-４",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第17条 17-49",
+          "sectionName": "解説_第17条 17-49",
+          "combinedScore": 0.5936004519462685
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "解説_第28条 28-４",
+      "response_time_ms": 533
+    },
+    {
+      "question_number": 12,
+      "question_text": "第４クォーター残り1:24で、ゲームクロックが動いている状態でのB１のショッ トまたはB１の最後のフリースローが成功したあと、スローインをするA１はエン ドラインの外側でボールを持っている。A１がボールを手放す前にコート上でB２ がA２に不当に触れ合いを起こした。スローインファウルがB２に宣せられた。こ れはチームBのこのクォーター５個目のファウルだっため、審判はA２にフリース ローを２本与え、ゲームは通常の最後のフリースローの後と同様に再開させる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.676610985206251
+        },
+        {
+          "sectionId": "解説_第34条 34-４",
+          "sectionName": "解説_第34条 34-４",
+          "combinedScore": 0.625052326908292
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.625
+        }
+      ],
+      "top_article": "解説_第44条 44-17",
+      "response_time_ms": 905
+    },
+    {
+      "question_number": 12,
+      "question_text": "A１の最後のフリースローで、A１の手からボールが離れる前にリバウンドの位置 を占めているB２が制限区域に入った。その後、A１のフリースローはリングに触 れなかった。 審判は、B２のバイオレーションが先に起きたため、A１にやり直しのフリース ローを与えた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6119739279778116
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第44条 44-11",
+          "sectionName": "解説_第44条 44-11",
+          "combinedScore": 0.5806519362719025
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 650
+    },
+    {
+      "question_number": 12,
+      "question_text": "フリースローを行うときはショットクロックは24秒にリセットし、14秒表示で はなく、24秒を表示した状態で行う。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.655
+        },
+        {
+          "sectionId": "規則_第50条 50-４",
+          "sectionName": "規則_第50条 50-４",
+          "combinedScore": 0.557914811844517
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 695
+    },
+    {
+      "question_number": 12,
+      "question_text": "B１がショットの動作（アクトオブシューティング）中のA１にファウルをした。 審判はA１ではなく、A２をシューターに指定してフリースローを行った。２本目 のフリースローでボールがリングに触れたあと、A３がリバウンドのボールを 取って2点を得点した。この誤りが、エンドラインの後ろのアウトオブバウンズ でチームBにスローインのボールが与えられる前に認識された。成否にかかわら ず、A２が行った２本のフリースローは取り消される。A３の得点も認めない。２ 本のフリースローがA１に与えられ、ゲームは通常の最後のフリースローの後と 同様に再開される。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.675
+        },
+        {
+          "sectionId": "解説_第34条 34-３",
+          "sectionName": "解説_第34条 34-３",
+          "combinedScore": 0.6651853694187451
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 632
+    },
+    {
+      "question_number": 13,
+      "question_text": "片方もしくは両方のチームがプレーをできる状態の５人のプレーヤーをコート上 に揃えることができない場合、ゲームを始めることはできない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第20条 20-１",
+          "sectionName": "規則_第20条 20-１",
+          "combinedScore": 0.5551696055925385
+        },
+        {
+          "sectionId": "規則_第40条 40-２",
+          "sectionName": "規則_第40条 40-２",
+          "combinedScore": 0.5050893783569335
+        },
+        {
+          "sectionId": "解説_第9条 9-５",
+          "sectionName": "解説_第9条 9-５",
+          "combinedScore": 0.457759779691696
+        }
+      ],
+      "top_article": "規則_第20条 20-１",
+      "response_time_ms": 665
+    },
+    {
+      "question_number": 13,
+      "question_text": "A１がバックコートでライブのボールをコントロールして４秒経過したときに、 チームAのヘッドコーチにテクニカルファウルが宣せられた。チームBに１本のフ リースローが与えられた後、ゲームはテクニカルファウルが宣せられたときに、 ボールがあったところから最も近いアウトオブバウンズから再開される。チーム Aは残り４秒でフロントコートにボールを運ばなければならない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6299999999999999
+        },
+        {
+          "sectionId": "解説_第36条 36-39",
+          "sectionName": "解説_第36条 36-39",
+          "combinedScore": 0.6171818454753311
+        },
+        {
+          "sectionId": "解説_第36条 36-26",
+          "sectionName": "解説_第36条 36-26",
+          "combinedScore": 0.5859511959836375
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 575
+    },
+    {
+      "question_number": 13,
+      "question_text": "第４クォーター残り54秒で、スローインをするA１がボールを手放す前に、コー ト上でB２がA２に不当な触れ合いを起こした。スローインファウルがB２に宣せ られたあと、A１にテクニカルファウルが宣せられた。審判は両ファウルの罰則 のフリースローは相殺し、ゲームはB２のファウルが起きた場所に最も近いアウ トオブバウンズからチームAのスローインで再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第34条 34-４",
+          "sectionName": "解説_第34条 34-４",
+          "combinedScore": 0.6852356532075621
+        },
+        {
+          "sectionId": "解説_第34条 34-9",
+          "sectionName": "解説_第34条 34-9",
+          "combinedScore": 0.6333241929621495
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第34条 34-４",
+      "response_time_ms": 485
+    },
+    {
+      "question_number": 13,
+      "question_text": "ボールがデッドでゲームクロックが止められ、そのとき各クォーターやオーバー タイムの残りが14秒未満で、なおかつどちらかのチームにボールのコントロール が新たに始まるとき、ショットクロックの表示装置の表示を切る。また、ショッ トクロックのブザーは、チームがボールをコントロールしているときを除いて、 ゲームクロックやゲームを止めるものではないし、ボールをデッドにするもので もない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "A",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.8307983369824795
+        },
+        {
+          "sectionId": "規則_第10条 10-３",
+          "sectionName": "規則_第10条 10-３",
+          "combinedScore": 0.775551961395262
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 738
+    },
+    {
+      "question_number": 13,
+      "question_text": "第４クォーター残り0:57で、ボールの無いところでA２がファウルをしたとき、 ショットのボールがA１の手を離れていた。ボールは正当にバスケットに入った が、審判は誤って得点を取り消した。この誤りが、次に審判がゲームを止めた第 ４クォーター残り0:43に認識された。 誤りは訂正できる。チームAに2点を追加することでスコアシートは訂正される。 ゲームは誤りの訂正のために止められたところから再開される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-20",
+          "sectionName": "解説_第44条 44-20",
+          "combinedScore": 0.7126132018661739
+        },
+        {
+          "sectionId": "解説_第44条 44-10",
+          "sectionName": "解説_第44条 44-10",
+          "combinedScore": 0.6120756895361685
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第44条 44-20",
+      "response_time_ms": 572
+    },
+    {
+      "question_number": 14,
+      "question_text": "ゲームを開始するジャンプボールのトスで、ボールがクルーチーフの手を離れ ジャンパーがボールをタップする前に、ジャンパーのB１がA１にパーソナルファ ウルをした。 第１クォーターはまだ始められていない。したがって、これはゲームの開始前の プレーのインターバル中に起きているファウルであるためゲームはジャンプボー ルで開始される。 ファウルはスコアシートに記録され、チームBの第１クォーターのチームファウ ルに数えられる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第9条 9-７",
+          "sectionName": "解説_第9条 9-７",
+          "combinedScore": 0.685016974214789
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.615
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.575
+        }
+      ],
+      "top_article": "解説_第9条 9-７",
+      "response_time_ms": 598
+    },
+    {
+      "question_number": 14,
+      "question_text": "A１がバックコートでライブのボールをコントロールしているときに、両足が完 全にフロントコートに触れているA２に向かってパスをした。A２はボールを キャッチできず、ボールはA２の体に当たってバックコートに転がり、バック コートにいるA３がキャッチした。このとき、チームAがバックコートでライブの ボールをコントロールしてから8秒が経過していた。審判はその前にA２の体に ボールが当たっていたためフロントコートにボールが進められたと判断し、A３ がキャッチした時点で再び８秒のカウントを始めた。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-10",
+          "sectionName": "解説_第30条 30-10",
+          "combinedScore": 0.6880461034247449
+        },
+        {
+          "sectionId": "解説_第30条 30-9",
+          "sectionName": "解説_第30条 30-9",
+          "combinedScore": 0.6480409734534945
+        },
+        {
+          "sectionId": "解説_第28条 28-４",
+          "sectionName": "解説_第28条 28-４",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第30条 30-10",
+      "response_time_ms": 749
+    },
+    {
+      "question_number": 14,
+      "question_text": "第４クォーター残り55秒で、スローインをするA１がボールを手放す前に、コー ト上でB２がA２にアンスポーツマンライクファウルの判定基準に合致する方法で 触れ合いを起こし、アンスポーツマンライクファウルがB２に宣せられた。誰も リバウンドの位置に着かずに２本のフリースローがA２に与えられる。ゲームは フロントコートのスローインラインからチームAのスローインで再開される。 ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第34条 34-４",
+          "sectionName": "解説_第34条 34-４",
+          "combinedScore": 0.6855914929156615
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.66
+        }
+      ],
+      "top_article": "解説_第34条 34-４",
+      "response_time_ms": 559
+    },
+    {
+      "question_number": 14,
+      "question_text": "B１はアンスポーツマンライクファウルを宣せられた。審判はB１のファウルがア ンスポーツマンライクファウルであったかどうかに確証がなかった。B６はB１と の交代を申し出たあと、IRSレビューの間にB６は自チームのチームベンチに 戻った。B6の交代はレビューの間、審判が最終的な判定を示すまでは交代の申し 出をいつでも取り下げることができる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.5449999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-５ (part 3)",
+      "response_time_ms": 578
+    },
+    {
+      "question_number": 14,
+      "question_text": "第１クォーター残り5:47で、B１がA１にファウルをしたが、審判は誤ってB２の ファウルとして伝達した。その後、B１は4回のファウルを記録され、B２はその 誤りを含め5回のファウルを記録され失格となった。 第４クォーター残り2:21でゲームが止められたときに、第１クォーターでのファ ウルの伝達の誤りが認識された。 誤りは訂正できるため、スコアラーはクルーチーフと相談したあと、誤ってB２ に記録されたファウルを取り除き、B１に正しくファウルを記録することでスコ アシートを訂正した。 それによって、B２は再びゲームに参加できる。また、B１はこの時点で５個の ファウルを宣せられたチームメンバーとなり以降のゲームに参加できない。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-11",
+          "sectionName": "解説_第44条 44-11",
+          "combinedScore": 0.640485631285385
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.611136628023593
+        },
+        {
+          "sectionId": "解説_第44条 44-７",
+          "sectionName": "解説_第44条 44-７",
+          "combinedScore": 0.5807428223558805
+        }
+      ],
+      "top_article": "解説_第44条 44-11",
+      "response_time_ms": 585
+    },
+    {
+      "question_number": 15,
+      "question_text": "ゲーム開始前のインターバル中に、A１にテクニカルファウルが宣せられた。 チームBのヘッドコーチは、B６を１本のフリースローを行うプレーヤーに指定し たが、B６はチームBの最初に出場する５人のプレーヤーではなかった。 誰もリバウンドの位置に着かずにB６にフリースローが与えられ、ゲームは最初 に出場する５人によりジャンプボールによって開始される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6299999999999999
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.59
+        },
+        {
+          "sectionId": "解説_第37条 37-9",
+          "sectionName": "解説_第37条 37-9",
+          "combinedScore": 0.5819040635795615
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 567
+    },
+    {
+      "question_number": 15,
+      "question_text": "第４クォーター残り25秒、得点がA 72 - B 72で、チームAがボールのコント ロールを得た。A１がバックコートで5秒間ドリブルをしているとき、コート上に ボトルが投げ込まれたため、審判はどちらのチームにも関係のない正当な理由で ゲームを止めた。チームAは不利な状況になると考えられたため、ゲームが止め られた場所に最も近いアウトオブバウンズからチームAのスローインによって新 たに8秒をチームAに与え再開する。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.5549999999999999
+        },
+        {
+          "sectionId": "規則_第29条 29-１-１",
+          "sectionName": "規則_第29条 29-１-１",
+          "combinedScore": 0.5426611914821995
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 747
+    },
+    {
+      "question_number": 15,
+      "question_text": "第４クォーター残り48秒、チームA 83 - チームB 80で、スローインをするA１ の手からボールが離れた後、コート上の誰にもボールが触れる前にスローインが 行われている場所とは別の場所でB２がA２に触れ合いを起こした。B２はA２に 対するスローインファウルを宣せられた。審判はA２にフリースローを１本与 え、ゲームはB２のファウルが起きた場所に最も近いアウトオブバウンズから チームAのスローインで再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6599999999999999
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.57
+        },
+        {
+          "sectionId": "規則_第29条 29-１-１",
+          "sectionName": "規則_第29条 29-１-１",
+          "combinedScore": 0.5652094732786805
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 662
+    },
+    {
+      "question_number": 15,
+      "question_text": "ショットクロック残り7秒で、A１のショットのボールはリングに触れなかった。 A２がボールをキャッチしたとき、ショットクロックオペレーターは誤って ショットクロックを14秒にリセットした。いくらかのドリブルやパスの後で、ま だチームAがボールをコントロールしていて、A３が得点した。このとき、誤りが 認識され、審判はゲームを止めた。レビューで、A３の得点の前にショットク ロックの時限を過ぎていた場合、ショットクロックバイオレーションとなり、A ３の得点は認められない。ゲームはフリースローラインの延長線上からチームB のスローインで再開され、ショットクロックは24秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7150000000000001
+        },
+        {
+          "sectionId": "解説_第36条 36-36",
+          "sectionName": "解説_第36条 36-36",
+          "combinedScore": 0.61567715610998
+        },
+        {
+          "sectionId": "解説_第17条 17-２",
+          "sectionName": "解説_第17条 17-２",
+          "combinedScore": 0.588741899059672
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 707
+    },
+    {
+      "question_number": 15,
+      "question_text": "第４クォーター残り3:45で、チームAは後半2個目のタイムアウトを請求した。 スコアラーはこのタイムアウトを誤ってチームBの後半2個目のタイムアウトとし て記録した。第４クォーター残り2:44で、ボールがアウトオブバウンズに出て審 判がゲームを止めた。 第４クォーター残り1:45で、チームBにタイムアウトが認 められた。チームBはこのタイムアウトが後半3個目であることを伝えられ、チー ムBはタイムアウトが残っていない。チームBのヘッドコーチは誤りが起きている ことを主張した。スコアラーはクルーチーフと相談し、誤りが認識されたが、審 判は訂正できる時機を過ぎているため、誤りはなかったものとした。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-23",
+          "sectionName": "解説_第44条 44-23",
+          "combinedScore": 0.6353502341896164
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6
+        },
+        {
+          "sectionId": "解説_第44条 44-21",
+          "sectionName": "解説_第44条 44-21",
+          "combinedScore": 0.591184091481708
+        }
+      ],
+      "top_article": "解説_第44条 44-23",
+      "response_time_ms": 462
+    },
+    {
+      "question_number": 16,
+      "question_text": "ボールのステータスは、ライブあるいはデッドのどちらかである。 ゴールあるいはフリースローが成功したとき、ボールのステータスはデッドにな る。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.54
+        },
+        {
+          "sectionId": "規則_第31条 31-２-２",
+          "sectionName": "規則_第31条 31-２-２",
+          "combinedScore": 0.52062311768532
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 674
+    },
+    {
+      "question_number": 16,
+      "question_text": "A１がバックコートでライブのボールをコントロールしているときに、8秒が経過 する直前にバックコートからのショットのボールがA１の手を離れた。これはA１ の正当なプレーであり、A１に3点が認められる。チームコントロールとはショッ トのボールがプレーヤーの手を離れたときに終わる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第14条 14-１-３",
+          "sectionName": "規則_第14条 14-１-３",
+          "combinedScore": 0.60136518445845
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.54
+        }
+      ],
+      "top_article": "規則_第14条 14-１-３",
+      "response_time_ms": 1001
+    },
+    {
+      "question_number": 16,
+      "question_text": "ダブルファウルとは、両チームの２人のプレーヤーがほとんど同時に、互いに パーソナルファウル、あるいはアンスポーツマンライクファウルやディスクォリ ファイングファウルをした場合をいう。 「パーソナルファウルとパーソナルファウル」「アンスポーツマンライクファウ ルとアンスポーツマンライクファウル」「ディスクォリファイングファウルと ディスクォリファイングファウル」「アンスポーツマンライクファウルとディス クォリファイングファウル」のいずれかの場合にダブルファウルとする。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.665
+        },
+        {
+          "sectionId": "規則_第17条 17-２-７",
+          "sectionName": "規則_第17条 17-２-７",
+          "combinedScore": 0.66
+        }
+      ],
+      "top_article": "規則_第50条 50-５ (part 3)",
+      "response_time_ms": 710
+    },
+    {
+      "question_number": 16,
+      "question_text": "A２は２本目のフリースローを行い、ボールはバスケットに入った。このとき審 判はA２は正しいフリースローシューターかどうかに確証がなかった。ゲーム中 のいかなる時間帯でも、フリースローシューターの誤りが起きたあと、ゲームク ロックが動き始め、最初にボールがデッドとなり、次にボールがライブとなる前 に、正しいフリースローシューターを特定するためにレビューを行うことができ る。レビューで、フリースローシューターを誤っていたことが明らかになったと き、「訂正のできる誤り」のうち、「違うプレーヤーにフリースローを与えてい た場合」に該当する。成功したかどうかにかかわらず、A２のフリースローは取 り消される。ゲームはバックコートのフリースローラインの延長線上のアウトオ ブバウンズからチームBのスローインで再開される。ショットクロックは24秒と なる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7
+        },
+        {
+          "sectionId": "解説_第44条 44-35 (part 13)",
+          "sectionName": "解説_第44条 44-35 (part 13) (part 13/None)",
+          "combinedScore": 0.632962781058355
+        },
+        {
+          "sectionId": "解説_第42条 42-13",
+          "sectionName": "解説_第42条 42-13",
+          "combinedScore": 0.60253548488233
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 834
+    },
+    {
+      "question_number": 16,
+      "question_text": "第１クォーター残り3:34で、チームAのヘッドコーチはテクニカルファウルを宣 せられた。スコアラーはこのテクニカルファウルを誤ってチームBのヘッドコー チに記録した。この誤りが、第４クォーター残り1:02にゲームが止められたとき に認識された。本来であれば、誤りを訂正できる時機を過ぎている。しかしテク ニカルファウルの場合は、コーチの失格・退場につながる恐れがあるため訂正で きる。 スコアラーはクルーチーフと相談したあと、誤ってチームBのヘッドコーチに記 録されたテクニカルファウルを取り除き、チームAのヘッドコーチに正しくテク ニカルファウルを記録することでスコアシートを訂正する。罰則は適用されな い。ゲームは誤りの訂正のためにゲームが止められたところから再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-26",
+          "sectionName": "解説_第44条 44-26",
+          "combinedScore": 0.7081408177698155
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.57
+        }
+      ],
+      "top_article": "解説_第44条 44-26",
+      "response_time_ms": 630
+    },
+    {
+      "question_number": 17,
+      "question_text": "プレーヤーの位置は、その触れているフロアによって決められる。 プレーヤーが空中にいるときは、最後に触れていたフロアにいるものとみなされ る。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第11条 11-１",
+          "sectionName": "規則_第11条 11-１",
+          "combinedScore": 0.6090840995311765
+        },
+        {
+          "sectionId": "規則_第11条 11-２",
+          "sectionName": "規則_第11条 11-２",
+          "combinedScore": 0.513224927465605
+        },
+        {
+          "sectionId": "解説_第30条 30-１",
+          "sectionName": "解説_第30条 30-１",
+          "combinedScore": 0.4854998111724875
+        }
+      ],
+      "top_article": "規則_第11条 11-１",
+      "response_time_ms": 550
+    },
+    {
+      "question_number": 17,
+      "question_text": "A１のショットのボールが空中にあるときにショットクロックのブザーが鳴っ た。ボールはバックボードに触れたあと、コート上に転がり、最初にB１、次にA ２に触れ、最終的にB２にコントロールされた。A１のショットはリングに触れな かったが、最終的にはチームBのプレーヤーがボールをコントロールしているの で審判はショットクロックのブザーはなかったものとし、プレーを続行させた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第24条 24-４",
+          "sectionName": "解説_第24条 24-４",
+          "combinedScore": 0.633105716149983
+        },
+        {
+          "sectionId": "解説_第33条 33-12",
+          "sectionName": "解説_第33条 33-12",
+          "combinedScore": 0.6057198618555375
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第24条 24-４",
+      "response_time_ms": 641
+    },
+    {
+      "question_number": 17,
+      "question_text": "ダブルファウルが起こったときに、どちらのチームもボールをコントロールして いなかったかボールが与えられることになっていなかった場合は、ダブルファウ ルが起こる前に、最後にボールをコントロールしていたチームが、ダブルファウ ルが起こったところに最も近いアウトオブバウンズからスローインをしてゲーム を再開する。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6299999999999999
+        },
+        {
+          "sectionId": "規則_第35条 35-２",
+          "sectionName": "規則_第35条 35-２",
+          "combinedScore": 0.610012011526586
+        },
+        {
+          "sectionId": "規則_第12条 12-３",
+          "sectionName": "規則_第12条 12-３",
+          "combinedScore": 0.605
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 547
+    },
+    {
+      "question_number": 17,
+      "question_text": "A１がB１に肘打ちをした。審判はA１のファウルを宣さなかった。その4秒後にB １がツーポイントゴールのショットの動作（アクトオブシューティング）中のA １にアンスポーツマンライクファウルをし、ボールはバスケットに入った。審判 はあらゆる暴力行為の間のチームメンバーの関与を特定するためにレビューを 行った結果、A１がB１に肘打ちをしていたことを確認し、A１にアンスポーツマ ンライクファウルを宣した。A１の得点は認められ、１本のフリースローがA１に 与えられる。アンスポーツマンライクファウルの罰則の一部であるAチームのス ローインは取り消される。続いて誰もリバウンドの位置に着かずに２本のフリー スローがB１に与えられ、ゲームはフロントコートのスローインラインからチー ムBのスローインで再開される。ショットクロックは14秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7150000000000001
+        },
+        {
+          "sectionId": "解説_第42条 42-７",
+          "sectionName": "解説_第42条 42-７",
+          "combinedScore": 0.6762014461395545
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.66
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 624
+    },
+    {
+      "question_number": 17,
+      "question_text": "第１クォーター残り2:43で、アウトオブバウンズのバイオレーションによって ゲームクロックが止められた。スローインの前、ゲームクロックが何も表示され ていない状態となった。タイマーは機材をリセットし、機材が再び動くように なったが、誤ってゲームクロックに1:43と設定してゲームが再開された。この誤 りが第３クォーターと第４クォーターの間のプレーのインターバル中に認識され た。 誤って設定されたゲームクロックは訂正できるため、第４クォーターに１分を追 加して11分間でプレーが行われる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-29",
+          "sectionName": "解説_第44条 44-29",
+          "combinedScore": 0.6710430760124115
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第12条 12-３",
+          "sectionName": "規則_第12条 12-３",
+          "combinedScore": 0.605
+        }
+      ],
+      "top_article": "解説_第44条 44-29",
+      "response_time_ms": 700
+    },
+    {
+      "question_number": 18,
+      "question_text": "ジャンプボールでは、ジャンパーは２回までしかタップすることはできない。ま た、タップした後、どちらのジャンパーも、ジャンパー以外のプレーヤーまたは コートにボールが触れるまでボールをキャッチしてはならない。 したがって、正しくタップされたボールがコートに弾んだ後なら、ジャンパー以 外のプレーヤーがボールに触れていなくてもジャンパーはボールをキャッチして もよい。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第12条 12-２-７",
+          "sectionName": "規則_第12条 12-２-７",
+          "combinedScore": 0.675
+        },
+        {
+          "sectionId": "規則_第12条 12-２-６",
+          "sectionName": "規則_第12条 12-２-６",
+          "combinedScore": 0.6441236083993115
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.6
+        }
+      ],
+      "top_article": "規則_第12条 12-２-７",
+      "response_time_ms": 634
+    },
+    {
+      "question_number": 18,
+      "question_text": "A１のショットのボールが空中にあるときにショットクロックのブザーが鳴っ た。ボールはリングに触れず、そのあと、A２とB２の間でヘルドボールが起き、 ショットクロックオペレーターは速やかにショットクロックを24秒にリセットし た。審判もショットクロックのブザーはなかったものとし、ジャンプボールシ チュエーションを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.72
+        },
+        {
+          "sectionId": "規則_第12条 12-４",
+          "sectionName": "規則_第12条 12-４",
+          "combinedScore": 0.6549999999999999
+        },
+        {
+          "sectionId": "解説_第12条 12-18",
+          "sectionName": "解説_第12条 12-18",
+          "combinedScore": 0.6318974933746491
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 690
+    },
+    {
+      "question_number": 18,
+      "question_text": "ドリブルをしているA１とB１がほとんど同時に互いにパーソナルファウルをしダ ブルファウルが宣せられた。チームAはこのクォーター2個目、チームBはこの クォーター５個目のチームファウルであった。チームBのスローインの罰則は取 り消される。A１にフリースローを２本与え、ゲームは通常の最後のフリース ローの後と同様に再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-9",
+          "sectionName": "解説_第42条 42-9",
+          "combinedScore": 0.6732173309792745
+        },
+        {
+          "sectionId": "解説_第35条 35-７",
+          "sectionName": "解説_第35条 35-７",
+          "combinedScore": 0.6321555082294655
+        },
+        {
+          "sectionId": "解説_第35条 35-８",
+          "sectionName": "解説_第35条 35-８",
+          "combinedScore": 0.6057595971679455
+        }
+      ],
+      "top_article": "解説_第42条 42-9",
+      "response_time_ms": 542
+    },
+    {
+      "question_number": 18,
+      "question_text": "第４クォーター残り7秒で、A１がツーポイントゴールで得点し、得点はチームA 82 - チームB 80となった。エンドラインのアウトオブバウンズからのチームBの スローインのあと、チームAのヘッドコーチはA１の得点は３点であったと考え、 ヘッドコーチチャレンジを請求した。B１がツーポイントゴールで得点し、ボー ルが空中にある間にゲームの終了を知らせるゲームクロックのブザーが鳴ったあ と、審判はヘッドコーチチャレンジの請求を認識した。得点はチームA 82 - チー ムB 82であった。すでに第４クォーターの終了のブザーが明らかに鳴ったあとで あり、審判はチームAのヘッドコーチチャレンジを認めなかった。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第36条 36-11",
+          "sectionName": "解説_第36条 36-11",
+          "combinedScore": 0.6218902128771264
+        },
+        {
+          "sectionId": "解説_第36条 36-４",
+          "sectionName": "解説_第36条 36-４",
+          "combinedScore": 0.5888904636935091
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 546
+    },
+    {
+      "question_number": 18,
+      "question_text": "チームAはバックコートでスローインを与えられた。ショットクロックは24秒に 設定されるべきところ、誤って14秒に設定された。A１がコート上でボールを キャッチし、フロントコートへドリブルをして、ショットをした。ボールが空中 にある間にショットクロックのブザーが鳴った。ボールはリングに触れず、すぐ にB２がリバウンドのボールを取った。審判はショットクロックバイオレーショ ンのためゲームを止めたが、テーブルオフィシャルズはショットクロックが誤っ て設定されたことを認識した。ショットクロックのバイオレーションはなかった ものとし、ゲームが止められた場所に近いところからスローインがチームAに与 えられ、ショットクロックは10秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7150000000000001
+        },
+        {
+          "sectionId": "解説_第44条 44-33",
+          "sectionName": "解説_第44条 44-33",
+          "combinedScore": 0.6756955131473901
+        },
+        {
+          "sectionId": "解説_第12条 12-28",
+          "sectionName": "解説_第12条 12-28",
+          "combinedScore": 0.6217215418815725
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 648
+    },
+    {
+      "question_number": 19,
+      "question_text": "クルーチーフがゲーム開始のジャンプボールのためにボールをトスした。ボール が最高点に達する前にジャンパーのA１がボールに触れた。 A１のジャンプボールのバイオレーションであるため、チームBはセンターライン 近くのフロントコートからスローインを与えられショットクロックは14秒とな る。スローインをするチームBのプレーヤーがボールを受け取ったらすぐに、 チームAは最初のオルタネイティングポゼッションのスローインの権利を得る。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.72
+        },
+        {
+          "sectionId": "規則_第12条 12-５",
+          "sectionName": "規則_第12条 12-５",
+          "combinedScore": 0.6649999999999999
+        },
+        {
+          "sectionId": "規則_第12条 12-６-１",
+          "sectionName": "規則_第12条 12-６-１",
+          "combinedScore": 0.6399999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 663
+    },
+    {
+      "question_number": 19,
+      "question_text": "B１はショットの動作（アクトオブシューティング）中のA１にファウルをし、ほ とんど同時にショットクロックのブザーが鳴った。ボールはバスケットに入っ た。そのときにボールがまだA１の手の中にあり、B１のファウルがショットク ロックのブザーが鳴った後に起きていた場合、ショットクロックのバイオレー ションである。A１のゴールは認められない。B１のファウルは、アンスポーツマ ンライクファウル、ディスクォリファイングファウルのいずれかでない限りな かったものとする。ゲームはフリースローラインの延長線上からチームBのス ローインで再開される。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.640822559595119
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 722
+    },
+    {
+      "question_number": 19,
+      "question_text": "ショットの動作（アクトオブシューティング）中に両手でボールを持っているA １とB１がほとんど同時に互いにファウル（どちらもパーソナルファウル）を宣 せられた。両方のファウルは同じカテゴリー（パーソナルファウル）であるた め、ダブルファウルである。A１のショットが成功した場合、ゴールは認められ ない。ゲームはフリースローラインの延長線上のアウトオブバウンズからチーム Aのスローインで再開される。ショットクロックは継続となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第29条 (part 1)",
+          "sectionName": "解説_第29条 (part 1) (part 1/None)",
+          "combinedScore": 0.725
+        },
+        {
+          "sectionId": "解説_第29条 (part 5)",
+          "sectionName": "解説_第29条 (part 5) (part 5/None)",
+          "combinedScore": 0.6849999999999999
+        },
+        {
+          "sectionId": "規則_第12条 12-４",
+          "sectionName": "規則_第12条 12-４",
+          "combinedScore": 0.6599999999999999
+        }
+      ],
+      "top_article": "解説_第29条 (part 1)",
+      "response_time_ms": 703
+    },
+    {
+      "question_number": 19,
+      "question_text": "第３クォーター残り43.4秒、ショットクロック残り1.2秒でA１はスリーポイントのショットを した。ショットは成功せず、ボールはリングに触れなかった。その後B１がバスケットの近くで ボールに触れ、ボールはすぐにアウトオブバウンズに出た。審判はチームAのプレーヤーが最後 にボールに触れたと判断し、スローインのボールをチームBに与えるとき、ショットクロックに 何も表示されていないことに気づいた。チームAのヘッドコーチはB１がボールをアウトオブバ ウンズに出したと考え、ヘッドコーチチャレンジを請求した。ゲーム中のいかなる時間帯で も、ボールをアウトオブバウンズにしたプレーヤーを特定するためにヘッドコーチチャレンジ のレビューを行うことができる。そのとき、誤操作があった場合はショットクロックにどのく らいの時間が表示されるかを決定するためにさらにレビューを行うこともできる。レビュー で、B１がボールをアウトオブバウンズに出していて、ボールがアウトオブバウンズに出る前に ショットクロックの時限を過ぎていた場合、チームAのショットクロックに時間は残っておら ず、ショットクロックバイオレーションとなる。ゲームはエンドラインのアウトオブバウンズ からチームBのスローインで再開され、ショットクロックは24秒となる。チームAのヘッドコー チは請求を認められた1回のヘッドコーチチャレンジを使用したこととなる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第36条 36-36",
+          "sectionName": "解説_第36条 36-36",
+          "combinedScore": 0.6454769670963285
+        },
+        {
+          "sectionId": "解説_第36条 36-38",
+          "sectionName": "解説_第36条 36-38",
+          "combinedScore": 0.6201674512328185
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 661
+    },
+    {
+      "question_number": 19,
+      "question_text": "クルーチーフによって承認されたIRS機器を利用できるゲームの中で、A１がドリ ブルをしているとき、A２がB２に肘打ちをした。審判はA２のファウルを宣さな かった。その５秒後にB３がドリブルをしているA１にファウルをし、このクォー ター３個目のチームファウルであった。ゲーム中のいかなる時間帯でも、あらゆ る暴力行為の間のチームメンバーの関与を特定するためにレビューを行うことが できる。レビューで、A２がB２に肘打ちをしていた場合、審判はA２にアンス ポーツマンライクファウルを宣することができ、B３のファウルも宣せられる。そ れぞれの罰則は起きた順序に従って行われる。誰もリバウンドの位置につかずに ２本のフリースローがB２に与えられる。アンスポーツマンライクファウルの罰則 の一部であるスローインは、B３のファウルの罰則によって取り消される。ゲーム は止められた場所に最も近いアウトオブバウンズからチームAのスローインで再開 される。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 604
+    },
+    {
+      "question_number": 20,
+      "question_text": "チームAのオルタネイティングポゼッションのスローインの間に、スローインを するA１がボールを手離すまでに５秒以上が経過した。 A１のバイオレーションであるため、ゲームは元々のスローインの位置からチー ムBのスローインで再開される。オルタネイティングポゼッションアローはチー ムAを示す。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "A+",
+      "search_results": [
+        {
+          "sectionId": "規則_第12条 12-６-５",
+          "sectionName": "規則_第12条 12-６-５",
+          "combinedScore": 0.905
+        },
+        {
+          "sectionId": "規則_第12条 12-５",
+          "sectionName": "規則_第12条 12-５",
+          "combinedScore": 0.615
+        },
+        {
+          "sectionId": "解説_第17条 17-34",
+          "sectionName": "解説_第17条 17-34",
+          "combinedScore": 0.598486805752321
+        }
+      ],
+      "top_article": "規則_第12条 12-６-５",
+      "response_time_ms": 760
+    },
+    {
+      "question_number": 20,
+      "question_text": "ゲームクロック残り25.2秒で、チームAがボールのコントロールを得た。ショッ トクロック残り1秒で、A１がショットをした。ボールが空中にある間にショット クロックのブザーが鳴った。ボールはリングに触れず、A２がリバウンドのボー ルを取ったため審判はチームAのショットクロックのバイオレーションを宣し た。このときゲームクロックは0.8秒を示していた。審判はゲームクロックを1.2 秒に戻し、ゲームが止められた場所に最も近いアウトオブバウンズからチームB のスローインで再開した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.69
+        },
+        {
+          "sectionId": "解説_第44条 44-33",
+          "sectionName": "解説_第44条 44-33",
+          "combinedScore": 0.6523509505213441
+        },
+        {
+          "sectionId": "解説_第12条 12-28",
+          "sectionName": "解説_第12条 12-28",
+          "combinedScore": 0.6200342646302465
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 425
+    },
+    {
+      "question_number": 20,
+      "question_text": "B１がドリブルをしているA１を押し、パーソナルファウルを宣せられ、チームB のこのクォーター3個目のチームファウルであった。ほとんど同時にA１がB１に 肘打ちをしてアンスポーツマンライクファウルを宣せられた。チームAのスロー インの罰則は取り消される。誰もリバウンドの位置に着かずに２本のフリース ローがB１に与えられる。ゲームはフロントコートのスローインラインからチー ムBのスローインで再開される。ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "解説_第34条 34-８",
+          "sectionName": "解説_第34条 34-８",
+          "combinedScore": 0.6598036709369325
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.645
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 451
+    },
+    {
+      "question_number": 20,
+      "question_text": "クルーチーフによって承認されたIRS機器を利用できるゲームの中で、チームB のヘッドコーチがヘッドコーチチャレンジを請求した。ヘッドコーチは、最も近 い審判と目で見えるようにコミュニケーションを確立し、はっきりとヘッドコー チチャレンジを依頼した。大きな声で英語で「チャレンジ」と言い、ヘッドコー チチャレンジのシグナルを示した。その直後、審判がシグナルを示してその請求 を認める前に、チームBのヘッドコーチは請求の取り下げを申し出た。審判は請 求したヘッドコーチチャレンジの取り下げは認めた。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-35 (part 17)",
+          "sectionName": "解説_第44条 44-35 (part 17) (part 17/None)",
+          "combinedScore": 0.593656757852033
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "解説_第44条 44-35 (part 17)",
+      "response_time_ms": 639
+    },
+    {
+      "question_number": 21,
+      "question_text": "A１のショットのボールが空中にある間にショットクロックのブザーが鳴った。 ボールはリングに弾んだが、バスケットには入らなかった。その直後にA２がテ クニカルファウルを宣せられた。 誰もリバウンドの位置に着かずに、１本のフリースローがチームBのいずれかの プレーヤーに与えられる。 オルタネイティングポゼッションアローがチームAを示していたため、ゲームは テクニカルファウルが宣せられたときにボールがあった場所に最も近いアウトオ ブバウンズからチームAのスローインで再開される。ショットクロックは14秒と なる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.7150000000000001
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "解説_第42条 42-10",
+          "sectionName": "解説_第42条 42-10",
+          "combinedScore": 0.648827707662677
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 755
+    },
+    {
+      "question_number": 21,
+      "question_text": "ゲームクロック25.3秒で、相手チームが得点をしたあと、エンドラインの後方か らチームAがスローインを与えられた。ショットクロックの時限の終了間際に、A １がA２にパスをしたボールにB１が触れ、ショットクロックのブザーが鳴った。 ゲームクロックに0.8秒が表示されている状態で、審判はショットクロックのバ イオレーションを宣した。ゲームは止められた場所に最も近いアウトオブバウン ズからチームBのスローインで再開される。ゲームクロックを1.3秒には戻さず に、引き続き0.8秒が表示された状態で再開となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-33",
+          "sectionName": "解説_第44条 44-33",
+          "combinedScore": 0.645053673675017
+        },
+        {
+          "sectionId": "解説_第12条 12-28",
+          "sectionName": "解説_第12条 12-28",
+          "combinedScore": 0.6125697687185335
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第44条 44-33",
+      "response_time_ms": 627
+    },
+    {
+      "question_number": 21,
+      "question_text": "ダンクショットのとき、リングをつかんで体重をかけることは、自身を含むプ レーヤーが怪我を避けるためであってもテクニカルファウルとなる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.5549999999999999
+        },
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.53
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 730
+    },
+    {
+      "question_number": 22,
+      "question_text": "A１は相手チームのバスケットの下でチームメイトのA２を抱き上げ、持ち上げ た。A３はA２にボールをパスし、A２はバスケットの中にボールをダンクした。 審判は、スポーツマンらしくないプレーと判断し、A２のゴールは認めずA１にテ クニカルファウルを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第33条 33-７",
+          "sectionName": "解説_第33条 33-７",
+          "combinedScore": 0.597316722491886
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第33条 33-８",
+          "sectionName": "解説_第33条 33-８",
+          "combinedScore": 0.564717169983224
+        }
+      ],
+      "top_article": "解説_第33条 33-７",
+      "response_time_ms": 558
+    },
+    {
+      "question_number": 22,
+      "question_text": "ショットクロック残り4秒で、チームAがフロントコートでボールをコントロール しているとき、B１が怪我をして、審判がゲームを止めた。ゲームはショットク ロック残り４秒で再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第29条 29-１-１",
+          "sectionName": "規則_第29条 29-１-１",
+          "combinedScore": 0.5816735822960035
+        },
+        {
+          "sectionId": "規則_第44条 44-６-１",
+          "sectionName": "規則_第44条 44-６-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第29条 29-１-１",
+      "response_time_ms": 545
+    },
+    {
+      "question_number": 22,
+      "question_text": "A１は相手チームのスローインを妨げたことで警告を与えられた。A１の警告は チームAのヘッドコーチにも伝達され、そのゲームの残り時間、A１による同様の 行為にのみ適用される。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第38条 38-10",
+          "sectionName": "解説_第38条 38-10",
+          "combinedScore": 0.589658728191067
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.565
+        },
+        {
+          "sectionId": "解説_第36条 36-38",
+          "sectionName": "解説_第36条 36-38",
+          "combinedScore": 0.5566402033901725
+        }
+      ],
+      "top_article": "解説_第38条 38-10",
+      "response_time_ms": 643
+    },
+    {
+      "question_number": 23,
+      "question_text": "チームAは15秒間ボールをコントロールしている。A１はA２にボールをパスし、 ボールは境界線を越えた。B１はボールをキャッチしようとコート内からジャン プをして境界線を越え、まだ空中にいる間に両手でボールを弾いた。ボールの チームコントロールが変わったので、ショットクロックはリセットされる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第14条 14-３",
+          "sectionName": "解説_第14条 14-３",
+          "combinedScore": 0.68482925322579
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第26条 26-４",
+          "sectionName": "解説_第26条 26-４",
+          "combinedScore": 0.6064955028139805
+        }
+      ],
+      "top_article": "解説_第14条 14-３",
+      "response_time_ms": 583
+    },
+    {
+      "question_number": 23,
+      "question_text": "ショットクロック残り6秒で、A１のショットのボールが空中にあるときにA２と B２にダブルファウルが起きた。ボールはリングに触れなかった。オルタネイ ティングポゼッションアローはチームAを示している。ゲームはショットクロッ ク残り14秒でチームAのスローインで再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6035324684304075
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.57
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 592
+    },
+    {
+      "question_number": 23,
+      "question_text": "チームベンチに座ることを許された人物にテクニカルファウルが宣せられた場合 は、ヘッドコーチに１個のテクニカルファウルが記録される。このファウルは チームファウルに数えない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "規則_第36条 36-２-２",
+          "sectionName": "規則_第36条 36-２-２",
+          "combinedScore": 0.570761663732132
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.57
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 658
+    },
+    {
+      "question_number": 24,
+      "question_text": "A１はジャンプして空中でスリーポイントゴールのショットのボールを放った。A １の両足がコートに着く前にB１がA１にファウルをした。ボールはバスケットに 入らなかった。 両足がコートに着くまでA１はショットの動作（アクトオブシューティング）中 である。A１に３本のフリースローが与えられる。ゲームは通常の最後のフリー スローの後と同様に再開される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-10",
+          "sectionName": "解説_第42条 42-10",
+          "combinedScore": 0.6326092937719006
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第31条 31-12",
+          "sectionName": "解説_第31条 31-12",
+          "combinedScore": 0.581602979493499
+        }
+      ],
+      "top_article": "解説_第42条 42-10",
+      "response_time_ms": 604
+    },
+    {
+      "question_number": 24,
+      "question_text": "ショットクロック残り5秒で、A１がドリブルをしているときに、B１がテクニカ ルファウルを宣せられた。その後チームAのヘッドコーチにテクニカルファウル が宣せられた。B１のテクニカルファウルとチームAのヘッドコーチのテクニカル ファウルを相殺し、ゲームはショットクロック5秒でチームAのスローインで再開 される。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第35条 35-２",
+          "sectionName": "解説_第35条 35-２",
+          "combinedScore": 0.62742573753442
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第36条 36-26",
+          "sectionName": "解説_第36条 36-26",
+          "combinedScore": 0.5751413986297585
+        }
+      ],
+      "top_article": "解説_第35条 35-２",
+      "response_time_ms": 615
+    },
+    {
+      "question_number": 24,
+      "question_text": "第１クォーター残り30秒、プレーヤー兼ヘッドコーチのA１がB１にファウルを し、A１はプレーヤーとして２個目のファウルを宣せられた。A１とA6が交代 し、そのまま第１クオーターが終了した。インターバル中にプレーヤー兼ヘッド コーチのA１が自身のスポーツマンらしくない振る舞いによってテクニカルファ ウルが宣せられた。このファウルは第２クォーターのチームファウルに数えな い。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-28",
+          "sectionName": "解説_第36条 36-28",
+          "combinedScore": 0.648570692624409
+        },
+        {
+          "sectionId": "解説_第36条 36-29",
+          "sectionName": "解説_第36条 36-29",
+          "combinedScore": 0.6217225669837805
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第36条 36-28",
+      "response_time_ms": 610
+    },
+    {
+      "question_number": 25,
+      "question_text": "B１がショットの動作（アクトオブシューティング）中のA１にファウルをし、こ のクォーター3個目のチームファウルであった。ファウルのあと、A１はA２に ボールをパスした。ゲームはファウルが起きた場所に最も近いアウトオブバウン ズからチームAのスローインで再開される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第15条 15-9",
+          "sectionName": "解説_第15条 15-9",
+          "combinedScore": 0.695586860179914
+        },
+        {
+          "sectionId": "解説_第10条 10-３",
+          "sectionName": "解説_第10条 10-３",
+          "combinedScore": 0.6323329203725275
+        },
+        {
+          "sectionId": "解説_第36条 36-24",
+          "sectionName": "解説_第36条 36-24",
+          "combinedScore": 0.5873057615185635
+        }
+      ],
+      "top_article": "解説_第15条 15-9",
+      "response_time_ms": 554
+    },
+    {
+      "question_number": 25,
+      "question_text": "ショットクロック残り12秒でフロントコートにいるA１がA２にボールをパスし たとき、チームBのバックコートにいるB１が意図的に拳でボールを叩いた。審判 はB１のバイオレーションを宣した。ゲームはフロントコートからチームAのス ローインで再開され、ショットクロックは12秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6282226145267595
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第39条 39-５",
+          "sectionName": "解説_第39条 39-５",
+          "combinedScore": 0.583106677193644
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 588
+    },
+    {
+      "question_number": 25,
+      "question_text": "ゲームクロックが動いている間にチームAの6人のプレーヤーが同時にコート上に いることを審判が発見した。チームBに不利にならない状況で、できる限りすぐ にその誤りは訂正されなければならない。6人以上のプレーヤーが不当にゲーム に出てから、そのことが発見されてゲームが止められるまでの間に起きた全ての 事象は有効なままとなる。チームAの１人のプレーヤーはベンチに戻され、テク ニカルファウルがチームAのヘッドコーチに宣せられ、スコアシートに「B１」と 記入される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第44条 44-10",
+          "sectionName": "解説_第44条 44-10",
+          "combinedScore": 0.6020350212967345
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.585
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 624
+    },
+    {
+      "question_number": 26,
+      "question_text": "ツーポイントゴールのために両手でボールを持ったA１はバスケットに向かって ドライブをした。B１はA１にファウルし、その勢いでA１はトラベリングのルー ルで定められている範囲を超えてステップを踏んだ。ボールはバスケットに入っ た。A１のゴールは認められず２本のフリースローがA１に与えられる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第15条 15-11",
+          "sectionName": "解説_第15条 15-11",
+          "combinedScore": 0.6947049564474905
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.605
+        }
+      ],
+      "top_article": "解説_第15条 15-11",
+      "response_time_ms": 1062
+    },
+    {
+      "question_number": 26,
+      "question_text": "ショットクロック残り17秒で、A１のショットのボールが空中にあるときにチー ムBのバックコートにいるB２がA２にファウルをし、このクォーター2個目の チームファウルであった。ボールは、リングに触れたが、バスケットには入らな かった。ゲームはフロントコートのB２のファウルが起きた場所に最も近いアウ トオブバウンズからチームAのスローインで再開される。ショットクロックは14 秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-40",
+          "sectionName": "解説_第36条 36-40",
+          "combinedScore": 0.649569773776585
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第17条 17-24",
+          "sectionName": "解説_第17条 17-24",
+          "combinedScore": 0.6175721709387265
+        }
+      ],
+      "top_article": "解説_第36条 36-40",
+      "response_time_ms": 573
+    },
+    {
+      "question_number": 26,
+      "question_text": "ゲームクロックが動いている状態で、５個のファウルを宣せられたチームメン バーであるA１がコート上にいた。A１が不当にゲームに出ていることが、A１が B１にファウルをした後に発見された。チームBが不利にならない状況で、ゲーム は速やかに止められる。A１はチームベンチに戻される。チームAのヘッドコーチ はテクニカルファウルを宣せられ、スコアシートに「B１」と記入される。A１の ファウルはプレーヤーのファウルであるため、このファウルはスコアシートのA １の５個目のファウルの横のスペースに記入される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-10",
+          "sectionName": "解説_第36条 36-10",
+          "combinedScore": 0.7019116013102775
+        },
+        {
+          "sectionId": "解説_第36条 36-9",
+          "sectionName": "解説_第36条 36-9",
+          "combinedScore": 0.649753963947296
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第36条 36-10",
+      "response_time_ms": 639
+    },
+    {
+      "question_number": 27,
+      "question_text": "A１はスリーポイントゴールエリアから相手チームのバスケット付近にいるA２に 向けてボールをパスした。ボールはパスカットを試みたバスケット付近にいるB ２に触れた後、バスケットに入ったため、審判はチームAに２点を認めた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "解説_第33条 33-８",
+          "sectionName": "解説_第33条 33-８",
+          "combinedScore": 0.593749991618097
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第33条 33-７",
+          "sectionName": "解説_第33条 33-７",
+          "combinedScore": 0.565464155729313
+        }
+      ],
+      "top_article": "解説_第33条 33-８",
+      "response_time_ms": 701
+    },
+    {
+      "question_number": 27,
+      "question_text": "A１のショットのボールが空中にあるときに、ショットクロックのブザーが鳴っ た。そのとき、チームAのフロントコートでB２がA２にファウルをし、この クォーター５個目のチームファウルであった。A１のショットのボールはリング に触れなかった。審判はチームAのショットクロックのバイオレーションを宣 し、B２に宣したファウルをなかったものとした。ゲームはバックボードの真後 ろを除いたエンドラインからチームBのスローインで再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第10条 10-２",
+          "sectionName": "解説_第10条 10-２",
+          "combinedScore": 0.6504680276335505
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第42条 42-２",
+          "sectionName": "解説_第42条 42-２",
+          "combinedScore": 0.622861397075182
+        }
+      ],
+      "top_article": "解説_第10条 10-２",
+      "response_time_ms": 718
+    },
+    {
+      "question_number": 27,
+      "question_text": "第４クォーター残り7秒、チームA 70 - チームB 70で、A１は５個目のファウル を宣せられ「５個のファウルを宣せられたチームメンバー」となった。タイムア ウトのあと、チームAがボールのコントロールを得て、A１が得点した。このとき A１が不当にコート上にいることが発見され、ゲームクロックは残り1秒であっ た。A１のゴールは認められない。チームAのヘッドコーチはテクニカルファウル を宣せられ、スコアシートに「B１」と記入される。誰もリバウンドの位置に着 かずに、１本のフリースローがチームBのいずれかのプレーヤーに与えられる。 ゲームはチームBのバックコートのフリースローラインの延長線上のアウトオブ バウンズからチームBのスローインで再開され、ゲームクロックは残り1秒とな る。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第17条 17-16",
+          "sectionName": "解説_第17条 17-16",
+          "combinedScore": 0.6556587798420259
+        },
+        {
+          "sectionId": "解説_第17条 17-44",
+          "sectionName": "解説_第17条 17-44",
+          "combinedScore": 0.629022585866146
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.625
+        }
+      ],
+      "top_article": "解説_第17条 17-16",
+      "response_time_ms": 574
+    },
+    {
+      "question_number": 28,
+      "question_text": "チームAにスローインが与えられ、ゲームクロックまたはショットクロックに は、0.2秒あるいは0.1秒が表示されている。得点が認められるゴールは、スロー インでパスされたボールが空中にある間に、タップされたか、直接ダンクされた 場合のみである。その場合でもゲームクロックまたはショットクロックに0.0秒 が表示されたときにはプレーヤーの片手または両手はボールに触れていてはなら ない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第16条 16-12",
+          "sectionName": "解説_第16条 16-12",
+          "combinedScore": 0.653639149232015
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "規則_第50条 50-４",
+          "sectionName": "規則_第50条 50-４",
+          "combinedScore": 0.589882848553828
+        }
+      ],
+      "top_article": "解説_第16条 16-12",
+      "response_time_ms": 747
+    },
+    {
+      "question_number": 28,
+      "question_text": "第４クォーター残り1:12、ショットクロック残り6秒で、A１がフロントコート でドリブルをしているときにB１がA１にアンスポーツマンライクファウルをし た。A１の最初のフリースローのあと、チームAもしくはチームBのヘッドコーチ がタイムアウトを請求した。誰もリバウンドの位置に着かずに２本目のフリース ローがA１に与えられ、そのあとタイムアウトが認められる。タイムアウトのあ とはゲームはフロントコートのスローインラインからチームAのスローインで再 開されショットクロックは24秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.7
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.66
+        },
+        {
+          "sectionId": "解説_第17条 17-16",
+          "sectionName": "解説_第17条 17-16",
+          "combinedScore": 0.6561443442573385
+        }
+      ],
+      "top_article": "規則_第50条 50-５ (part 3)",
+      "response_time_ms": 691
+    },
+    {
+      "question_number": 28,
+      "question_text": "B１がドリブルをしているA１をディフェンスした。A１はあたかもB１にファウ ルをされたかのような印象を与えようと頭部を急に動かした。審判はA１に 「ローワー・ザ・フォアアーム」のシグナルを2回示した。その後ゲームクロッ クが１度も止められずに動き続けている状態で、A１があたかもB１に押されたか のような印象を与えようとコート上に倒れた。ゲームが止められず、A１あるい はチームAのヘッドコーチにA１の最初のフェイクの警告が伝達されていなかった ため、コート上に倒れた２度目のフェイクによってもA１はテクニカルファウル を宣せられない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6109250353664145
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第44条 44-11",
+          "sectionName": "解説_第44条 44-11",
+          "combinedScore": 0.5765797466981265
+        }
+      ],
+      "top_article": "解説_第44条 44-14",
+      "response_time_ms": 553
+    },
+    {
+      "question_number": 29,
+      "question_text": "スローインをするプレーヤーが、 ・スローインのボールを手離すのに５秒を超えること。 ・スローインをしたボールがコート内のプレーヤーに触れる前にアウトオブバウ ンズになること。 ・スローインをしたボールが（コート内のプレーヤーに触れないで）直接バス ケットに入ること。 は、バイオレーションである。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "解説_第16条 16-10",
+          "sectionName": "解説_第16条 16-10",
+          "combinedScore": 0.5789445638656615
+        },
+        {
+          "sectionId": "規則_第12条 12-３",
+          "sectionName": "規則_第12条 12-３",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 617
+    },
+    {
+      "question_number": 29,
+      "question_text": "A１からA２へのパスのボールにB２が触れたあと、ボールがリングに触れ、A３ がそのボールをコントロールした。A３がコート上でボールのコントロールを得 たとき、ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.655
+        },
+        {
+          "sectionId": "規則_第50条 50-１",
+          "sectionName": "規則_第50条 50-１",
+          "combinedScore": 0.583514511585238
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 583
+    },
+    {
+      "question_number": 29,
+      "question_text": "A１がリバウンドのボールを取ってコートに着地した。その後B１がすぐそばで ディフェンスをした。A１がピボットをするための十分なスペースを確保するた めに、過度に肘を振り回したがB１には当たらなかった。審判はA１の行為はルー ルの精神や目的に反するものであるが、触れ合いがなかったためA１に警告をし た。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-18",
+          "sectionName": "解説_第36条 36-18",
+          "combinedScore": 0.64315073943303
+        },
+        {
+          "sectionId": "解説_第38条 38-10",
+          "sectionName": "解説_第38条 38-10",
+          "combinedScore": 0.5851400685477345
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "解説_第36条 36-18",
+      "response_time_ms": 607
+    },
+    {
+      "question_number": 30,
+      "question_text": "第４クォーター残り51秒で、チームAがスローインを与えられることになってい る。スローインをするA１にボールが与えられる前に審判はB１に「イリーガルバ ウンダリラインクロッシング」のシグナルを行わず、警告を示さなかった。その 後ボールが境界線を越えてスローインされる前に、B１がA１に向かって境界線を 越えて手を動かした。第４クォーター、各オーバータイムでゲームクロックに ２:00あるいはそれ以下が表示されているとき、ディフェンスのプレーヤーはス ローインを妨害するために、体のどの部分も境界線を越えて出してはならないた め、B１にテクニカルファウルが宣せられる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第17条 17-５",
+          "sectionName": "解説_第17条 17-５",
+          "combinedScore": 0.7016909420490265
+        },
+        {
+          "sectionId": "解説_第17条 17-３",
+          "sectionName": "解説_第17条 17-３",
+          "combinedScore": 0.615194207429886
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "解説_第17条 17-５",
+      "response_time_ms": 581
+    },
+    {
+      "question_number": 30,
+      "question_text": "ショットクロック残り4秒で、A１がショットクロックをリセットするためにボー ルをリングに向かって投げた。ボールはリングに触れ、その後B１がボールに触 れて、ボールはチームAのバックコートのアウトオブバウンズに出た。ショット クロックは24秒から、ゲームはバックコートのボールがアウトオブバウンズに出 た場所に最も近いアウトオブバウンズからチームAのスローインで再開される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.735
+        },
+        {
+          "sectionId": "規則_第12条 12-３",
+          "sectionName": "規則_第12条 12-３",
+          "combinedScore": 0.59
+        },
+        {
+          "sectionId": "規則_第29条 29-１-１",
+          "sectionName": "規則_第29条 29-１-１",
+          "combinedScore": 0.583366403983979
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 440
+    },
+    {
+      "question_number": 30,
+      "question_text": "２個のテクニカルファウル、あるいは２個のアンスポーツマンライクファウル、 もしくは１個のテクニカルファウルと１個のアンスポーツマンライクファウルを 記録されたプレーヤーは、自動的に失格・退場となる。この場合の失格・退場と なったプレーヤーはチームベンチエリア座ることは許される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第37条 37-２-３",
+          "sectionName": "規則_第37条 37-２-３",
+          "combinedScore": 0.689191441680532
+        },
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.66
+        }
+      ],
+      "top_article": "規則_第37条 37-２-３",
+      "response_time_ms": 562
+    },
+    {
+      "question_number": 31,
+      "question_text": "第４クォーター残り１:24で、A１がフロントコートでドリブルをしているとき、 B１がチームAのバックコートへボールを弾き出し、チームAのいずれかのプレー ヤーが再びドリブルを始めた。このとき、B２がボールをチームAのバックコート のテーブルサイドのアウトオブバウンズに弾き出した。ショットクロックは６秒 であった。 タイムアウトがチームAに認められた。 チームAのヘッドコーチがフロントコートのスローインラインからのスローイン を選択した場合、スローインはテーブルサイドで行われ、ショットクロックは６ 秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.585
+        },
+        {
+          "sectionId": "規則_第29条 29-２-１",
+          "sectionName": "規則_第29条 29-２-１",
+          "combinedScore": 0.578625341817698
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 797
+    },
+    {
+      "question_number": 31,
+      "question_text": "ショットクロック残り17秒でA１がショットを放ち、そのボールがリングとバッ クボードの間に挟まった。オルタネイティングポゼッションアローはチームAを 示している。ゲームはフロントコートのバックボードに最も近いエンドラインか らチームAのスローインで再開され、ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第12条 12-６-１",
+          "sectionName": "規則_第12条 12-６-１",
+          "combinedScore": 0.605
+        }
+      ],
+      "top_article": "規則_第３条",
+      "response_time_ms": 591
+    },
+    {
+      "question_number": 31,
+      "question_text": "プレーヤー兼ヘッドコーチのA１が４個のプレーヤーとしてのファウルと１個の ヘッドコーチとしてのテクニカルファウルを宣せられた。プレーヤー兼ヘッド コーチのA１は、あわせて５個のファウルを宣せられており、プレーを続けるこ とはできない。A１はヘッドコーチとして役割を続けることができる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第36条 36-30",
+          "sectionName": "解説_第36条 36-30",
+          "combinedScore": 0.6048131969682515
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第36条 36-28",
+          "sectionName": "解説_第36条 36-28",
+          "combinedScore": 0.56644495972663
+        }
+      ],
+      "top_article": "解説_第36条 36-30",
+      "response_time_ms": 734
+    },
+    {
+      "question_number": 32,
+      "question_text": "ゲーム開始のジャンプボールでボールがクルーチーフの手を離れたあと正当に タップされる前に、ジャンパーのA２がバイオレーションを宣せられ、チームBに スローインのボールが与えられた。このときチームBが交代を請求した。 ゲームはすでに開始しているため審判は交代を認めた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.605
+        },
+        {
+          "sectionId": "解説_第17条 17-２",
+          "sectionName": "解説_第17条 17-２",
+          "combinedScore": 0.6034958046529505
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 579
+    },
+    {
+      "question_number": 32,
+      "question_text": "フロントコートにいるA１がA２にアリウープのパスをしたがA２はボールを キャッチできなかった。ボールはリングに触れ、その後チームAのプレーヤーが バックコートでボールのコントロールを得た。審判はチームAのバックコートバ イオレーションを宣した。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第28条 28-４",
+          "sectionName": "解説_第28条 28-４",
+          "combinedScore": 0.57
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.53
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 568
+    },
+    {
+      "question_number": 32,
+      "question_text": "第４クォーター残り１:08、ショットクロック残り11 秒で、バックコートのサイ ドラインにいるA１がスローインのボールを持っていた。審判はB１に警告として 「イリーガルバウンダリラインクロッシングシグナル」を示した。B１がA１のス ローインを妨げようと境界線を越えて手を動かしたため、審判はB１にテクニカ ルファウルを宣した。誰もリバウンドの位置に着かずに１本のフリースローが チームAのいずれかのプレーヤーに与えられる。ゲームはB１のテクニカルファウ ルが起きたときにボールがあった場所に最も近いアウトオブバウンズから、チー ムAのスローインで再開される。ショットクロックは24秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第17条 17-６",
+          "sectionName": "解説_第17条 17-６",
+          "combinedScore": 0.671350650070581
+        },
+        {
+          "sectionId": "解説_第42条 42-11",
+          "sectionName": "解説_第42条 42-11",
+          "combinedScore": 0.617717933003726
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 686
+    },
+    {
+      "question_number": 33,
+      "question_text": "A１がB１にファウルをした。これはチームAの5回目のファウルであった。B１の フリースローの前にB２がB３と交代をして交代要員となった。B１の最後のフ リースローが成功し、B２が再び交代を請求したため審判は交代を認めた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-17",
+          "sectionName": "解説_第44条 44-17",
+          "combinedScore": 0.629901536685509
+        },
+        {
+          "sectionId": "解説_第37条 37-9",
+          "sectionName": "解説_第37条 37-9",
+          "combinedScore": 0.5973065437718015
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第44条 44-17",
+      "response_time_ms": 743
+    },
+    {
+      "question_number": 33,
+      "question_text": "ショットクロック残り2秒で放ったA１のショットのボールがリングに触れた。B １がリバウンドのボールを取り、コートに着地した。A２がB１の両手からボール を弾き、A３がボールをキャッチし、新たなコントロールを得た。ショットク ロックは14秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第44条 44-31",
+          "sectionName": "解説_第44条 44-31",
+          "combinedScore": 0.625566344725087
+        },
+        {
+          "sectionId": "解説_第17条 17-48",
+          "sectionName": "解説_第17条 17-48",
+          "combinedScore": 0.5849464511839481
+        },
+        {
+          "sectionId": "規則_第３条",
+          "sectionName": "規則_第３条",
+          "combinedScore": 0.58
+        }
+      ],
+      "top_article": "解説_第44条 44-31",
+      "response_time_ms": 634
+    },
+    {
+      "question_number": 33,
+      "question_text": "プレーヤーによる過度に激しい触れ合いであっても、ボールや相手プレーヤーに 正当にプレーしようと努力していた場合は、アンスポーツマンライクファウルに ならない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第36条 36-30",
+          "sectionName": "解説_第36条 36-30",
+          "combinedScore": 0.62
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 613
+    },
+    {
+      "question_number": 34,
+      "question_text": "第１クォーター残り23秒で、A１がコート上で新たなボールのコントロールを得 た。ショットクロックには何も表示されていない。ゲームクロック残り19秒で、 A１がショットをし、ボールはリングに触れた。ゲームクロック残り16秒で、A ２がリバウンドのボールを取り、チームAがボールのコントロールを取り戻し た。ショットクロックは表示され、ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "解説_第16条 16-13",
+          "sectionName": "解説_第16条 16-13",
+          "combinedScore": 0.6380113825811631
+        },
+        {
+          "sectionId": "解説_第31条 31-12",
+          "sectionName": "解説_第31条 31-12",
+          "combinedScore": 0.602837464551626
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 713
+    },
+    {
+      "question_number": 34,
+      "question_text": "審判は、ゲームの残り時間や状況及びプレーヤーの起こしたアクションを基準と して、アンスポーツマンライクファウルの判断を行わなければならない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第12条 12-10",
+          "sectionName": "解説_第12条 12-10",
+          "combinedScore": 0.559137580615662
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 596
+    },
+    {
+      "question_number": 35,
+      "question_text": "第１クォーター残り22秒で、A１がコート上で新たなボールのコントロールを得 た。ショットクロックには何も表示されていない。ゲームクロック残り18秒で、 A１がショットをした。ボールはリングに触れず、ゲームクロック残り15.5秒で B１によってチームBのバックコートでボールをアウトオブバウンズに弾き出し た。ゲームクロック残り15.5秒で、ゲームはフロントコートのボールがアウトオ ブバウンズに出た場所に最も近いアウトオブバウンズからチームAのスローイン で再開され、ショットクロックは14秒となる。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.745
+        },
+        {
+          "sectionId": "解説_第42条 42-11",
+          "sectionName": "解説_第42条 42-11",
+          "combinedScore": 0.628863215446475
+        },
+        {
+          "sectionId": "規則_第12条 12-３",
+          "sectionName": "規則_第12条 12-３",
+          "combinedScore": 0.59
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 663
+    },
+    {
+      "question_number": 35,
+      "question_text": "第１クォーターが始まる前を除き、アンスポーツマンライクを宣した場合、ファ ウルをされたプレーヤーにフリースローを与えたあとのスローインは、そのチー ムのフロントコートのスコアラーズテーブル側のスローインラインから行うか、 反対側のスローインラインから行うかを選択することができる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第17条 17-27",
+          "sectionName": "解説_第17条 17-27",
+          "combinedScore": 0.586300671896544
+        },
+        {
+          "sectionId": "規則_第49条 49-２",
+          "sectionName": "規則_第49条 49-２",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 685
+    },
+    {
+      "question_number": 36,
+      "question_text": "A１とB１の間での第１クォーター開始のジャンプボールでボールはフロントコー トにいるA２に正当にタップされた。A２はジャンプして空中にいる間にボールを キャッチし、コート上に着地する前にバックコートにいるA１にボールをパスし た。チームAのバックコートバイオレーションではない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-６",
+          "sectionName": "解説_第30条 30-６",
+          "combinedScore": 0.7078676198642035
+        },
+        {
+          "sectionId": "解説_第30条 30-３",
+          "sectionName": "解説_第30条 30-３",
+          "combinedScore": 0.654127450533358
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.6299999999999999
+        }
+      ],
+      "top_article": "解説_第30条 30-６",
+      "response_time_ms": 393
+    },
+    {
+      "question_number": 36,
+      "question_text": "A１が速攻でバスケットに向かってドリブルをしているとき、A１とそのチームが 攻めるバスケットの間に相手のプレーヤーが全くいない状況で、B１はボールを スティールしようとして、後ろからA１の腕に触れ合いを起こした。審判はボー ルに対するプレーであるが、B１にアンスポーツマンライクファウルを宣した。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第８条 ８-9",
+          "sectionName": "規則_第８条 ８-9",
+          "combinedScore": 0.6699999999999999
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第38条 38-10",
+          "sectionName": "解説_第38条 38-10",
+          "combinedScore": 0.621593228457343
+        }
+      ],
+      "top_article": "規則_第８条 ８-9",
+      "response_time_ms": 662
+    },
+    {
+      "question_number": 37,
+      "question_text": "バックコートにいるA１がフロントコートに向かってボールをパスした。ボール はコート上でセンターラインをまたいで立っている審判に触れ、まだバックコー トにいるA２がボールに触れた。チームAのバックコートバイオレーションではな い。しかし、ボールがセンターラインをまたいでいる審判に触れたとき、8秒は 数え終わることになり、バックコートにいるA２がボールに触れたらすぐに新た な8秒が数え始められる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-10",
+          "sectionName": "解説_第30条 30-10",
+          "combinedScore": 0.717740531890459
+        },
+        {
+          "sectionId": "解説_第30条 30-9",
+          "sectionName": "解説_第30条 30-9",
+          "combinedScore": 0.6589718559997175
+        },
+        {
+          "sectionId": "解説_第28条 28-４",
+          "sectionName": "解説_第28条 28-４",
+          "combinedScore": 0.625
+        }
+      ],
+      "top_article": "解説_第30条 30-10",
+      "response_time_ms": 750
+    },
+    {
+      "question_number": 37,
+      "question_text": "チームAのバックコートでB１はドリブルをしているA１のボールを弾き出した。 そのあと、B１はボールのコントロールを得ようとした。B１とチームAのバス ケットの間にチームAのプレーヤーがいない状況で、A２が後ろあるいは横からB １に触れ合いを起こした。審判はまだB１がボールをコントロールしていなかっ たため、A２にパーソナルファウルを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第42条 42-15",
+          "sectionName": "解説_第42条 42-15",
+          "combinedScore": 0.615666058749019
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第33条 33-７",
+          "sectionName": "解説_第33条 33-７",
+          "combinedScore": 0.5825169572254375
+        }
+      ],
+      "top_article": "解説_第42条 42-15",
+      "response_time_ms": 565
+    },
+    {
+      "question_number": 38,
+      "question_text": "チームAがフロントコートでボールをコントロールしているとき、A１とB１が同 時にボールに触れた。その後ボールはチームAのバックコートに転がり、A２が最 初にボールに触れた。チームAのバックコートバイオレーションではない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-11",
+          "sectionName": "解説_第30条 30-11",
+          "combinedScore": 0.7172738391700175
+        },
+        {
+          "sectionId": "解説_第30条 30-9",
+          "sectionName": "解説_第30条 30-9",
+          "combinedScore": 0.621734822380277
+        },
+        {
+          "sectionId": "解説_第12条 12-４",
+          "sectionName": "解説_第12条 12-４",
+          "combinedScore": 0.595
+        }
+      ],
+      "top_article": "解説_第30条 30-11",
+      "response_time_ms": 641
+    },
+    {
+      "question_number": 38,
+      "question_text": "B１はA１にファウルをし、５個目のファウルを宣せられ、５個のファウルを宣せ られたチームメンバーとなった。B１はチームベンチに向かう間にA２を突き飛ば した。B１のスポーツマンらしくない振る舞いはチームBのヘッドコーチにテクニ カルファウルとして宣せられ「B１」と記入される。誰もリバウンドの位置に着 かずに１本のフリースローがチームAのいずれかのプレーヤーに与えられる。 ゲームはB１のスポーツマンらしくない振る舞いが起きたときにボールがあった 場所に最も近いアウトオブバウンズからチームAのスローインで再開される。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.645
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6267562435124234
+        },
+        {
+          "sectionId": "解説_第44条 44-11",
+          "sectionName": "解説_第44条 44-11",
+          "combinedScore": 0.5793418596605945
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 544
+    },
+    {
+      "question_number": 39,
+      "question_text": "フロントコートでスローインを行うA１がA２にボールをパスした。A２はフロン トコートからジャンプして、空中にいる間にボールをキャッチした。その後左足 でコート上のフロントコートに着地し、続けて右足をバックコートに着いた。 チームAのバックコートバイオレーションではない。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第30条 30-14",
+          "sectionName": "解説_第30条 30-14",
+          "combinedScore": 0.6893016790719345
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第30条 30-13",
+          "sectionName": "解説_第30条 30-13",
+          "combinedScore": 0.5713535297196966
+        }
+      ],
+      "top_article": "解説_第30条 30-14",
+      "response_time_ms": 564
+    },
+    {
+      "question_number": 39,
+      "question_text": "プレーヤー、チームベンチに座ることを許された人物による用具・器具を破損す るおそれのある行為は、絶対に許してはならない。このような行為があったとき には、審判はそのチームのヘッドコーチにそのような行為をやめさせるように警 告をする。その行為が繰り返された場合には、速やかにテクニカルファウルまた はさらにディスクォリファイングファウルを宣さなければならない。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第38条 38-２-６",
+          "sectionName": "規則_第38条 38-２-６",
+          "combinedScore": 0.713146003297217
+        },
+        {
+          "sectionId": "規則_第50条 50-５ (part 3)",
+          "sectionName": "規則_第50条 50-５ (part 3) (part 3/None)",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.57
+        }
+      ],
+      "top_article": "規則_第38条 38-２-６",
+      "response_time_ms": 687
+    },
+    {
+      "question_number": 40,
+      "question_text": "A１の最後のフリースローでボールがリングに触れる前に、B１がバスケットの下 から手を入れてボールに触れた。審判はインタフェアレンスのバイオレーション を宣してA１に１点のみを罰則として与えた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.625
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.5779363317527625
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 445
+    },
+    {
+      "question_number": 40,
+      "question_text": "体の触れ合いをともなわないディスクォリファイングファウルが宣せられた場合 のフリースローシューターは、ヘッドコーチが指定する。与えられるフリース ローは１本となる。フリースローの後は、ファウルをされたチームのフロント コートのスローインラインからのスローインでゲームは再開する。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第38条 38-３-３",
+          "sectionName": "規則_第38条 38-３-３",
+          "combinedScore": 0.6681122779846189
+        },
+        {
+          "sectionId": "規則_第43条 43-２-１",
+          "sectionName": "規則_第43条 43-２-１",
+          "combinedScore": 0.627520394550599
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.61
+        }
+      ],
+      "top_article": "規則_第38条 38-３-３",
+      "response_time_ms": 622
+    },
+    {
+      "question_number": 41,
+      "question_text": "A１の最後のフリースローで、ボールはリングから跳ね返った。B１がボールを弾 き出そうとしてボールに触れたが、ボールはバスケットに入った。審判はインタ フェアレンスのバイオレーションを宣して、コート上のチームAのキャプテンに １点を与えた。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.625
+        },
+        {
+          "sectionId": "解説_第44条 44-18",
+          "sectionName": "解説_第44条 44-18",
+          "combinedScore": 0.6218806172716105
+        },
+        {
+          "sectionId": "解説_第38条 38-10",
+          "sectionName": "解説_第38条 38-10",
+          "combinedScore": 0.572685326704828
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 728
+    },
+    {
+      "question_number": 41,
+      "question_text": "A１が著しくスポーツマンらしくない振る舞いにより失格・退場になった。コー トを離れるときに審判を侮辱する発言を行なった。審判はテクニカルファウルを 宣し、チームAのヘッドコーチに「B１」が記入される。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "規則_第５条 ５-４",
+          "sectionName": "規則_第５条 ５-４",
+          "combinedScore": 0.57
+        },
+        {
+          "sectionId": "解説_第39条 39-４",
+          "sectionName": "解説_第39条 39-４",
+          "combinedScore": 0.568365286686106
+        }
+      ],
+      "top_article": "規則_第49条 49-１",
+      "response_time_ms": 650
+    },
+    {
+      "question_number": 42,
+      "question_text": "A１の最後のフリースローのあと、ボールはリングから跳ね返った。リバウンド でB２がA２にファウルをし、このクォーター3個目のチームファウルであった。 ボールはまだバスケットに入る可能性を残している状況で、A３がボールに触れ た。A３のインタフェアレンスのバイオレーションである。A１への得点は与えら れない。両方のスローインの罰則は互いに相殺される。ゲームはバックボードの 真後ろを除いたファウルが起きた場所に最も近いエンドラインからオルタネイ ティングポゼッションのスローインで再開される。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.64
+        },
+        {
+          "sectionId": "解説_第42条 42-10",
+          "sectionName": "解説_第42条 42-10",
+          "combinedScore": 0.6393483413042644
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.615
+        }
+      ],
+      "top_article": "規則_第2条 (part 1)",
+      "response_time_ms": 720
+    },
+    {
+      "question_number": 42,
+      "question_text": "A１は５個目のパーソナルファウルを宣せられ、このクォーター２個目のチーム ファウルであった。チームベンチに向かう間にA１はB２を殴ったことにより、 ディスクォリファイングファウルを宣せられた。５個目のパーソナルファウルに よって、A１は５個のファウルを宣せられたチームメンバーとなり、さらにA１は B２を殴ったことにより失格・退場となる。A１のディスクォリファイングファウ ルはスコアシートのA１に「D」、チームAのヘッドコーチに「B２」と記入され る。誰もリバウンドの位置に着かずに２本のフリースローがB２に与えられる。 ゲームはフロントコートのスローインラインからチームBのスローインで再開さ れる。ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "解説_第39条 39-５",
+          "sectionName": "解説_第39条 39-５",
+          "combinedScore": 0.642802227830506
+        },
+        {
+          "sectionId": "解説_第44条 44-14",
+          "sectionName": "解説_第44条 44-14",
+          "combinedScore": 0.6055146942682195
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 565
+    },
+    {
+      "question_number": 43,
+      "question_text": "A１のショットのボールが空中にあるときにB１がA１にファウルをした。その 後、ボールが上昇している間にB２が正当に触れ、ボールはバスケットに入っ た。審判はA１の得点を認めた。",
+      "correct_answer": "×",
+      "ai_answer": "○",
+      "is_correct": false,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.595
+        },
+        {
+          "sectionId": "解説_第33条 33-10",
+          "sectionName": "解説_第33条 33-10",
+          "combinedScore": 0.589405357837677
+        },
+        {
+          "sectionId": "規則_第47条 47-３",
+          "sectionName": "規則_第47条 47-３",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 475
+    },
+    {
+      "question_number": 43,
+      "question_text": "コート上にいるA１とB１で抗争が始まり、A６とB６がコートに入ってきたが抗争 には加わらなかった。A７はコートに入ってきて、B１の顔面を殴った。A１とB１ は失格・退場となり「DC」と記入される。A7は失格・退場になり「D２」と記入 され、スコアシート上の残りのファウル欄には「F」と記入される。A６とB６は抗 争の間にコートに入ったことで失格・退場となり、「D」と記入され、スコアシー ト上の残りのファウル欄には「F」と記入される。両チームのヘッドコーチはテク ニカルファウルを宣せられ「BC」と記入される。A１、B１のディスクォリファイ ングファウルの罰則とA６、B６ のテクニカルファウルの罰則は相殺される。A7 が積極的に抗争に関わり失格・退場となったことでの罰則の処置が行われる。誰 もリバウンドの位置に着かずに２本のフリースローがB１と交代したプレーヤーに 与えられる。ゲームはフロントコートのスローインラインからチームBのスローイ ンで再開される。ショットクロックは14秒となる。",
+      "correct_answer": "○",
+      "ai_answer": "○",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "解説_第39条 39-５",
+          "sectionName": "解説_第39条 39-５",
+          "combinedScore": 0.727806448936466
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.685
+        },
+        {
+          "sectionId": "解説_第39条 39-４",
+          "sectionName": "解説_第39条 39-４",
+          "combinedScore": 0.64117594168473
+        }
+      ],
+      "top_article": "解説_第39条 39-５",
+      "response_time_ms": 666
+    },
+    {
+      "question_number": 44,
+      "question_text": "ゲームクロックが動いていて、ボールがライブの状態でA１のショットのボール が下降していて、完全にリングよりも上にあるときにA２とB２が同時にボールに 触れた。ボールは、バスケットに入った。A２とB２のゴールテンディングのバイ オレーションであり得点は与えられない。ゲームはオルタネイティングポゼッ ションのスローインで再開される。",
+      "correct_answer": "○",
+      "ai_answer": "×",
+      "is_correct": false,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第31条 31-２-１",
+          "sectionName": "規則_第31条 31-２-１",
+          "combinedScore": 0.6136347976596475
+        },
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.61
+        },
+        {
+          "sectionId": "解説_第33条 33-６",
+          "sectionName": "解説_第33条 33-６",
+          "combinedScore": 0.585266457804038
+        }
+      ],
+      "top_article": "規則_第31条 31-２-１",
+      "response_time_ms": 601
+    },
+    {
+      "question_number": 44,
+      "question_text": "タイムアウトの間に、いずれかのチームの交代要員またはチーム関係者の数人 が、コートに入り、チームベンチエリアの近くにとどまっていた。このとき、 コート上で抗争につながりそうな状況が起き、タイムアウトのためにすでにチー ムベンチエリアの近くのそれぞれの場所にいた人物は、その場所からとどまり続 けていたが、チームベンチエリアから出て、コート上にいた全ての人物は失格・ 退場となる。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "C",
+      "search_results": [
+        {
+          "sectionId": "規則_第18条 18-３-５",
+          "sectionName": "規則_第18条 18-３-５",
+          "combinedScore": 0.5828718841901039
+        },
+        {
+          "sectionId": "規則_第49条 49-１",
+          "sectionName": "規則_第49条 49-１",
+          "combinedScore": 0.58
+        },
+        {
+          "sectionId": "規則_第４条 ４-２-３",
+          "sectionName": "規則_第４条 ４-２-３",
+          "combinedScore": 0.5549999999999999
+        }
+      ],
+      "top_article": "規則_第18条 18-３-５",
+      "response_time_ms": 718
+    },
+    {
+      "question_number": 45,
+      "question_text": "A１が最後のフリースローを行った。ボールはリングに弾んでバックボードに触 れたあと、リングの周りを回っていて、わずかな部分がバスケットの中にあっ た。このとき、A２がまだリングの上にあるボールに触れた。審判はA２のインタ フェアレンスのバイオレーションを宣した。",
+      "correct_answer": "×",
+      "ai_answer": "×",
+      "is_correct": true,
+      "confidence_grade": "B",
+      "search_results": [
+        {
+          "sectionId": "規則_第50条 50-３",
+          "sectionName": "規則_第50条 50-３",
+          "combinedScore": 0.625
+        },
+        {
+          "sectionId": "解説_第44条 44-34",
+          "sectionName": "解説_第44条 44-34",
+          "combinedScore": 0.591577122854505
+        },
+        {
+          "sectionId": "規則_第2条 (part 1)",
+          "sectionName": "規則_第2条 (part 1) (part 1/None)",
+          "combinedScore": 0.57
+        }
+      ],
+      "top_article": "規則_第50条 50-３",
+      "response_time_ms": 616
+    }
+  ],
+  "error_patterns": []
+}

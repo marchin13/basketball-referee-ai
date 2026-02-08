@@ -30,6 +30,11 @@ const openai = DEV_MODE ? null : new OpenAI({ apiKey: OPENAI_API_KEY! });
 
 const PDFParser = require('pdf2json');
 
+// 🆕 全角数字を半角に変換するヘルパー関数
+function normalizeDigits(str: string): string {
+  return str.replace(/[０-９]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0xFEE0));
+}
+
 // PDF解析
 async function extractPdfText(pdfPath: string): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -64,7 +69,7 @@ async function extractPdfText(pdfPath: string): Promise<string> {
   });
 }
 
-// 改良版：インタープリテーションを細かく分割
+// 🆕 改良版：競技規則本文もサブセクションで分割
 function splitIntoSections(fullText: string): Array<{
   sectionId: string;
   sectionName: string;
@@ -123,8 +128,8 @@ function splitIntoSections(fullText: string): Array<{
   console.log(`📖 競技規則本文: ${rulesText.length}文字`);
   console.log(`📖 インタープリテーション: ${interpretationText.length}文字\n`);
   
-  // === 2. 競技規則本文を処理 ===
-  console.log('=== 1️⃣ 競技規則本文を処理 ===\n');
+  // === 2. 🆕 競技規則本文を処理（サブセクション分割対応） ===
+  console.log('=== 1️⃣ 競技規則本文を処理（改良版：サブセクション分割） ===\n');
   
   const ruleParts = rulesText.split(/(?=第\s*\d+\s*条|別添資料\s*[A-Z])/);
   
@@ -135,13 +140,72 @@ function splitIntoSections(fullText: string): Array<{
     const appendixMatch = part.match(/別添資料\s*([A-Z])\s*[−ー―‐\-]+\s*([^\n]+)/);
     
     if (articleMatch) {
-      sections.push({
-        sectionId: `第${articleMatch[1]}条`,
-        sectionName: articleMatch[2].trim().split(/\s+/)[0],
-        content: part.slice(0, 3000),
-        sectionType: 'rule'
-      });
-      console.log(`✅ 第${articleMatch[1]}条 ${articleMatch[2].trim().split(/\s+/)[0]}`);
+      const articleNumber = articleMatch[1];
+      const articleName = articleMatch[2].trim().split(/\s+/)[0];
+      
+      console.log(`\n--- 第${articleNumber}条 ${articleName} ---`);
+      
+      // 🆕🆕 デバッグ: 第23条の場合は最初の500文字を表示
+      if (articleNumber === '23') {
+        console.log(`   🔍 デバッグ: 第23条の最初の500文字:`);
+        console.log(`   ${part.slice(0, 500).replace(/\n/g, ' ')}`);
+      }
+      
+      // 🆕 サブセクション（23-1、23-2など）で分割
+      // パターン: "23 - 1" "23-1" だけマッチ（"23-1-1" は除外）
+      // 🆕🆕 全角数字（１２３）にも対応、3階層目を除外
+      const subSectionPattern = new RegExp(`${articleNumber}\\s*[-−ー―‐–—]\\s*[\\d０-９]+(?!\\s*[-−ー―‐–—])`, 'g');
+      const subSectionMatches = part.match(subSectionPattern);
+      
+      console.log(`   🔍 サブセクション候補: ${subSectionMatches ? subSectionMatches.length : 0}個`);
+      if (subSectionMatches && articleNumber === '23') {
+        console.log(`   🔍 デバッグ: 検出されたパターン: ${subSectionMatches.slice(0, 10).join(', ')}`);
+      }
+      
+      if (!subSectionMatches || subSectionMatches.length === 0) {
+        // サブセクションがない場合は条文全体を1つのセクションとして登録
+        sections.push({
+          sectionId: `第${articleNumber}条`,
+          sectionName: articleName,
+          content: part.slice(0, 3000),
+          sectionType: 'rule'
+        });
+        console.log(`   ✅ 第${articleNumber}条（全体）`);
+      } else {
+        // 🆕 サブセクションで分割（2階層まで：23-1、23-2）
+        // 3階層目（23-1-1など）の直前では分割しない
+        const splitPattern = new RegExp(`(?=${articleNumber}\\s*[-−ー―‐–—]\\s*[\\d０-９]+(?!\\s*[-−ー―‐–—]))`);
+        const subSections = part.split(splitPattern);
+        
+        console.log(`   📝 分割後のセクション数: ${subSections.length}個`);
+        
+        // サブセクションごとに登録（3階層目は含めず、2階層目で統合）
+        subSections.forEach((subPart, subIndex) => {
+          if (subPart.trim().length < 30) return;
+          
+          // サブセクション番号を抽出（例: "23 - ２" → "２"）（3階層目を除外）
+          const subMatch = subPart.match(new RegExp(`${articleNumber}\\s*[-−ー―‐–—]\\s*([\\d０-９]+)(?!\\s*[-−ー―‐–—])`));
+          
+          if (subMatch) {
+            const subNum = subMatch[1];
+            const normalizedSubNum = normalizeDigits(subNum); // 全角→半角変換
+            
+            // 🆕🆕🆕 第23条の場合は各セクションの内容も表示
+            if (articleNumber === '23') {
+              console.log(`   🔍 デバッグ [23-${normalizedSubNum}]: ${subPart.slice(0, 200).replace(/\n/g, ' ')}`);
+            }
+            
+            // 🆕 2階層まで：23-1、23-2 レベルで保存（23-1-1などの3階層目は分割しない）
+            sections.push({
+              sectionId: `第${articleNumber}条_${articleNumber}-${normalizedSubNum}`,
+              sectionName: `${articleName} ${articleNumber}-${normalizedSubNum}`,
+              content: subPart.slice(0, 3000), // 自然に長くなる
+              sectionType: 'rule'
+            });
+            console.log(`   ✅ ${articleNumber}-${normalizedSubNum} (${subPart.length}文字)`);
+          }
+        });
+      }
     } else if (appendixMatch) {
       sections.push({
         sectionId: `別添資料${appendixMatch[1]}`,
@@ -155,7 +219,7 @@ function splitIntoSections(fullText: string): Array<{
   
   console.log(`\n✅ 競技規則本文: ${sections.filter(s => s.sectionType === 'rule' || s.sectionType === 'appendix').length}個\n`);
   
-  // === 3. インタープリテーションを処理 ===
+  // === 3. インタープリテーションを処理（既存のロジック） ===
   console.log('=== 2️⃣ インタープリテーションを処理 ===\n');
   
   if (interpretationText.length > 0) {
@@ -253,7 +317,7 @@ async function generateEmbedding(text: string): Promise<number[]> {
 
 // メイン処理
 async function main() {
-  console.log('🚀 RAGセットアップ（改良版）を開始します...\n');
+  console.log('🚀 RAGセットアップ（改良版v2：競技規則サブセクション分割対応）を開始します...\n');
   
   if (DEV_MODE) {
     console.log('⚠️  開発モード: データベースへの保存はスキップします\n');
@@ -279,10 +343,10 @@ async function main() {
     console.log('\n=== 📋 分割結果サンプル ===\n');
     
     // 各タイプから5個ずつサンプル表示
-    const rulesSample = sections.filter(s => s.sectionType === 'rule').slice(0, 5);
+    const rulesSample = sections.filter(s => s.sectionType === 'rule').slice(0, 10);
     const interpretationSample = sections.filter(s => s.sectionType === 'interpretation').slice(0, 20);
     
-    console.log('競技規則本文（最初の5個）:');
+    console.log('競技規則本文（最初の10個）:');
     rulesSample.forEach(s => console.log(`  - ${s.sectionId}: ${s.sectionName}`));
     
     console.log('\nインタープリテーション（最初の20個）:');

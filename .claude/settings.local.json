@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm pkg set:*)",
+      "Bash(npm run test:178:*)",
+      "Bash(npm install:*)",
+      "Bash(chmod:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(npx tsx:*)",
+      "Bash(ls:*)",
+      "Bash(node --eval:*)",
+      "Bash(node:*)",
+      "Bash(npm run analyze:errors:*)",
+      "Bash(tsx:*)",
+      "Bash(npm run test:reasoning:*)",
+      "Bash(npx next build:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

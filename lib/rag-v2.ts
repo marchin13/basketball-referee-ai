@@ -1,5 +1,6 @@
 import OpenAI from 'openai';
 import { createClient } from '@supabase/supabase-js';
+import { calculatePhraseScoreV2, findMatchingPhrasesV2 } from './phrase-matching-v2';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -11,8 +12,10 @@ export interface RagResult {
   content: string;
   similarity: number;
   source: 'vector' | 'keyword';
-  rankScore?: number; // 🆕 順位スコア
-  combinedScore?: number; // 🆕 合計スコア
+  rankScore?: number;
+  combinedScore?: number;
+  phraseScore?: number;
+  matchingPhrases?: string[];
 }
 
 export interface ConfidenceInfo {
@@ -154,37 +157,36 @@ function calculateConfidence(results: RagResult[]): ConfidenceInfo {
 function extractKeywords(question: string): string[] {
   const keywords: string[] = [];
   
-  // 🆕 大幅に拡張したキーワードリスト
+  // v4: 特異性の高いキーワードのみ（ファウル、審判等の汎用語は除外）
   const importantTerms = [
-    // 既存
-    '怪我', '負傷', 'インジャリー',
-    '交代', '選手交代',
-    'ファウル', 'バイオレーション',
-    'タイムアウト', '中断',
-    'ショットクロック', 'ゲームクロック',
-    'フリースロー', 'スローイン',
-    'ヘッドコーチ', '審判',
-    'スコアシート', 'テーブルオフィシャルズ',
-    
-    // 🆕 追加：ボール関連
+    // 特定のバイオレーション・状況（出現が限定的）
     'ヘルドボール', 'ジャンプボール', 'オルタネイティングポゼッション',
-    'アウトオブバウンズ', '境界線', 'ライン', 'サイドライン', 'エンドライン',
-    'ドリブル', 'トラベリング', 'パス', 'シュート',
-    
-    // 🆕 追加：コート関連
-    'フロントコート', 'バックコート', 'センターライン',
-    'リング', 'バスケット', 'バックボード',
-    
-    // 🆕 追加：ファウル種類
-    'パーソナルファウル', 'テクニカルファウル', 
-    'アンスポーツマンライクファウル', 'アンスポ',
-    'ディスクォリファイングファウル', 'チームファウル',
-    
-    // 🆕 追加：プレー状況
-    'オフェンス', 'ディフェンス', '攻撃', '守備',
-    'コンタクト', '接触', '触れ合い',
+    'アウトオブバウンズ', 'ゴールテンディング', 'インタフェアレンス',
+    'トラベリング', 'ダブルドリブル', 'イリーガルドリブル',
+    'バックコートバイオレーション', 'キック',
+
+    // 特定のファウル種類（複合語のみ、単独「ファウル」は除外）
+    'テクニカルファウル', 'アンスポーツマンライクファウル',
+    'ディスクォリファイングファウル', 'パーソナルファウル',
+    'チームファウル', 'ダブルファウル',
+
+    // 特定のプレー概念
+    'ショットクロック', 'ゲームクロック',
+    'アクトオブシューティング', 'ショットの動作',
+    'シリンダー', 'リーガルガーディングポジション',
+    'ノーチャージセミサークル', 'スローインライン',
     'ブロッキング', 'チャージング',
-    '3秒', '8秒', '24秒', '14秒',
+
+    // 特定の状況
+    '抗争', '相殺', '速攻', 'ファストブレイク',
+    'タイムアウト', 'インターバル', 'オーバータイム',
+    '怪我', '負傷', 'インジャリー',
+
+    // 特定の数値ルール
+    '3秒', '5秒', '8秒', '14秒', '24秒',
+
+    // 特定の役割（限定的）
+    'テーブルオフィシャルズ', 'コミッショナー', 'プレーヤー兼',
   ];
   
   importantTerms.forEach(term => {
@@ -329,12 +331,13 @@ async function searchByKeywords(keywords: string[], question: string): Promise<R
     // 🆕🆕🆕 フレーズマッチングボーナスを追加
     const phraseBonus = calculatePhraseMatch(question, item.content);
     
-    // 🆕🆕 スコアリング改善
-    // ベーススコア0.60 + 通常マッチ × 0.03 + 重要マッチ × 0.10 + フレーズボーナス（最大0.99）
-    const baseScore = 0.60;
-    const normalBonus = (matchCount - criticalMatchCount) * 0.03;
-    const criticalBonus = criticalMatchCount * 0.10;
-    const similarity = Math.min(baseScore + normalBonus + criticalBonus + phraseBonus, 0.99);
+    // 🆕v4: キーワードスコアを低く抑え、ベクトル検索結果を優先させる
+    // フレーズマッチなし: 最大0.50 / フレーズマッチあり: 最大0.65
+    const baseScore = 0.40;
+    const normalBonus = (matchCount - criticalMatchCount) * 0.02;
+    const criticalBonus = criticalMatchCount * 0.05;
+    const maxScore = phraseBonus > 0 ? 0.65 : 0.50;
+    const similarity = Math.min(baseScore + normalBonus + criticalBonus + phraseBonus, maxScore);
     
     console.log(`  [K] ${item.section_id} (通常:${matchCount}個, 重要:${criticalMatchCount}個 [${matchedKeywords.join(', ')}], スコア: ${(similarity * 100).toFixed(1)}%)`);
     
@@ -370,31 +373,38 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
   }
   
   try {
-    // 1. ベクトル検索
+    // 1. エンベディング生成
     console.log('📊 ベクトル検索中...');
     const embeddingResponse = await openai.embeddings.create({
       model: 'text-embedding-3-small',
       input: cleanQuestion,
     });
     const questionEmbedding = embeddingResponse.data[0].embedding;
-    
+
     const supabase = createClient(supabaseUrl, supabaseKey, {
       auth: { persistSession: false }
     });
-    
+
     const vectorString = '[' + questionEmbedding.join(',') + ']';
-    
-    // 🔄 変更: RPC関数名を match_jba_rules に、件数もmatchCountを使用
-    const { data: vectorData, error: vectorError } = await supabase.rpc('match_jba_rules', {
-      query_embedding: vectorString,
-      match_count: matchCount
-    });
-    
+
+    // 2. ベクトル検索とキーワード検索を並列実行
+    const keywords = extractKeywords(cleanQuestion);
+
+    const [vectorRpcResult, keywordResults] = await Promise.all([
+      supabase.rpc('match_jba_rules', {
+        query_embedding: vectorString,
+        match_count: Math.max(matchCount * 3, 15) // v4: ベクトル候補を多く取得
+      }),
+      searchByKeywords(keywords, cleanQuestion)
+    ]);
+
+    const { data: vectorData, error: vectorError } = vectorRpcResult;
+
     if (vectorError) {
       console.error('❌ ベクトル検索エラー:', vectorError);
       throw new Error(`ベクトル検索エラー: ${vectorError.message}`);
     }
-    
+
     const vectorResults: RagResult[] = (vectorData || []).map((item: any) => ({
       sectionId: item.section_id,
       sectionName: item.section_name,
@@ -402,16 +412,12 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
       similarity: item.similarity,
       source: 'vector' as const
     }));
-    
+
     console.log(`✅ ベクトル検索: ${vectorResults.length}件`);
     console.log('📊 ベクトル検索結果:');
     vectorResults.forEach((result, index) => {
       console.log(`  [V${index + 1}] ${result.sectionId} (${(result.similarity * 100).toFixed(1)}%)`);
     });
-    
-    // 2. キーワード検索（フレーズマッチング対応）
-    const keywords = extractKeywords(cleanQuestion);
-    const keywordResults = await searchByKeywords(keywords, cleanQuestion);
     
     // 🆕🆕 3. 順位スコアを計算
     const vectorRankScores = new Map<string, number>();
@@ -424,10 +430,10 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
       keywordRankScores.set(result.sectionId, Math.max(10 - index, 1));
     });
     
-    // 🆕🆕 4. 結果をマージして順位スコアを付与
+    // 🆕🆕 4. 結果をマージして順位スコア + フレーズスコアを付与
     const allResults = [...vectorResults, ...keywordResults];
     const merged = new Map<string, RagResult>();
-    
+
     allResults.forEach(result => {
       const existing = merged.get(result.sectionId);
       if (!existing || result.similarity > existing.similarity) {
@@ -435,11 +441,20 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
         const vScore = vectorRankScores.get(result.sectionId) || 0;
         const kScore = keywordRankScores.get(result.sectionId) || 0;
         const rankScore = vScore + kScore;
-        
+
+        // フレーズマッチングv2スコアを計算（意味のあるフレーズのみ）
+        const phraseScore = calculatePhraseScoreV2(cleanQuestion, result.content);
+        const { matched: matchingPhrases, missed: missedPhrases } = findMatchingPhrasesV2(cleanQuestion, result.content);
+
+        // v5: ベクトル類似度70% + 順位15% + フレーズ15%
+        const combinedScore = result.similarity * 0.7 + (rankScore / 20) * 0.15 + phraseScore * 0.15;
+
         merged.set(result.sectionId, {
           ...result,
           rankScore,
-          combinedScore: result.similarity * 0.5 + (rankScore / 20) * 0.5 // 類似度50% + 順位50%
+          phraseScore,
+          matchingPhrases,
+          combinedScore,
         });
       }
     });
@@ -453,7 +468,8 @@ export async function searchRules(question: string, matchCount: number = 5): Pro
     console.log(`🔀 マージ後: ${merged.size}件`);
     console.log(`📊 最終結果（上位${matchCount}件）:`);
     finalResults.forEach((result, index) => {
-      console.log(`  [${index + 1}] ${result.sectionId} (類似度:${(result.similarity * 100).toFixed(1)}%, 順位:${result.rankScore}, 総合:${((result.combinedScore || 0) * 100).toFixed(1)}%, ${result.source === 'vector' ? 'V' : 'K'})`);
+      const phraseInfo = result.matchingPhrases?.length ? `, フレーズ:${result.matchingPhrases.slice(0, 2).join('/')}` : '';
+      console.log(`  [${index + 1}] ${result.sectionId} (類似度:${(result.similarity * 100).toFixed(1)}%, 順位:${result.rankScore}, フレーズ:${((result.phraseScore || 0) * 100).toFixed(0)}%, 総合:${((result.combinedScore || 0) * 100).toFixed(1)}%, ${result.source === 'vector' ? 'V' : 'K'}${phraseInfo})`);
     });
     
     // 🆕🆕 6. 信頼度を判定
