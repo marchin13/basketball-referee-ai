@@ -5,7 +5,7 @@ const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY")!;
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
 
-const TO_EMAIL = "yamada@roux.tokyo";
+const TO_EMAIL = "marchin.momo@gmail.com";
 const FROM_EMAIL = "onboarding@resend.dev";
 
 interface QueryLog {
