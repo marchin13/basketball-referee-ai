@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { enhancedSearch } from '@/lib/enhanced_search';
+import { searchSignalImages } from '@/lib/signal-images';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -186,6 +187,9 @@ export async function POST(request: NextRequest) {
     // 関連質問生成（LLM）
     const relatedQuestions = await generateRelatedQuestions(question, result.references);
 
+    // 審判シグナル画像を検索
+    const matchedSignalImages = searchSignalImages(question);
+
     return NextResponse.json({
       answer: result.answer, // 簡潔な結論
       rawAnswer: result.answer, // 同じ
@@ -196,7 +200,11 @@ export async function POST(request: NextRequest) {
         similarity: r.score,
       })),
       relatedQuestions, // 既存機能
-      signalImages: [], // 既存機能（空配列で保持）
+      signalImages: matchedSignalImages.map(img => ({
+        name: img.name,
+        path: img.path,
+        description: img.description,
+      })),
       // v1.1.0 新機能
       reasoning: result.reasoning,
       references: result.references,
