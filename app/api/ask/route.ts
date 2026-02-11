@@ -210,7 +210,7 @@ export async function POST(request: NextRequest) {
         process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
       );
 
-      await supabase.from('query_logs').insert({
+      const { error: logInsertError } = await supabase.from('query_logs').insert({
         question,
         normalized_question: question,
         ai_answer: result.answer,
@@ -222,10 +222,13 @@ export async function POST(request: NextRequest) {
         ip_address: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip'),
         referrer: request.headers.get('referer'),
         model_used: 'gpt-4o-mini',
-        confidence: result.confidence,
       });
 
-      console.log('📊 ログ保存完了');
+      if (logInsertError) {
+        console.error('⚠️ ログ保存エラー（処理は継続）:', logInsertError.message);
+      } else {
+        console.log('📊 ログ保存完了');
+      }
     } catch (logError) {
       console.error('⚠️ ログ保存エラー（処理は継続）:', logError);
     }
