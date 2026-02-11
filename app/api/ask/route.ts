@@ -203,7 +203,7 @@ export async function POST(request: NextRequest) {
 
     // === query_logs へのログ保存（必須） ===
     // 注意: この処理を削除しないでください。日次レポート機能がこのテーブルに依存しています。
-    // regression guard: tests/check-query-logging.sh で存在チェックされています。
+    // regression guard: tests/check-core-features.sh で存在チェックされています。
     try {
       const supabase = createClient(
         process.env.NEXT_PUBLIC_SUPABASE_URL!,

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "bash tests/check-query-logging.sh",
+    "prebuild": "bash tests/check-core-features.sh",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
