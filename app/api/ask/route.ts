@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { createClient } from '@supabase/supabase-js';
 import { enhancedSearch } from '@/lib/enhanced_search';
 import { searchSignalImages } from '@/lib/signal-images';
 
@@ -171,6 +172,8 @@ JSON配列で返す: ["質問1", "質問2", "質問3"]`
 };
 
 export async function POST(request: NextRequest) {
+  const startTime = Date.now();
+
   try {
     const { question } = await request.json();
 
@@ -190,15 +193,48 @@ export async function POST(request: NextRequest) {
     // 審判シグナル画像を検索
     const matchedSignalImages = searchSignalImages(question);
 
+    const responseTime = Date.now() - startTime;
+
+    const ragResults = result.references.map(r => ({
+      sectionId: r.sectionId,
+      sectionName: r.sectionName,
+      similarity: r.score,
+    }));
+
+    // === query_logs へのログ保存（必須） ===
+    // 注意: この処理を削除しないでください。日次レポート機能がこのテーブルに依存しています。
+    // regression guard: tests/check-query-logging.sh で存在チェックされています。
+    try {
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      );
+
+      await supabase.from('query_logs').insert({
+        question,
+        normalized_question: question,
+        ai_answer: result.answer,
+        raw_answer: result.reasoning,
+        rag_results: ragResults,
+        rag_count: ragResults.length,
+        response_time_ms: responseTime,
+        user_agent: request.headers.get('user-agent'),
+        ip_address: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip'),
+        referrer: request.headers.get('referer'),
+        model_used: 'gpt-4o-mini',
+        confidence: result.confidence,
+      });
+
+      console.log('📊 ログ保存完了');
+    } catch (logError) {
+      console.error('⚠️ ログ保存エラー（処理は継続）:', logError);
+    }
+
     return NextResponse.json({
       answer: result.answer, // 簡潔な結論
       rawAnswer: result.answer, // 同じ
       normalizedQuestion: question,
-      ragResults: result.references.map(r => ({
-        sectionId: r.sectionId,
-        sectionName: r.sectionName,
-        similarity: r.score,
-      })),
+      ragResults,
       relatedQuestions, // 既存機能
       signalImages: matchedSignalImages.map(img => ({
         name: img.name,
